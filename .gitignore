@@ -1,4 +1,5 @@
 **.exe
 /exec/**.exe
-.vscode
-/.vscode
+.vscode/**
+**.exe
+**/**.exe
