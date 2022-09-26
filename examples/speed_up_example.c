@@ -6,23 +6,21 @@ int main(int argc, char const *argv[])
 
     int thId, nThreads, nProc;
 
+    int maxThreads = omp_get_max_threads();
+
     double start = omp_get_wtime();
+
 #pragma omp parallel
     {
 
         int thId = omp_get_thread_num();
         printf("Thread: %d \n", thId);
-        // int threadsNum = omp_get_num_threads();
-        // printf("Threads: %d \n", threadsNum);
-        // double threadsTime[4];
-        // for (int i = 0; i < 4; i++)
-        // {
-        //     double threadStart = omp_get_wtime();
-        //     int threadNum = omp_get_thread_num();
-        //     printf("Thread: %d \n", threadNum);
-        //     double threadTime = omp_get_wtime() - threadStart;
-        //     printf("Thread Time: %d \n", threadTime);
-        // }
+
+        int sum = 0;
+        for (int i = 0; i < 100000; i++)
+        {
+            sum += i;
+        }
 
 #pragma omp barrier
 
