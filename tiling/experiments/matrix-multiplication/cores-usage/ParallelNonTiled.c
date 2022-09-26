@@ -28,6 +28,8 @@ int main(int argc, char const *argv[])
 
     int i, j, k;
 
+    int thId, nThreads;
+
     double start = omp_get_wtime();
     #pragma omp parallel for private(i, j, k)
     for (i = 0; i < n; i++)

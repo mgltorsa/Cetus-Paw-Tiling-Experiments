@@ -1,0 +1,1 @@
+sbatch --job-name=matrix-multiplication --ntasks-per-core=1 --ntasks=4
