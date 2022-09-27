@@ -39,13 +39,10 @@ int main(int argc, char const *argv[])
 
 #pragma omp barrier
 
-    if (thId == 0)
+        if (thId == 0)
         {
             nThreads = omp_get_num_threads();
             printf("There are %d threads\n", nThreads);
-
-            nProc = omp_get_num_procs();
-            printf("There are %d procs\n", nProc);
         }
     }
 

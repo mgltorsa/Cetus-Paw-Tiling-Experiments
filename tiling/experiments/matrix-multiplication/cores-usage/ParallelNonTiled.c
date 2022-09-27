@@ -31,7 +31,9 @@ int main(int argc, char const *argv[])
     int thId, nThreads;
 
     double start = omp_get_wtime();
-    #pragma omp parallel for private(i, j, k)
+    #pragma omp parallel
+    {
+    #pragma omp for private(i, j, k)
     for (i = 0; i < n; i++)
     {
 
@@ -44,6 +46,7 @@ int main(int argc, char const *argv[])
                 d[i][j] = d[i][j] + a[i][k] * b[k][j];
             }
         }
+    }
     }
     double end = omp_get_wtime();
     double time = end-start;

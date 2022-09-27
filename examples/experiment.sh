@@ -6,6 +6,9 @@
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
 #SBATCH --output=array_%A-%a.log    # Standard output and error log
-##SBATCH --array=1-5                 # Array range
 
 echo This is task $SLURM_ARRAY_TASK_ID
+
+export OMP_NUM_THREADS=$SLURM_ARRAY_TASK_ID
+
+./ParallelNonTiled >> output

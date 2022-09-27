@@ -1,5 +1,3 @@
 **.exe
-/exec/**.exe
-.vscode/**
-**.exe
-**/**.exe
+cbin/
+.vscode/

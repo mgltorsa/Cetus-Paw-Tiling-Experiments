@@ -1,51 +1,63 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 
-
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 
-    int n, m;
-
-    if(argc == 0) {
-        n=20;
-    }
-
-    if(argc >0) {
-        n=argv[0];        
-    }
+    int n = 20, m = n; 
     
-    m=n;
-
-    if(argc >1) {
-        m=argv[1];
+    if (argc > 2)
+    {
+        n = atoi(argv[1]);
     }
 
+    m = n;
+
+    if (argc > 3)
+    {
+        m = atoi(argv[2]);
+    }
 
     int a[n][n], b[n][m], d[n][m];
 
-
     int i, j, k;
 
-    double start = omp_get_wtime();
-    #pragma omp parallel for private(i, j, k)
-    for (i = 0; i < n; i++)
-    {
+    int thId, nThreads;
 
-        for (j = 0; j < m; j++)
+
+    double start = omp_get_wtime();
+
+    #pragma omp parallel
+    {
+        int thId = omp_get_thread_num();
+        #pragma omp for private(i, j, k)
+        for (i = 0; i < n; i++)
         {
 
-            for (k = 0; k < n; k++)
+            for (j = 0; j < m; j++)
             {
 
-                d[i][j] = d[i][j] + a[i][k] * b[k][j];
+                for (k = 0; k < n; k++)
+                {
+
+                    d[i][j] = d[i][j] + a[i][k] * b[k][j];
+                }
             }
         }
+
+        #pragma omp barrier
+        if (thId == 0)
+        {
+            nThreads = omp_get_num_threads();
+        }
     }
+
     double end = omp_get_wtime();
-    double time = end-start;
-    printf("%f", time);
+    double time = end - start;
+
+    printf("matrix-mult,speed-up,%d,%f\n", nThreads, time);
 
     return 0;
 }
