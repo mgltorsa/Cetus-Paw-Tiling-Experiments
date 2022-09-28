@@ -6,6 +6,10 @@ int main(int argc, char const *argv[])
 
     int thId, nThreads;
 
+    if(argc>1) {
+        omp_set_num_threads(itoi(argv[1]));
+    }
+
     int maxThreads = omp_get_max_threads();
 
     double start = omp_get_wtime();
@@ -35,3 +39,4 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
