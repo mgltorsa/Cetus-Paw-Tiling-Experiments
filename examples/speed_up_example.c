@@ -1,21 +1,26 @@
 #include "omp.h"
+#include "stdlib.h"
 #include "stdio.h"
 
 int main(int argc, char const *argv[])
 {
 
-    int thId, nThreads;
+    int thId, nThreads = 0;
 
-    if(argc>1) {
-        omp_set_num_threads(itoi(argv[1]));
+    if (argc > 1)
+    {
+        omp_set_num_threads(atoi(argv[1]));
     }
-
-    int maxThreads = omp_get_max_threads();
 
     double start = omp_get_wtime();
 
 #pragma omp parallel
     {
+
+        if (nThreads == 0)
+        {
+            nThreads = omp_get_num_threads();
+        }
         int thId = omp_get_thread_num();
         printf("Thread: %d \n", thId);
 
@@ -24,14 +29,9 @@ int main(int argc, char const *argv[])
         {
             sum += i;
         }
-#pragma omp barrier
-        if (thId == 0)
-        {
-            nThreads = omp_get_num_threads();
-            printf("There are %d threads\n", nThreads);
-        }
     }
-    
+
+    printf("There are %d threads\n", nThreads);
 
     double end = omp_get_wtime();
     double time = end - start;
@@ -39,4 +39,3 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
-

@@ -4,12 +4,11 @@
 int main(int argc, char const *argv[])
 {
 
-    int thId, nThreads, nProc;
+    int thId, nThreads = 0;
 
-    int maxThreads = omp_get_max_threads();
+    double threadsTime[omp_get_max_threads()];
 
-    double threadsTime[maxThreads];
-
+    int maxThreads = sizeof threadsTime / sizeof threadsTime[0];
     for (int i = 0; i < maxThreads; i++)
     {
         threadsTime[i] = 0;
@@ -18,7 +17,12 @@ int main(int argc, char const *argv[])
     double start = omp_get_wtime();
 
 #pragma omp parallel
-    {
+    {        
+        if (nThreads == 0)
+        {
+            nThreads = omp_get_num_threads();
+            printf("There are %d threads\n", nThreads);
+        }
 
         int thId = omp_get_thread_num();
         printf("Thread: %d \n", thId);
@@ -36,14 +40,6 @@ int main(int argc, char const *argv[])
         double thTime = thEnd - thStart;
         threadsTime[thId] += thTime;
         printf("Thread %d time: %f \n", thId, thTime);
-
-#pragma omp barrier
-
-        if (thId == 0)
-        {
-            nThreads = omp_get_num_threads();
-            printf("There are %d threads\n", nThreads);
-        }
     }
 
     double end = omp_get_wtime();
