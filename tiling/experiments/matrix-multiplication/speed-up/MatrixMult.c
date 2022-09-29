@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <omp.h>
+
+int main(int argc, char const * argv[])
+{
+	int n = 1000, m = 1000;
+
+    int cores = 0;
+
+    if(argc > 1) {
+        cores=atoi(argv[1]);
+    }
+
+    if(cores >0) {
+        omp_set_num_threads(cores);
+    }
+
+    if (argc > 2)
+    {
+        n = atoi(argv[2]);
+    }
+
+    m = n;
+
+    if (argc > 3)
+    {
+        m = atoi(argv[3]);
+    }
+	
+	int a[n][n], b[n][m], d[n][m];
+	int i, j, k;
+	int _ret_val_0;
+
+
+    double start = omp_get_wtime();
+
+	if (((m*n)*n)<=100000)
+	{
+		#pragma loop name main#0 
+		#pragma cetus private(i, j, k) 
+		for (i=0; i<n; i ++ )
+		{
+			#pragma loop name main#0#0 
+			#pragma cetus private(j, k) 
+			for (j=0; j<m; j ++ )
+			{
+				#pragma loop name main#0#0#0 
+				#pragma cetus private(k) 
+				for (k=0; k<n; k ++ )
+				{
+					d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
+				}
+			}
+		}
+	}
+	else
+	{
+		int balancedTileSize = (((m*n)*n)/(4*(((m*n)*n)/4000)));
+		int kk;
+		int kTile = balancedTileSize;
+		#pragma loop name main#1 
+		#pragma cetus private(i, j, k, kk) 
+		for (i=0; i<n; i ++ )
+		{
+			#pragma loop name main#1#0 
+			#pragma cetus private(j, k, kk) 
+			for ((kk=0); kk<n; kk+=kTile)
+			{
+				#pragma loop name main#1#0#0 
+				#pragma cetus private(j, k) 
+				for (j=0; j<m; j ++ )
+				{
+					#pragma loop name main#1#0#0#0 
+					#pragma cetus private(k) 
+					#pragma cetus parallel 
+					#pragma omp parallel for if((10000<((1L+(-3L*kk))+(3L*((((-1001L+kTile)+kk)<0L) ? ((-1L+kTile)+kk) : 1000L))))) private(k)
+					for ((k=kk); k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
+					{
+						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
+					}
+				}
+			}
+		}
+	}
+
+	double end = omp_get_wtime();
+    double time = end - start;
+
+    printf("matrix-mult,parallel-paw-tiled,%d,speed-up,%f\n", cores, time);
+
+	_ret_val_0=0;
+	return _ret_val_0;
+}

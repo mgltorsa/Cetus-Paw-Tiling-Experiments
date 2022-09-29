@@ -6,33 +6,39 @@
 int main(int argc, char *argv[])
 {
 
-    int n = 20, m = n; 
-    
+    int n = 20, m = n;
+
+    int cores = 0;
+
+    if(argc > 1) {
+        cores=atoi(argv[1]);
+    }
+
+    if(cores >0) {
+        omp_set_num_threads(cores);
+    }
+
     if (argc > 2)
     {
-        n = atoi(argv[1]);
+        n = atoi(argv[2]);
     }
 
     m = n;
 
     if (argc > 3)
     {
-        m = atoi(argv[2]);
+        m = atoi(argv[3]);
     }
 
     int a[n][n], b[n][m], d[n][m];
 
     int i, j, k;
 
-    int thId, nThreads;
-
 
     double start = omp_get_wtime();
 
-    #pragma omp parallel
+    #pragma omp parallel for private(i, j, k)
     {
-        int thId = omp_get_thread_num();
-        #pragma omp for private(i, j, k)
         for (i = 0; i < n; i++)
         {
 
@@ -46,18 +52,12 @@ int main(int argc, char *argv[])
                 }
             }
         }
-
-        #pragma omp barrier
-        if (thId == 0)
-        {
-            nThreads = omp_get_num_threads();
-        }
     }
 
     double end = omp_get_wtime();
     double time = end - start;
 
-    printf("matrix-mult,speed-up,%d,%f\n", nThreads, time);
+    printf("matrix-mult,parallel-non-tiled,%d,speed-up,%f\n", cores, time);
 
     return 0;
 }
