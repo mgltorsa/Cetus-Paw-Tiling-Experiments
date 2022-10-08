@@ -9,5 +9,5 @@
 #SBATCH --open-mode=append
 #SBATCH --exclusive
 
-./ParallelNonTiled "$SLURM_ARRAY_TASK_ID"
-./ParallelTiled "$SLURM_ARRAY_TASK_ID"
+./speed-up/ParallelNonTiled "$SLURM_ARRAY_TASK_ID"
+./speed-up/ParallelTiled "$SLURM_ARRAY_TASK_ID"
