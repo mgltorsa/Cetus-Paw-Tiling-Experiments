@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
 
-    int n = 20, m = n;
+    int n = 1000, m = n;
 
     int cores = 0;
 
@@ -38,7 +38,6 @@ int main(int argc, char *argv[])
     double start = omp_get_wtime();
 
     #pragma omp parallel for private(i, j, k)
-    {
         for (i = 0; i < n; i++)
         {
 
@@ -52,7 +51,6 @@ int main(int argc, char *argv[])
                 }
             }
         }
-    }
 
     double end = omp_get_wtime();
     double time = end - start;

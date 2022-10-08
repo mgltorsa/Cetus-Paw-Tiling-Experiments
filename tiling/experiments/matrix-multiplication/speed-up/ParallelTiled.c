@@ -3,7 +3,7 @@
 
 int main(int argc, char const * argv[])
 {
-	int n = 1000, m = 1000;
+	int n = 1000, m = n;
 
     int cores = 0;
 
