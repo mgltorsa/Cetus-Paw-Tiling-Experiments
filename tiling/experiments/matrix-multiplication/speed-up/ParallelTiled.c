@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 
 int main(int argc, char const * argv[])
@@ -32,7 +33,7 @@ int main(int argc, char const * argv[])
     float **d = (float **)malloc(n * sizeof(float *));
 
 	if(a==NULL || b==NULL || d==NULL) {
-		printf("ERROR an array was null");
+    	printf("matrix-mult,parallel-paw-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores,n,m);
 		return 1;
 	}
 

@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     float **d = (float **)malloc(n * sizeof(float *));
 
     if(a==NULL || b==NULL || d==NULL) {
-		printf("ERROR an array was null");
+        printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
 		return 1;
 	}
 
