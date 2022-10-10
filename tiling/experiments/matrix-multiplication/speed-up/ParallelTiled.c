@@ -101,7 +101,7 @@ int main(int argc, char const * argv[])
 					#pragma loop name main#1#0#0#0 
 					#pragma cetus private(k) 
 					#pragma cetus parallel 
-					#pragma omp parallel for if((10000<((1L+(-3L*kk))+(3L*((((-1001L+kTile)+kk)<0L) ? ((-1L+kTile)+kk) : 1000L))))) private(k)
+					#pragma omp parallel for private(k)
 					for (k=kk; k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
 					{
 						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
