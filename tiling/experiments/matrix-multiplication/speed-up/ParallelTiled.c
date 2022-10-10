@@ -3,7 +3,7 @@
 
 int main(int argc, char const * argv[])
 {
-	int n = 1000, m = n;
+	int n = 300, m = n;
 
     int cores = 0;
 
@@ -27,7 +27,32 @@ int main(int argc, char const * argv[])
         m = atoi(argv[3]);
     }
 	
-	int a[n][n], b[n][m], d[n][m];
+	float **a = (float **)malloc(n * sizeof(float *));
+    float **b = (float **)malloc(n * sizeof(float *));
+    float **d = (float **)malloc(n * sizeof(float *));
+
+	if(a==NULL || b==NULL || d==NULL) {
+		printf("ERROR an array was null");
+		return 1;
+	}
+
+ 	for (int z = 0; z < n; z++)
+    {
+        a[z] = (float *)malloc(m * sizeof(float));
+        b[z] = (float *)malloc(m * sizeof(float));
+        d[z] = (float *)malloc(m * sizeof(float));
+    }
+
+	for (int z = 0; z < n; z++)
+    {
+        for (int p = 0; p < n; p++)
+        {
+            a[z][p] = rand()*1000;
+            b[z][p] = rand()*1000;
+            d[z][p] = rand()*1000;
+        }        
+    }
+
 	int i, j, k;
 	int _ret_val_0;
 
@@ -86,7 +111,19 @@ int main(int argc, char const * argv[])
 	double end = omp_get_wtime();
     double time = end - start;
 
-    printf("matrix-mult,parallel-paw-tiled,%d,speed-up,%f\n", cores, time);
+	for (int z = 0; z < n; z++)
+    {
+        free(a[z]);
+        free(b[z]);
+        free(d[z]);
+    }
+
+    free(a);
+    free(b);
+    free(d);
+
+
+    printf("matrix-mult,parallel-paw-tiled,%d,speed-up,%d,%d,%f\n", cores,n,m,time);
 
 	_ret_val_0=0;
 	return _ret_val_0;

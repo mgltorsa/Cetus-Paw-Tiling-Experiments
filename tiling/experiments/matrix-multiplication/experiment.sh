@@ -1,13 +1,17 @@
 #!/bin/bash
-#SBATCH --job-name=matrix-mult-sup-job
-#SBATCH --array=2-32
+#SBATCH --job-name=matrix-mult-job
+#SBATCH --ntasks=2
+#SBATCH --nodes=2
 #SBATCH --exclusive
-#SBATCH --cpus-per-task=32
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
 #SBATCH --output=speed-up.csv    # Standard output and error log
 #SBATCH --open-mode=append
-#SBATCH --exclusive
 
-./speed-up/ParallelNonTiled "$SLURM_ARRAY_TASK_ID"
-./speed-up/ParallelTiled "$SLURM_ARRAY_TASK_ID"
+
+for i in {1..32}
+do
+    srun --ntasks=1 --cpus-per-task=$i --exclusive speed-up/ParallelNonTiled "$i" 1000
+    srun --ntasks=1 --cpus-per-task=$i --exclusive speed-up/ParallelTiled "$i" 1000
+done
+
