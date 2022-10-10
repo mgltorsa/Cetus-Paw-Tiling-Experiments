@@ -32,25 +32,27 @@ int main(int argc, char *argv[])
         m = atoi(argv[3]);
     }
 
-    int **a = (float **)malloc(n * sizeof(float *));
-    int **b = (float **)malloc(n * sizeof(float *));
-    int **d = (float **)malloc(n * sizeof(float *));
+    float **a = (float **)malloc(n * sizeof(float *));
+    float **b = (float **)malloc(n * sizeof(float *));
+    float **d = (float **)malloc(n * sizeof(float *));
 
     if(a==NULL || b==NULL || d==NULL) {
 		printf("ERROR an array was null");
 		return 1;
 	}
 
-    for (int z = 0; z < n; z++)
+    int z,p;
+
+    for (z = 0; z < n; z++)
     {
         a[z] = (float *)malloc(m * sizeof(float));
         b[z] = (float *)malloc(m * sizeof(float));
         d[z] = (float *)malloc(m * sizeof(float));
     }
 
-    for (int z = 0; z < n; z++)
+    for (z = 0; z < n; z++)
     {
-        for (int p = 0; p < n; p++)
+        for (p = 0; p < n; p++)
         {
             a[z][p] = rand()*1000;
             b[z][p] = rand()*1000;
@@ -80,7 +82,7 @@ int main(int argc, char *argv[])
     double end = omp_get_wtime();
     double time = end - start;
 
-    for (int z = 0; z < n; z++)
+    for (z = 0; z < n; z++)
     {
         free(a[z]);
         free(b[z]);

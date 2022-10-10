@@ -36,16 +36,18 @@ int main(int argc, char const * argv[])
 		return 1;
 	}
 
- 	for (int z = 0; z < n; z++)
+	int z,p;
+
+ 	for (z = 0; z < n; z++)
     {
         a[z] = (float *)malloc(m * sizeof(float));
         b[z] = (float *)malloc(m * sizeof(float));
         d[z] = (float *)malloc(m * sizeof(float));
     }
 
-	for (int z = 0; z < n; z++)
+	for (z = 0; z < n; z++)
     {
-        for (int p = 0; p < n; p++)
+        for (p = 0; p < n; p++)
         {
             a[z][p] = rand()*1000;
             b[z][p] = rand()*1000;
@@ -111,7 +113,7 @@ int main(int argc, char const * argv[])
 	double end = omp_get_wtime();
     double time = end - start;
 
-	for (int z = 0; z < n; z++)
+	for (z = 0; z < n; z++)
     {
         free(a[z]);
         free(b[z]);
