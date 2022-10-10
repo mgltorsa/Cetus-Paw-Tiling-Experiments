@@ -1,3 +1,128 @@
-slurmstepd: error: execve(): /speed-up/ParallelNonTiled: No such file or directory
-srun: error: r1n12: task 0: Exited with exit code 2
-matrix-mult,parallel-non-tiled,4,speed-up,0.000133
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,1,speed-up,1000,1000,5.834175
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,1,speed-up,1000,1000,6.599456
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,2,speed-up,1000,1000,2.985354
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,2,speed-up,1000,1000,6.593378
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,3,speed-up,1000,1000,1.990410
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,3,speed-up,1000,1000,6.595828
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,4,speed-up,1000,1000,1.484667
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,4,speed-up,1000,1000,6.620002
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,5,speed-up,1000,1000,1.194693
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,5,speed-up,1000,1000,6.580403
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,6,speed-up,1000,1000,1.026477
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,6,speed-up,1000,1000,6.605915
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,7,speed-up,1000,1000,0.876866
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,7,speed-up,1000,1000,6.621413
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,8,speed-up,1000,1000,0.777259
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,8,speed-up,1000,1000,6.577357
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,9,speed-up,1000,1000,0.673870
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,9,speed-up,1000,1000,6.368209
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,10,speed-up,1000,1000,1.416061
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,10,speed-up,1000,1000,6.619986
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,11,speed-up,1000,1000,0.798463
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,11,speed-up,1000,1000,6.608495
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,12,speed-up,1000,1000,0.723585
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,12,speed-up,1000,1000,6.579801
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,13,speed-up,1000,1000,0.669321
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,13,speed-up,1000,1000,6.625252
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,14,speed-up,1000,1000,0.665236
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,14,speed-up,1000,1000,6.513532
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,15,speed-up,1000,1000,0.587908
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,15,speed-up,1000,1000,6.574251
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,16,speed-up,1000,1000,0.565864
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,16,speed-up,1000,1000,6.603277
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,17,speed-up,1000,1000,0.754086
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,17,speed-up,1000,1000,6.459702
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,18,speed-up,1000,1000,0.538412
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,18,speed-up,1000,1000,6.525816
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,19,speed-up,1000,1000,0.539266
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,19,speed-up,1000,1000,6.562516
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,20,speed-up,1000,1000,0.525957
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,20,speed-up,1000,1000,6.506495
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,21,speed-up,1000,1000,0.415975
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,21,speed-up,1000,1000,6.510171
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,22,speed-up,1000,1000,0.435323
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,22,speed-up,1000,1000,6.367526
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,23,speed-up,1000,1000,0.391790
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,23,speed-up,1000,1000,6.580004
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,24,speed-up,1000,1000,0.366966
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,24,speed-up,1000,1000,6.557181
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,25,speed-up,1000,1000,0.425991
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,25,speed-up,1000,1000,6.631832
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,26,speed-up,1000,1000,0.435861
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,26,speed-up,1000,1000,6.513523
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,27,speed-up,1000,1000,0.392201
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,27,speed-up,1000,1000,6.547607
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,28,speed-up,1000,1000,0.336852
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,28,speed-up,1000,1000,6.549445
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,29,speed-up,1000,1000,0.364499
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,29,speed-up,1000,1000,6.570333
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,30,speed-up,1000,1000,0.280253
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,30,speed-up,1000,1000,6.588296
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,31,speed-up,1000,1000,0.305537
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,31,speed-up,1000,1000,6.648427
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-non-tiled,32,speed-up,1000,1000,0.295465
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+matrix-mult,parallel-paw-tiled,32,speed-up,1000,1000,6.536949
