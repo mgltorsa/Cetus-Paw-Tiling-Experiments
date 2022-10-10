@@ -12,7 +12,8 @@
 
 for i in {1..32}
 do
-    srun --ntasks=1 --cpus-per-task=$i --exclusive speed-up/ParallelNonTiled "$i" 1000
-    srun --ntasks=1 --cpus-per-task=$i --exclusive speed-up/ParallelTiled "$i" 1000
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive speed-up/ParallelNonTiled "$i" 1000 &
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive speed-up/ParallelTiled "$i" 1000 &
+    wait
 done
 
