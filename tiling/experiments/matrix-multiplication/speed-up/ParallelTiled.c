@@ -83,16 +83,18 @@ int main(int argc, char const * argv[])
 	}
 	else
 	{
-		int balancedTileSize = (((m*n)*n)/(4*(((m*n)*n)/4000)));
+		int balancedTileSize = 2048;
 		int kk;
 		int kTile = balancedTileSize;
 		#pragma loop name main#1 
 		#pragma cetus private(i, j, k, kk) 
+		#pragma cetus parallel 
+		#pragma omp parallel for private(i, j, k, kk)
 		for (i=0; i<n; i ++ )
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(j, k, kk) 
-			for (kk=0; kk<n; kk+=kTile)
+			for ((kk=0); kk<n; kk+=kTile)
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(j, k) 
@@ -100,9 +102,7 @@ int main(int argc, char const * argv[])
 				{
 					#pragma loop name main#1#0#0#0 
 					#pragma cetus private(k) 
-					#pragma cetus parallel 
-					#pragma omp parallel for private(k)
-					for (k=kk; k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
+					for ((k=kk); k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
 					{
 						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
 					}
