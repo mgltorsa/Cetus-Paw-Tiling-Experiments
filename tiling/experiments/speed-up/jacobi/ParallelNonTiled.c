@@ -61,7 +61,6 @@ int main(int argc, char const *argv[])
 	int _ret_val_0;
 
 	double start = omp_get_wtime();
-	int _ret_val_0;
 	#pragma loop name main #0
 	#pragma cetus private(i, j)
 	#pragma cetus parallel
