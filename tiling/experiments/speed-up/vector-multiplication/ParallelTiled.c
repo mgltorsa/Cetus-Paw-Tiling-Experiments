@@ -1,5 +1,6 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <omp.h>
 
 int main(int argc, char const *argv[])
 {
@@ -76,7 +77,7 @@ int main(int argc, char const *argv[])
 			#pragma loop name main #1
 			#pragma cetus for
 			#pragma omp for
-			for ((jj = 0); jj < n; jj += jTile)
+			for (jj = 0; jj < n; jj += jTile)
 			{
 				#pragma loop name main #1 #0
 				#pragma cetus private(i, j)
@@ -85,7 +86,7 @@ int main(int argc, char const *argv[])
 					#pragma loop name main #1 #0 #0
 					#pragma cetus private(j)
 					/* #pragma cetus reduction(+: c[i])  */
-					for ((j = jj); j < ((((-1 + jTile) + jj) < n) ? ((-1 + jTile) + jj) : n); j++)
+					for (j = jj; j < ((((-1 + jTile) + jj) < n) ? ((-1 + jTile) + jj) : n); j++)
 					{
 						reduce[i] += (a[(i * n) + j] * b[j]);
 					}
