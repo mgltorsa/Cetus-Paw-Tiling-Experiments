@@ -9,4 +9,4 @@ gcc -g -fopenmp vector-multiplication/ParallelTiled.c -o vector-multiplication/P
 
 #Jacobi
 gcc -g -fopenmp jacobi/ParallelNonTiled.c -o jacobi/ParallelNonTiled
-gcc -g -fopenmp jacobi/ParallelNonTiled.c -o jacobi/ParallelNonTiled
+gcc -g -fopenmp jacobi/ParallelTiled.c -o jacobi/ParallelTiled
