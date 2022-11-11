@@ -32,39 +32,40 @@ int main(int argc, char *argv[])
         m = atoi(argv[3]);
     }
 
-    float **a = (float **)malloc(n * sizeof(float *));
-    float **b = (float **)malloc(n * sizeof(float *));
-    float **d = (float **)malloc(n * sizeof(float *));
+    float **a = (float **)calloc(n, sizeof(float *));
+    float **b = (float **)calloc(n, sizeof(float *));
+    float **d = (float **)calloc(n, sizeof(float *));
 
-    if(a==NULL || b==NULL || d==NULL) {
+    if (a == NULL || b == NULL || d == NULL)
+    {
         printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
-		return 1;
-	}
+        return 1;
+    }
 
-    int z,p;
+    int z, p;
 
     for (z = 0; z < n; z++)
     {
-        a[z] = (float *)malloc(m * sizeof(float));
-        b[z] = (float *)malloc(m * sizeof(float));
-        d[z] = (float *)malloc(m * sizeof(float));
+        a[z] = (float *)calloc(m, sizeof(float));
+        b[z] = (float *)calloc(m, sizeof(float));
+        d[z] = (float *)calloc(m,  sizeof(float));
     }
 
     for (z = 0; z < n; z++)
     {
         for (p = 0; p < n; p++)
         {
-            a[z][p] = rand()*1000;
-            b[z][p] = rand()*1000;
-            d[z][p] = rand()*1000;
-        }        
+            a[z][p] = rand() * 1000;
+            b[z][p] = rand() * 1000;
+            d[z][p] = rand() * 1000;
+        }
     }
 
     int i, j, k;
 
     double start = omp_get_wtime();
 
-    #pragma omp parallel for private(i, j, k)
+#pragma omp parallel for private(i, j, k)
     for (i = 0; i < n; i++)
     {
 

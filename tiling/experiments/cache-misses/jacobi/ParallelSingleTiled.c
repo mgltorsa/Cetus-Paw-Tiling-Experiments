@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
 
 	if (a == NULL || b == NULL)
 	{
-		printf("jacobi,parallel-paw-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
+		printf("jacobi,parallel-paw-single-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
 		return 1;
 	}
 
@@ -80,28 +80,18 @@ int main(int argc, char const *argv[])
 		int balancedTileSize = (((1+(-2*n))+(n*n))/(cores*(((1+(-2*n))+(n*n))/(1365*cores))));
 		int ii;
 		int iTile = balancedTileSize;
-		int jj;
-		int jTile = balancedTileSize;
-		#pragma loop name main #1
-		#pragma cetus private(i, ii, j, jj)
-		#pragma cetus parallel
-		#pragma omp parallel for private(i, ii, j, jj)
-		for (ii = 1; ii < (n - 1); ii += iTile)
+		#pragma cetus private(i, ii, j) 
+		#pragma cetus parallel 
+		#pragma omp parallel for private(i, ii, j)
+		for (ii=1; ii<(n-1); ii+=iTile)
 		{
-			#pragma loop name main #1 #0
-			#pragma cetus private(i, j, jj)
-			for (jj = 1; jj < (n - 1); jj += jTile)
+			#pragma cetus private(i, j) 
+			for ((i=ii); i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
 			{
-				#pragma loop name main #1 #0 #0
-				#pragma cetus private(i, j)
-				for (i = ii; i < ((((-1 + iTile) + ii) < (n - 1)) ? ((-1 + iTile) + ii) : (n - 1)); i++)
+				#pragma cetus private(j) 
+				for (j=1; j<(n-1); j ++ )
 				{
-					#pragma loop name main #1 #0 #0 #0
-					#pragma cetus private(j)
-					for (j = jj; j < ((((-1 + jTile) + jj) < (n - 1)) ? ((-1 + jTile) + jj) : (n - 1)); j++)
-					{
-						a[i][j] = (0.2 * ((((b[j][i] + b[j - 1][i]) + b[j][i - 1]) + b[j + 1][i]) + b[j][i + 1]));
-					}
+					a[i][j]=(0.2*((((b[j][i]+b[j-1][i])+b[j][i-1])+b[j+1][i])+b[j][i+1]));
 				}
 			}
 		}
@@ -119,7 +109,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-paw-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
+    printf("jacobi,parallel-paw-single-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;
