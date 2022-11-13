@@ -6,7 +6,7 @@
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
-#SBATCH --output=papi-experiments.csv    # Standard output and error log
+#SBATCH --output=../results.csv    # Standard output and error log
 #SBATCH --open-mode=append
 
 BINARY_FOLDER=bin

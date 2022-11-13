@@ -20,16 +20,16 @@ int main(int argc, char const * argv[])
         omp_set_num_threads(cores);
     }
 
-    if (argc > 2)
+    if (argc > 3)
     {
-        n = atoi(argv[2]);
+        n = atoi(argv[3]);
     }
 
     m = n;
 
-    if (argc > 3)
+    if (argc > 4)
     {
-        m = atoi(argv[3]);
+        m = atoi(argv[4]);
     }
 
     float **a = (float **)calloc(n, sizeof(float *));

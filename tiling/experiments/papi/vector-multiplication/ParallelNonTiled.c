@@ -9,12 +9,7 @@ int main(int argc, char const *argv[])
 
 	int n = 5;
 
-	int cores = 0;
-
-	if (argc > 1)
-	{
-		cores = atoi(argv[1]);
-	}
+	int cores = atoi(argv[1]);
 
 	if (cores > 0)
 	{

@@ -31,8 +31,8 @@ int main(int argc, char const *argv[])
 		m = atoi(argv[3]);
 	}
 
-	float **a = (float **)malloc(n * sizeof(float *));
-	float **b = (float **)malloc(n * sizeof(float *));
+	float **a = (float **)calloc(n, sizeof(float *));
+	float **b = (float **)calloc(n, sizeof(float *));
 
 	if (a == NULL || b == NULL)
 	{

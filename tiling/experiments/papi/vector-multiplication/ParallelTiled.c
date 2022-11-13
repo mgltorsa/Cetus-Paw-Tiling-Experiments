@@ -8,21 +8,16 @@ int main(int argc, char const * argv[])
 {
 	int n = 300;
 
-	int cores = 0;
-
-	if (argc > 1)
-	{
-		cores = atoi(argv[1]);
-	}
+	int cores = atoi(argv[1]);
 
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 2)
+	if (argc > 3)
 	{
-		n = atoi(argv[2]);
+		n = atoi(argv[3]);
 	}
 
 	float *a = (float *)calloc(n * n, sizeof(float *));
