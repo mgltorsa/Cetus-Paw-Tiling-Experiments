@@ -1,8 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <omp.h>
+#include <papi.h>
+#include <papi_libs.h>
 
-int main(int argc, char const *argv[])
+int main(int argc, char const * argv[])
 {
 	int n = 300;
 
@@ -23,13 +25,19 @@ int main(int argc, char const *argv[])
 		n = atoi(argv[2]);
 	}
 
-	float *a = (float *)calloc(n, sizeof(float *));
-	float *b = (float *)calloc(n, sizeof(float *));
-	float *c = (float *)calloc(n, sizeof(float *));
+	float *a = (float *)calloc(n * n, sizeof(float *));
+	float *b = (float *)calloc(n , sizeof(float *));
+	float *c = (float *)calloc(n , sizeof(float *));
+
+	//PAPI Measurements
+	int eventType = atoi(argv[2]);
+	int eventSet = createEmptyEventSet();
+    int event = getEvent(eventType);
+	char *eventLabel = getEventLabel(eventType);
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
-		printf("vector-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, n);
+		printf("vector-mult,parallel-paw-single-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, n);
 		return 1;
 	}
 
@@ -47,19 +55,22 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
-	double start = omp_get_wtime();
-	if ((n * n) <= 100000)
+
+	//PAPI init measurement
+	initAndMeasure(&eventSet, event);
+	
+	if ((n*n)<=100000)
 	{
-		#pragma loop name main #0
-		#pragma cetus private(i, j)
-		for (i = 0; i < n; i++)
+		#pragma cetus private(i, j) 
+		#pragma cetus parallel 
+		#pragma omp parallel for private(i, j)
+		for (i=0; i<n; i ++ )
 		{
-			#pragma loop name main #0 #0
-			#pragma cetus private(j)
+			#pragma cetus private(j) 
 			/* #pragma cetus reduction(+: c[i])  */
-			for (j = 0; j < n; j++)
+			for (j=0; j<n; j ++ )
 			{
-				c[i] += (a[(i * n) + j] * b[j]);
+				c[i]+=(a[(i*n)+j]*b[j]);
 			}
 		}
 	}
@@ -104,14 +115,14 @@ int main(int argc, char const *argv[])
 		}
 	}
 
-	double end = omp_get_wtime();
-	double time = end - start;
+    long_long measurement = stopMeasure(eventSet);
+
 
 	free(a);
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%f\n", cores, n, n, time);
-	_ret_val_0 = 0;
+	printf("vector-mult,parallel-paw-single-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, n, measurement);
+	_ret_val_0=0;
 	return _ret_val_0;
 }

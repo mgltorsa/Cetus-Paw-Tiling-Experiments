@@ -1,3 +1,4 @@
 **.exe
 cbin/
 .vscode/
+**/bin

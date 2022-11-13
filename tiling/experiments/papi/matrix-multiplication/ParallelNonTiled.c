@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <papi.h>
+#include <papi_libs.h>
 
 int main(int argc, char *argv[])
 {
@@ -36,9 +38,15 @@ int main(int argc, char *argv[])
     float **b = (float **)calloc(n, sizeof(float *));
     float **d = (float **)calloc(n, sizeof(float *));
 
+    //PAPI Measurements
+	int eventType = atoi(argv[2]);
+	int eventSet = createEmptyEventSet();
+    int event = getEvent(eventType);
+	char *eventLabel = getEventLabel(eventType);
+
     if (a == NULL || b == NULL || d == NULL)
     {
-        printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
+        printf("matrix-mult,parallel-non-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
         return 1;
     }
 
@@ -63,9 +71,9 @@ int main(int argc, char *argv[])
 
     int i, j, k;
 
-    double start = omp_get_wtime();
+	initAndMeasure(&eventSet, event);
 
-#pragma omp parallel for private(i, j, k)
+    #pragma omp parallel for private(i, j, k)
     for (i = 0; i < n; i++)
     {
 
@@ -80,8 +88,8 @@ int main(int argc, char *argv[])
         }
     }
 
-    double end = omp_get_wtime();
-    double time = end - start;
+    long_long measurement = stopMeasure(eventSet);
+
 
     for (z = 0; z < n; z++)
     {
@@ -94,7 +102,7 @@ int main(int argc, char *argv[])
     free(b);
     free(d);
 
-    printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
+    printf("matrix-mult,parallel-non-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, m, measurement);
 
     return 0;
 }

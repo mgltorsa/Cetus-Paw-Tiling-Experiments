@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
 		n = atoi(argv[2]);
 	}
 
-	float *a = (float *)calloc(n, sizeof(float *));
+	float *a = (float *)calloc(n * n, sizeof(float *));
 	float *b = (float *)calloc(n, sizeof(float *));
 	float *c = (float *)calloc(n, sizeof(float *));
 

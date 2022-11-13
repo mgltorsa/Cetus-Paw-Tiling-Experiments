@@ -9,12 +9,13 @@
 #SBATCH --output=speed-up.csv    # Standard output and error log
 #SBATCH --open-mode=append
 
+BINARY_FOLDER=bin
 
 for i in {1..32}
 do
     #jacobi
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive jacobi/ParallelNonTiled "$i" 2000 &
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive jacobi/ParallelTiled "$i" 2000 &
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelNonTiled "$i" 2000 &
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelTiled "$i" 2000 &
     wait
 done
 
