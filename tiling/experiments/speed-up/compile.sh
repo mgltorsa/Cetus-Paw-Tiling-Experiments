@@ -22,4 +22,4 @@ gcc -g -fopenmp vector-multiplication/ParallelSingleTiled.c -o $BINARY_FOLDER/ve
 #Jacobi
 gcc -g -fopenmp jacobi/ParallelNonTiled.c -o $BINARY_FOLDER/jacobi/ParallelNonTiled
 gcc -g -fopenmp jacobi/ParallelTiled.c -o $BINARY_FOLDER/jacobi/ParallelTiled
-gcc -g -fopenmp jacobi/ParallelTiled.c -o $BINARY_FOLDER/jacobi/ParallelSingleTiled
+gcc -g -fopenmp jacobi/ParallelSingleTiled.c -o $BINARY_FOLDER/jacobi/ParallelSingleTiled

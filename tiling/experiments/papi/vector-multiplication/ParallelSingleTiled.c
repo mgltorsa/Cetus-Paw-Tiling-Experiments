@@ -54,7 +54,8 @@ int main(int argc, char const *argv[])
 	int _ret_val_0;
 	
 	//PAPI init measurement
-	initAndMeasure(&eventSet, event);
+	//getting works performance here. Check
+	// initAndMeasure(&eventSet, event);
 
 	if ((n * n) <= 100000)
 	{
@@ -76,6 +77,7 @@ int main(int argc, char const *argv[])
 		int balancedTileSize = (2730+(-1*(2730%cores)));
 		int jj;
 		int jTile = balancedTileSize;
+		initAndMeasure(&eventSet, event);
 		#pragma cetus parallel 
 		#pragma cetus private(i, j, jj) 
 		#pragma omp parallel private(i, j, jj)

@@ -67,7 +67,8 @@ int main(int argc, char const *argv[])
 	int i, j, k;
 	int _ret_val_0;
 
-	initAndMeasure(&eventSet, event);
+	//getting works performance here. Check
+	// initAndMeasure(&eventSet, event);
 
 	if (((m * n) * n) <= 100000)
 	{
@@ -93,6 +94,7 @@ int main(int argc, char const *argv[])
 		int balancedTileSize = (((m*n)*n)/(cores*(((m*n)*n)/(2048*cores))));
 		int kk;
 		int kTile = balancedTileSize;
+		initAndMeasure(&eventSet, event);
 		#pragma loop name main #1
 		#pragma cetus private(i, j, k, kk)
 		#pragma cetus parallel

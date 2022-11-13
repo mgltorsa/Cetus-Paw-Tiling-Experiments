@@ -11,54 +11,49 @@
 
 BINARY_FOLDER=bin
 
+N=1100
+
 TYPE=0
-for i in {1..8}
-do
+
+for i in {1..8}; do
     #Matrix mult
-    ./$BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/jacobi/ParallelTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$TYPE" 2000 &
-    wait
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/jacobi/ParallelTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$TYPE" $N
 done
 
 TYPE=1
-for i in {1..8}
-do
+for i in {1..8}; do
     #Matrix mult
-    ./$BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/jacobi/ParallelTiled "$i" "$TYPE" 2000 &
-    wait
-    ./$BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$TYPE" 2000 &
-    wait
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$TYPE" $N
+
+    ./$BINARY_FOLDER/jacobi/ParallelTiled "$i" "$TYPE" $N
+    
+    ./$BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$TYPE" $N
 done
-
-
-
-
