@@ -69,7 +69,7 @@ int createEmptyEventSet()
 
 int getEvent(int type)
 {
-    return type == 0 ? PAPI_L3_LDM : PAPI_TOT_INS;
+    return type == 0 ? PAPI_L3_TCM : PAPI_TOT_INS;
 }
 
 char *getEventLabel(int type)

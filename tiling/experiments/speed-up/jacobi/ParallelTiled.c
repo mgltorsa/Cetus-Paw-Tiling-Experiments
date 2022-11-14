@@ -75,7 +75,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = (((1+(-2*n))+(n*n))/(cores*(((1+(-2*n))+(n*n))/(cores*(cacheSize/192)))));
+		int balancedTileSize = (n-1)/cores;
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;
