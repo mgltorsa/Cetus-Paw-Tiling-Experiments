@@ -74,17 +74,20 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = (((1+(-2*n))+(n*n))/(cores*(((1+(-2*n))+(n*n))/(1365*cores))));
+		int balancedTileSize = (((1+(-2*n))+(n*n))/(cores*(((1+(-2*n))+(n*n))/(cores*(cacheSize/192)))));
 		int ii;
 		int iTile = balancedTileSize;
+		#pragma loop name main#1 
 		#pragma cetus private(i, ii, j) 
 		#pragma cetus parallel 
 		#pragma omp parallel for private(i, ii, j)
-		for (ii=1; ii<(n-1); ii+=iTile)
+		for ((ii=1); ii<(n-1); ii+=iTile)
 		{
+			#pragma loop name main#1#0 
 			#pragma cetus private(i, j) 
 			for ((i=ii); i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
 			{
+				#pragma loop name main#1#0#0 
 				#pragma cetus private(j) 
 				for (j=1; j<(n-1); j ++ )
 				{

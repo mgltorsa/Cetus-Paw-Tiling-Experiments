@@ -63,40 +63,26 @@ int main(int argc, char const * argv[])
 	}
 	else
 	{
-		int balancedTileSize = (2730+(-1*(2730%cores)));
+		int balancedTileSize = ((cacheSize/96)+(-1*((cacheSize/96)%cores)));
 		int jj;
 		int jTile = balancedTileSize;
-		#pragma cetus parallel 
+		#pragma loop name main#1 
 		#pragma cetus private(i, j, jj) 
-		#pragma omp parallel private(i, j, jj)
+		#pragma cetus reduction(+: c[i]) 
+		for ((jj=0); jj<n; jj+=jTile)
 		{
-			int * reduce = (int * )malloc(n*sizeof (int));
-			int reduce_span_0;
-			for (reduce_span_0=0; reduce_span_0<n; reduce_span_0 ++ )
+			#pragma loop name main#1#0 
+			#pragma cetus private(i, j) 
+			#pragma cetus parallel 
+			#pragma omp parallel for private(i, j)
+			for (i=0; i<n; i ++ )
 			{
-				reduce[reduce_span_0]=0;
-			}
-			#pragma cetus for  
-			#pragma omp for
-			for (jj=0; jj<n; jj+=jTile)
-			{
-				#pragma cetus private(i, j) 
-				for (i=0; i<n; i ++ )
+				#pragma loop name main#1#0#0 
+				#pragma cetus private(j) 
+				#pragma cetus reduction(+: c[i]) 
+				for ((j=jj); j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
 				{
-					#pragma cetus private(j) 
-					/* #pragma cetus reduction(+: c[i])  */
-					for ((j=jj); j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
-					{
-						reduce[i]+=(a[(i*n)+j]*b[j]);
-					}
-				}
-			}
-			#pragma cetus critical  
-			#pragma omp critical
-			{
-				for (reduce_span_0=0; reduce_span_0<n; reduce_span_0 ++ )
-				{
-					c[reduce_span_0]+=reduce[reduce_span_0];
+					c[i]+=(a[(i*n)+j]*b[j]);
 				}
 			}
 		}
