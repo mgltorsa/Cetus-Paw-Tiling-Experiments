@@ -6,29 +6,28 @@ int main(int argc, char const *argv[])
 {
 	int n = 300, m = n;
 
-	int cores = 0;
+	int cores = atoi(argv[1]);
 
-	if (argc > 1)
-	{
-		cores = atoi(argv[1]);
-	}
+	int cacheSize = atoi(argv[2]);
 
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 2)
+	if (argc > 3)
 	{
-		n = atoi(argv[2]);
+		n = atoi(argv[3]);
 	}
 
 	m = n;
 
-	if (argc > 3)
+	if (argc > 4)
 	{
-		m = atoi(argv[3]);
+		m = atoi(argv[4]);
 	}
+
+	double start = omp_get_wtime();
 
 	float **a = (float **)calloc(n, sizeof(float *));
 	float **b = (float **)calloc(n, sizeof(float *));
@@ -62,8 +61,6 @@ int main(int argc, char const *argv[])
 	int i, j, k;
 	int _ret_val_0;
 
-	double start = omp_get_wtime();
-
 	if (((m * n) * n) <= 100000)
 	{
 		#pragma loop name main #0
@@ -85,28 +82,28 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = (((m*n)*n)/(cores*(((m*n)*n)/(2048*cores))));
+		int balancedTileSize = ((cacheSize/128)+(-1*((cacheSize/128)%cores)));
 		int kk;
 		int kTile = balancedTileSize;
-		#pragma loop name main #1
-		#pragma cetus private(i, j, k, kk)
-		#pragma cetus parallel
+		#pragma loop name main#1 
+		#pragma cetus private(i, j, k, kk) 
+		#pragma cetus parallel 
 		#pragma omp parallel for private(i, j, k, kk)
-		for (i = 0; i < n; i++)
+		for (i=0; i<n; i ++ )
 		{
-			#pragma loop name main #1 #0
-			#pragma cetus private(j, k, kk)
-			for ((kk = 0); kk < n; kk += kTile)
+			#pragma loop name main#1#0 
+			#pragma cetus private(j, k, kk) 
+			for ((kk=0); kk<n; kk+=kTile)
 			{
-				#pragma loop name main #1 #0 #0
-				#pragma cetus private(j, k)
-				for (j = 0; j < m; j++)
+				#pragma loop name main#1#0#0 
+				#pragma cetus private(j, k) 
+				for (j=0; j<m; j ++ )
 				{
-					#pragma loop name main #1 #0 #0 #0
-					#pragma cetus private(k)
-					for ((k = kk); k < ((((-1 + kTile) + kk) < n) ? ((-1 + kTile) + kk) : n); k++)
+					#pragma loop name main#1#0#0#0 
+					#pragma cetus private(k) 
+					for ((k=kk); k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
 					{
-						d[i][j] = (d[i][j] + (a[i][k] * b[k][j]));
+						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
 					}
 				}
 			}

@@ -7,29 +7,27 @@ int main(int argc, char const *argv[])
 {
 	int n = 300, m = n;
 
-	int cores = 0;
-
-	if (argc > 1)
-	{
-		cores = atoi(argv[1]);
-	}
+	int cores = atoi(argv[1]);
+	int cacheSize = atoi(argv[2]);
 
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 2)
+	if (argc > 3)
 	{
-		n = atoi(argv[2]);
+		n = atoi(argv[3]);
 	}
 
 	m = n;
 
-	if (argc > 3)
+	if (argc > 4)
 	{
-		m = atoi(argv[3]);
+		m = atoi(argv[4]);
 	}
+
+	double start = omp_get_wtime();
 
 	float **a = (float **)calloc(n , sizeof(float *));
 	float **b = (float **)calloc(n , sizeof(float *));
@@ -59,7 +57,6 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
-	double start = omp_get_wtime();
 
 	if (((1 + (-2 * n)) + (n * n)) <= 100000)
 	{
@@ -77,30 +74,30 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = (((1+(-2*n))+(n*n))/(cores*(((1+(-2*n))+(n*n))/(1365*cores))));
+		int balancedTileSize = (((1+(-2*n))+(n*n))/(cores*(((1+(-2*n))+(n*n))/(cores*(cacheSize/192)))));
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;
 		int jTile = balancedTileSize;
-		#pragma loop name main #1
-		#pragma cetus private(i, ii, j, jj)
-		#pragma cetus parallel
+		#pragma loop name main#1 
+		#pragma cetus private(i, ii, j, jj) 
+		#pragma cetus parallel 
 		#pragma omp parallel for private(i, ii, j, jj)
-		for (ii = 1; ii < (n - 1); ii += iTile)
+		for ((ii=1); ii<(n-1); ii+=iTile)
 		{
-			#pragma loop name main #1 #0
-			#pragma cetus private(i, j, jj)
-			for (jj = 1; jj < (n - 1); jj += jTile)
+			#pragma loop name main#1#0 
+			#pragma cetus private(i, j, jj) 
+			for ((jj=1); jj<(n-1); jj+=jTile)
 			{
-				#pragma loop name main #1 #0 #0
-				#pragma cetus private(i, j)
-				for (i = ii; i < ((((-1 + iTile) + ii) < (n - 1)) ? ((-1 + iTile) + ii) : (n - 1)); i++)
+				#pragma loop name main#1#0#0 
+				#pragma cetus private(i, j) 
+				for ((i=ii); i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
 				{
-					#pragma loop name main #1 #0 #0 #0
-					#pragma cetus private(j)
-					for (j = jj; j < ((((-1 + jTile) + jj) < (n - 1)) ? ((-1 + jTile) + jj) : (n - 1)); j++)
+					#pragma loop name main#1#0#0#0 
+					#pragma cetus private(j) 
+					for ((j=jj); j<((((-1+jTile)+jj)<(n-1)) ? ((-1+jTile)+jj) : (n-1)); j ++ )
 					{
-						a[i][j] = (0.2 * ((((b[j][i] + b[j - 1][i]) + b[j][i - 1]) + b[j + 1][i]) + b[j][i + 1]));
+						a[i][j]=(0.2*((((b[j][i]+b[j-1][i])+b[j][i-1])+b[j+1][i])+b[j][i+1]));
 					}
 				}
 			}

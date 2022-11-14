@@ -6,30 +6,28 @@
 int main(int argc, char const *argv[])
 {
 	int n = 300, m = n;
-
-	int cores = 0;
-
-	if (argc > 1)
-	{
-		cores = atoi(argv[1]);
-	}
+	
+	int cores = atoi(argv[1]);
+	int cacheSize = atoi(argv[2]);
 
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 2)
+	if (argc > 3)
 	{
-		n = atoi(argv[2]);
+		n = atoi(argv[3]);
 	}
 
 	m = n;
 
-	if (argc > 3)
+	if (argc > 4)
 	{
-		m = atoi(argv[3]);
+		m = atoi(argv[4]);
 	}
+	
+	double start = omp_get_wtime();
 
 	float **a = (float **)calloc(n, sizeof(float *));
 	float **b = (float **)calloc(n, sizeof(float *));
@@ -59,7 +57,6 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
-	double start = omp_get_wtime();
 
 	if (((1 + (-2 * n)) + (n * n)) <= 100000)
 	{

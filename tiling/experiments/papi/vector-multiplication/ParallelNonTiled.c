@@ -10,26 +10,31 @@ int main(int argc, char const *argv[])
 	int n = 5;
 
 	int cores = atoi(argv[1]);
+	int cacheSize = atoi(argv[2]);
+	
+	//PAPI Measurements
+	int eventType = atoi(argv[3]);
+	int eventSet = createEmptyEventSet();
+    int event = getEvent(eventType);
+	char *eventLabel = getEventLabel(eventType);
 
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 3)
+	if (argc > 4)
 	{
-		n = atoi(argv[3]);
+		n = atoi(argv[4]);
 	}
+
+	//PAPI init measurement
+	initAndMeasure(&eventSet, event);
 
 	float *a = (float *)calloc(n * n, sizeof(float *));
 	float *b = (float *)calloc(n, sizeof(float *));
 	float *c = (float *)calloc(n, sizeof(float *));
 
-	//PAPI Measurements
-	int eventType = atoi(argv[2]);
-	int eventSet = createEmptyEventSet();
-    int event = getEvent(eventType);
-	char *eventLabel = getEventLabel(eventType);
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
@@ -53,8 +58,7 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-	//PAPI init measurement
-	initAndMeasure(&eventSet, event);
+	
 
 	#pragma loop name main #0
 	#pragma cetus private(i, j)

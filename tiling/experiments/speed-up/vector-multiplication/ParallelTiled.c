@@ -6,22 +6,21 @@ int main(int argc, char const * argv[])
 {
 	int n = 300;
 
-	int cores = 0;
+	int cores = atoi(argv[1]);
+	int cacheSize = atoi(argv[2]);
 
-	if (argc > 1)
-	{
-		cores = atoi(argv[1]);
-	}
 
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 2)
+	if (argc > 3)
 	{
-		n = atoi(argv[2]);
+		n = atoi(argv[3]);
 	}
+
+	double start = omp_get_wtime();
 
 	float *a = (float *)calloc(n * n , sizeof(float *));
 	float *b = (float *)calloc(n , sizeof(float *));
@@ -29,7 +28,7 @@ int main(int argc, char const * argv[])
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
-		printf("vector-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, n);
+		printf("vector-mult,parallel-paw-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, n);
 		return 1;
 	}
 
@@ -47,7 +46,6 @@ int main(int argc, char const * argv[])
 
 	int i, j;
 	int _ret_val_0;
-	double start = omp_get_wtime();
 	if ((n*n)<=100000)
 	{
 		#pragma cetus private(i, j) 
@@ -111,7 +109,7 @@ int main(int argc, char const * argv[])
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%f\n", cores, n, n, time);
+	printf("vector-mult,parallel-paw-tiled,%d,speed-up,%d,%d,%f\n", cores, n, n, time);
 	_ret_val_0=0;
 	return _ret_val_0;
 }

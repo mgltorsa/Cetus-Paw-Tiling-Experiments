@@ -11,6 +11,13 @@ int main(int argc, char *argv[])
     int n = 300, m = n;
 
     int cores = atoi(argv[1]);
+	int cacheSize = atoi(argv[2]);
+	
+	//PAPI Measurements
+	int eventType = atoi(argv[3]);
+	int eventSet = createEmptyEventSet();
+    int event = getEvent(eventType);
+	char *eventLabel = getEventLabel(eventType);
     
 
     if (cores > 0)
@@ -18,27 +25,24 @@ int main(int argc, char *argv[])
         omp_set_num_threads(cores);
     }
 
-    if (argc > 3)
+    if (argc > 4)
     {
-        n = atoi(argv[3]);
+        n = atoi(argv[4]);
     }
 
     m = n;
 
-    if (argc > 4)
+    if (argc > 5)
     {
-        m = atoi(argv[4]);
+        m = atoi(argv[5]);
     }
+
+    initAndMeasure(&eventSet, event);
 
     float **a = (float **)calloc(n, sizeof(float *));
     float **b = (float **)calloc(n, sizeof(float *));
     float **d = (float **)calloc(n, sizeof(float *));
 
-    //PAPI Measurements
-	int eventType = atoi(argv[2]);
-	int eventSet = createEmptyEventSet();
-    int event = getEvent(eventType);
-	char *eventLabel = getEventLabel(eventType);
 
     if (a == NULL || b == NULL || d == NULL)
     {
@@ -67,7 +71,6 @@ int main(int argc, char *argv[])
 
     int i, j, k;
 
-	initAndMeasure(&eventSet, event);
 
     #pragma omp parallel for private(i, j, k)
     for (i = 0; i < n; i++)

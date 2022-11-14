@@ -9,6 +9,13 @@ int main(int argc, char const * argv[])
 	int n = 300;
 
 	int cores = atoi(argv[1]);
+	int cacheSize = atoi(argv[2]);
+	
+	//PAPI Measurements
+	int eventType = atoi(argv[3]);
+	int eventSet = createEmptyEventSet();
+    int event = getEvent(eventType);
+	char *eventLabel = getEventLabel(eventType);
 
 	if (cores > 0)
 	{
@@ -20,15 +27,12 @@ int main(int argc, char const * argv[])
 		n = atoi(argv[3]);
 	}
 
+	initAndMeasure(&eventSet, event);
+
 	float *a = (float *)calloc(n * n, sizeof(float *));
 	float *b = (float *)calloc(n , sizeof(float *));
 	float *c = (float *)calloc(n , sizeof(float *));
 
-	//PAPI Measurements
-	int eventType = atoi(argv[2]);
-	int eventSet = createEmptyEventSet();
-    int event = getEvent(eventType);
-	char *eventLabel = getEventLabel(eventType);
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
@@ -75,7 +79,6 @@ int main(int argc, char const * argv[])
 		int balancedTileSize = (2730+(-1*(2730%cores)));
 		int jj;
 		int jTile = balancedTileSize;
-		initAndMeasure(&eventSet, event);
 		#pragma cetus parallel 
 		#pragma cetus private(i, j, jj) 
 		#pragma omp parallel private(i, j, jj)
