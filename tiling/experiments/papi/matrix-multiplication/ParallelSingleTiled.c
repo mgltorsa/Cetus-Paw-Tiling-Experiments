@@ -100,7 +100,7 @@ int main(int argc, char const * argv[])
 		#pragma cetus private(i, j, jj, k) 
 		#pragma cetus parallel 
 		#pragma omp parallel for private(i, j, jj, k)
-		for ((jj=0); jj<m; jj+=jTile)
+		for (jj=0; jj<m; jj+=jTile)
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(i, j, k) 
@@ -108,7 +108,7 @@ int main(int argc, char const * argv[])
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(j, k) 
-				for ((j=jj); j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
+				for (j=jj; j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
 				{
 					#pragma loop name main#1#0#0#0 
 					#pragma cetus private(k) 

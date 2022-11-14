@@ -94,11 +94,11 @@ int main(int argc, char const *argv[])
 		#pragma cetus private(i, ii, j) 
 		#pragma cetus parallel 
 		#pragma omp parallel for private(i, ii, j)
-		for ((ii=1); ii<(n-1); ii+=iTile)
+		for (ii=1; ii<(n-1); ii+=iTile)
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(i, j) 
-			for ((i=ii); i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
+			for (i=ii; i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(j) 

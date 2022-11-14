@@ -106,7 +106,7 @@ int main(int argc, char const *argv[])
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(j, k, kk) 
-			for ((kk=0); kk<n; kk+=kTile)
+			for (kk=0; kk<n; kk+=kTile)
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(j, k) 
@@ -114,7 +114,7 @@ int main(int argc, char const *argv[])
 				{
 					#pragma loop name main#1#0#0#0 
 					#pragma cetus private(k) 
-					for ((k=kk); k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
+					for (k=kk; k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
 					{
 						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
 					}

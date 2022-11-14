@@ -1,6 +1,8 @@
 #!/bin/bash
 BINARY_FOLDER=bin
-CACHE=32*1024
+#32*1024
+CACHE=32768 
+
 N=1100
 
 for i in {1..8}

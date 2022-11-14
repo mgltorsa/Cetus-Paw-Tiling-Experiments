@@ -83,19 +83,19 @@ int main(int argc, char const *argv[])
 		#pragma cetus private(i, ii, j, jj) 
 		#pragma cetus parallel 
 		#pragma omp parallel for private(i, ii, j, jj)
-		for ((ii=1); ii<(n-1); ii+=iTile)
+		for (ii=1; ii<(n-1); ii+=iTile)
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(i, j, jj) 
-			for ((jj=1); jj<(n-1); jj+=jTile)
+			for (jj=1; jj<(n-1); jj+=jTile)
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(i, j) 
-				for ((i=ii); i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
+				for (i=ii; i<((((-1+iTile)+ii)<(n-1)) ? ((-1+iTile)+ii) : (n-1)); i ++ )
 				{
 					#pragma loop name main#1#0#0#0 
 					#pragma cetus private(j) 
-					for ((j=jj); j<((((-1+jTile)+jj)<(n-1)) ? ((-1+jTile)+jj) : (n-1)); j ++ )
+					for (j=jj; j<((((-1+jTile)+jj)<(n-1)) ? ((-1+jTile)+jj) : (n-1)); j ++ )
 					{
 						a[i][j]=(0.2*((((b[j][i]+b[j-1][i])+b[j][i-1])+b[j+1][i])+b[j][i+1]));
 					}

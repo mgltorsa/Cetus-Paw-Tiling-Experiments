@@ -10,7 +10,9 @@
 #SBATCH --open-mode=append
 
 BINARY_FOLDER=bin
-CACHE=32*1024
+#32*1024
+CACHE=32768
+
 N=1100
 
 TYPE=0

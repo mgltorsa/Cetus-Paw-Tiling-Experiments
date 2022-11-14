@@ -22,9 +22,9 @@ int main(int argc, char const * argv[])
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 3)
+	if (argc > 4)
 	{
-		n = atoi(argv[3]);
+		n = atoi(argv[4]);
 	}
 
 	initAndMeasure(&eventSet, event);
@@ -36,7 +36,7 @@ int main(int argc, char const * argv[])
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
-		printf("vector-mult,parallel-paw-single-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, n);
+		printf("vector-mult,parallel-paw-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, n);
 		return 1;
 	}
 
@@ -82,7 +82,7 @@ int main(int argc, char const * argv[])
 		#pragma loop name main#1 
 		#pragma cetus private(i, j, jj) 
 		#pragma cetus reduction(+: c[i]) 
-		for ((jj=0); jj<n; jj+=jTile)
+		for (jj=0; jj<n; jj+=jTile)
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(i, j) 
@@ -93,7 +93,7 @@ int main(int argc, char const * argv[])
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(j) 
 				#pragma cetus reduction(+: c[i]) 
-				for ((j=jj); j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
+				for (j=jj; j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
 				{
 					c[i]+=(a[(i*n)+j]*b[j]);
 				}
@@ -108,7 +108,7 @@ int main(int argc, char const * argv[])
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-single-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, n, measurement);
+	printf("vector-mult,parallel-paw-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, n, measurement);
 	_ret_val_0=0;
 	return _ret_val_0;
 }

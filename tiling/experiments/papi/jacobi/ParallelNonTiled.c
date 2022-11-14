@@ -24,16 +24,16 @@ int main(int argc, char const *argv[])
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 3)
+	if (argc > 4)
 	{
-		n = atoi(argv[3]);
+		n = atoi(argv[4]);
 	}
 
 	m = n;
 
-	if (argc > 4)
+	if (argc > 5)
 	{
-		m = atoi(argv[4]);
+		m = atoi(argv[5]);
 	}
 
 	initAndMeasure(&eventSet, event);
