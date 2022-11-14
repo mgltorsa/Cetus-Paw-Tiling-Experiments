@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
         m = atoi(argv[4]);
     }
 
-    double start = omp_get_wtime();
 
     float **a = (float **)calloc(n, sizeof(float *));
     float **b = (float **)calloc(n, sizeof(float *));
@@ -61,6 +60,8 @@ int main(int argc, char *argv[])
 
     int i, j, k;
 
+    double start = omp_get_wtime();
+    
     #pragma omp parallel for private(i, j, k)
     for (i = 0; i < n; i++)
     {

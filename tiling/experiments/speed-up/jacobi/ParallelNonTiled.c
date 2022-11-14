@@ -27,7 +27,6 @@ int main(int argc, char const *argv[])
 		m = atoi(argv[4]);
 	}
 
-	double start = omp_get_wtime();
 
 	float **a = (float **)calloc(n , sizeof(float *));
 	float **b = (float **)calloc(n , sizeof(float *));
@@ -57,6 +56,8 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
+
+	double start = omp_get_wtime();
 
 	#pragma loop name main #0
 	#pragma cetus private(i, j)

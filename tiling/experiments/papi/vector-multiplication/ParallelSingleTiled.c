@@ -27,7 +27,6 @@ int main(int argc, char const *argv[])
 		n = atoi(argv[4]);
 	}
 
-	initAndMeasure(&eventSet, event);
 
 	float *a = (float *)calloc(n*n, sizeof(float *));
 	float *b = (float *)calloc(n, sizeof(float *));
@@ -72,6 +71,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
+		initAndMeasure(&eventSet, event);
 		int balancedTileSize = ((cacheSize/96)+(-1*((cacheSize/96)%cores)));
 		int jj;
 		int jTile = balancedTileSize;

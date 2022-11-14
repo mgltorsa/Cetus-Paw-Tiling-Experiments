@@ -28,8 +28,6 @@ int main(int argc, char const *argv[])
 		n = atoi(argv[4]);
 	}
 
-	//PAPI init measurement
-	initAndMeasure(&eventSet, event);
 
 	float *a = (float *)calloc(n * n, sizeof(float *));
 	float *b = (float *)calloc(n, sizeof(float *));
@@ -58,7 +56,7 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-	
+	initAndMeasure(&eventSet, event);
 
 	#pragma loop name main #0
 	#pragma cetus private(i, j)
