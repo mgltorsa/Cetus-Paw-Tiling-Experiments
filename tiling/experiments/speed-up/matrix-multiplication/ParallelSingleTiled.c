@@ -2,13 +2,15 @@
 #include <stdlib.h>
 #include <omp.h>
 
-int main(int argc, char const * argv[])
+int main(int argc, char const *argv[])
 {
-	int n = 300, m = n;
+    int n = 300, m = n;
 
     int cores = atoi(argv[1]);
     int cacheSize =atoi(argv[2]);
-    
+
+    // int cores = 4;
+    // int cacheSize = 8 * 1024 * 1024;
 
     if (cores > 0)
     {
@@ -27,7 +29,6 @@ int main(int argc, char const * argv[])
         m = atoi(argv[4]);
     }
 
-
     float **a = (float **)calloc(n, sizeof(float *));
     float **b = (float **)calloc(n, sizeof(float *));
     float **d = (float **)calloc(n, sizeof(float *));
@@ -44,7 +45,7 @@ int main(int argc, char const * argv[])
     {
         a[z] = (float *)calloc(m, sizeof(float));
         b[z] = (float *)calloc(m, sizeof(float));
-        d[z] = (float *)calloc(m,  sizeof(float));
+        d[z] = (float *)calloc(m, sizeof(float));
     }
 
     for (z = 0; z < n; z++)
@@ -57,64 +58,42 @@ int main(int argc, char const * argv[])
         }
     }
 
-
     int i, j, k;
-	int _ret_val_0;
-    
+    int _ret_val_0;
+
     double start = omp_get_wtime();
 
-	if (((m*n)*n)<=100000)
-	{
-		#pragma cetus private(i, j, k) 
-		#pragma cetus parallel 
-		#pragma omp parallel for if((10000<(((1L+(3L*n))+((3L*m)*n))+(((3L*m)*n)*n)))) private(i, j, k)
-		for (i=0; i<n; i ++ )
-		{
-			#pragma cetus private(j, k) 
-			for (j=0; j<m; j ++ )
-			{
-				#pragma cetus private(k) 
-				for (k=0; k<n; k ++ )
-				{
-					d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
-				}
-			}
-		}
-	}
-	else
-	{
-		int balancedTileSize = m/cores;
-		int jj;
-		int jTile = balancedTileSize;
-		#pragma loop name main#1 
-		#pragma cetus private(i, j, jj, k) 
-		#pragma cetus parallel 
-		#pragma omp parallel for private(i, j, jj, k)
-		for (jj=0; jj<m; jj+=jTile)
-		{
-			#pragma loop name main#1#0 
-			#pragma cetus private(i, j, k) 
-			for (i=0; i<n; i ++ )
-			{
-				#pragma loop name main#1#0#0 
-				#pragma cetus private(j, k) 
-				for (j=jj; j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
-				{
-					#pragma loop name main#1#0#0#0 
-					#pragma cetus private(k) 
-					for (k=0; k<n; k ++ )
-					{
-						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
-					}
-				}
-			}
-		}
-	}
+    int balancedTileSize = m / cores;
+    int jj;
+    int jTile = balancedTileSize;
+    #pragma loop name main #1
+    #pragma cetus private(i, j, jj, k)
+    #pragma cetus parallel
+    #pragma omp parallel for private(i, j, jj, k)
+    for (jj = 0; jj < m; jj += jTile)
+    {
+        #pragma loop name main #1 #0
+        #pragma cetus private(i, j, k)
+        for (i = 0; i < n; i++)
+        {
+            #pragma loop name main #1 #0 #0
+            #pragma cetus private(j, k)
+            for (j = jj; j < ((((-1 + jTile) + jj) < m) ? ((-1 + jTile) + jj) : m); j++)
+            {
+                #pragma loop name main #1 #0 #0 #0
+                #pragma cetus private(k)
+                for (k = 0; k < n; k++)
+                {
+                    d[i][j] = (d[i][j] + (a[i][k] * b[k][j]));
+                }
+            }
+        }
+    }
 
     double end = omp_get_wtime();
     double time = end - start;
 
-	for (z = 0; z < n; z++)
+    for (z = 0; z < n; z++)
     {
         free(a[z]);
         free(b[z]);
@@ -125,8 +104,7 @@ int main(int argc, char const * argv[])
     free(b);
     free(d);
 
-
-    printf("matrix-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%f\n", cores,n,m,time);
-	_ret_val_0=0;
-	return _ret_val_0;
+    printf("matrix-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
+    _ret_val_0 = 0;
+    return _ret_val_0;
 }

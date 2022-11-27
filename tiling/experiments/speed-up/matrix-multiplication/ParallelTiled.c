@@ -83,7 +83,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = ((cacheSize/128)+(-1*((cacheSize/128)%cores)));
+    	int balancedTileSize = m / cores;
 		int kk;
 		int kTile = balancedTileSize;
 		#pragma loop name main#1 
