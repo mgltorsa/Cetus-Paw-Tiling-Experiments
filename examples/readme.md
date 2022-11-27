@@ -1,2 +1,2 @@
 # Output format
-algorithm, version, cores, measurement, value
+algorithm, version, cores, measurement, N, M, value
