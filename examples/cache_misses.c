@@ -3,27 +3,40 @@
 #include <papi.h>
 #include <papi_libs.h>
 
-// PAPI_TOT_INS
-int events[] = {PAPI_TOT_CYC};
-long_long values[] = {0};
-char eventLabel[PAPI_MAX_STR_LEN];
-
 int main(int argc, char const *argv[])
 {
     int eventSet = PAPI_NULL;
     int event = PAPI_L3_TCM;
 
     int n = 1000;
-    int *ar = (int *)calloc(n, sizeof(int *));
+    int ar[32][16];
 
     initAndMeasure(&eventSet, event);
 
-    for (int i = 1; i < n; i++)
-    {
-        ar[i] = ar[i - 1];
-    }
+    int r = ar[0][0];
+
+    r=ar[1][0];
+    // for (int i = 1; i < 32; i++)
+    // {
+    //     ar[i] = ar[i - 1];
+    // }
 
     long_long val = stopMeasure(eventSet);
+    printf("Got: %llu\n", val);
+
+    int eventSet2 = PAPI_NULL;
+
+    initAndMeasure(&eventSet2, event);
+
+    r = ar[2][1];
+
+    r=ar[3][1];
+    // for (int i = 1; i < 32; i++)
+    // {
+    //     ar[i] = ar[i - 1];
+    // }
+
+    val = stopMeasure(eventSet2);
     printf("Got: %llu\n", val);
     return 0;
 }

@@ -72,7 +72,7 @@ int main(int argc, char const *argv[])
 	else
 	{
 		initAndMeasure(&eventSet, event);
-		int balancedTileSize = ((cacheSize/96)+(-1*((cacheSize/96)%cores)));
+		int balancedTileSize = n/cores;
 		int jj;
 		int jTile = balancedTileSize;
 		#pragma loop name main#1 
