@@ -1,0 +1,5 @@
+matrix-mult,parallel-non-tiled,5,cache-misses,1200,1200,5
+matrix-mult,parallel-non-tiled,5,cache-misses,1200,1200,7               
+matrix-mult,parallel-non-tiled,5,total-i,1200,1200,1
+matrix-mult,parallel-non-tiled,5,total-i,1200,1200,3
+matrix-mult,parallel-non-tiled,4,cache-misses,1200,1200,2
