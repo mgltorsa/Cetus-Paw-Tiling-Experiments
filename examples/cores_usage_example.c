@@ -6,6 +6,10 @@ int main(int argc, char const *argv[])
 
     int thId, nThreads = 0;
 
+    omp_set_num_threads(12);
+
+    printf("Max threads %d", omp_get_max_threads());
+
     double threadsTime[omp_get_max_threads()];
 
     int maxThreads = sizeof threadsTime / sizeof threadsTime[0];
@@ -39,7 +43,7 @@ int main(int argc, char const *argv[])
 
         double thTime = thEnd - thStart;
         threadsTime[thId] += thTime;
-        printf("Thread %d time: %f \n", thId, thTime);
+        printf("Thread %d time: %f.15 \n", thId, thTime);
     }
 
     double end = omp_get_wtime();
@@ -49,7 +53,7 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < nThreads; i++)
     {
         double thTime = threadsTime[i];
-        printf("Thread: %d - Rate usage: %f\n", i, (thTime / time) * 100);
+        printf("Thread: %d - Rate usage: %f.15\n", i, (thTime / time) * 100);
     }
 
     return 0;

@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;
-		int jTile = balancedTileSize;
+		int jTile = 15;
 		#pragma loop name main#1 
 		#pragma cetus private(i, ii, j, jj) 
 		#pragma cetus parallel 

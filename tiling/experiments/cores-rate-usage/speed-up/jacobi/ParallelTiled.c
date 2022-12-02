@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
-#include <papi.h>
-#include <papi_libs.h>
 
 int main(int argc, char const *argv[])
 {
@@ -12,38 +10,30 @@ int main(int argc, char const *argv[])
 	int cores = atoi(argv[1]);
 	int cacheSize = atoi(argv[2]);
 
-	//PAPI Measurements
-	int eventType = atoi(argv[3]);
-	int eventSet = createEmptyEventSet();
-    int event = getEvent(eventType);
-	char *eventLabel = getEventLabel(eventType);
-
-
 	if (cores > 0)
 	{
 		omp_set_num_threads(cores);
 	}
 
-	if (argc > 4)
+	if (argc > 3)
 	{
-		n = atoi(argv[4]);
+		n = atoi(argv[3]);
 	}
 
 	m = n;
 
-	if (argc > 5)
+	if (argc > 4)
 	{
-		m = atoi(argv[5]);
+		m = atoi(argv[4]);
 	}
 
 
-	float **a = (float **)calloc(n, sizeof(float *));
-	float **b = (float **)calloc(n, sizeof(float *));
-
+	float **a = (float **)calloc(n , sizeof(float *));
+	float **b = (float **)calloc(n , sizeof(float *));
 
 	if (a == NULL || b == NULL)
 	{
-		printf("jacobi,parallel-paw-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
+		printf("jacobi,parallel-paw-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
 		return 1;
 	}
 
@@ -67,9 +57,8 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-    //getting works performance here. Check
-	// initAndMeasure(&eventSet, event);
-	
+	double start = omp_get_wtime();
+
 	if (((1 + (-2 * n)) + (n * n)) <= 100000)
 	{
 		#pragma loop name main #0
@@ -86,12 +75,11 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		initAndMeasure(&eventSet, event);
-		int balancedTileSize = n-1/cores;
+		int balancedTileSize = (n-1)/cores;
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;
-		int jTile = 15;
+		int jTile = balancedTileSize;
 		#pragma loop name main#1 
 		#pragma cetus private(i, ii, j, jj) 
 		#pragma cetus parallel 
@@ -117,8 +105,8 @@ int main(int argc, char const *argv[])
 		}
 	}
 
-	long_long measurement = stopMeasure(eventSet);
-
+	double end = omp_get_wtime();
+    double time = end - start;
 
     for (z = 0; z < n; z++)
     {
@@ -129,7 +117,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-paw-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, m, measurement);
+    printf("jacobi,parallel-paw-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

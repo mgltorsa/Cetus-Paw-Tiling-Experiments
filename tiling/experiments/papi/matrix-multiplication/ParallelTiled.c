@@ -95,7 +95,7 @@ int main(int argc, char const *argv[])
 	else
 	{
 		initAndMeasure(&eventSet, event);
-		int balancedTileSize = m/cores;
+		int balancedTileSize =15;
 		int kk;
 		int kTile = balancedTileSize;
 		#pragma loop name main#1 

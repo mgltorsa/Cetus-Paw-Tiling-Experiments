@@ -83,7 +83,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-    	int balancedTileSize = 15;
+    	int balancedTileSize = m / cores;
 		int kk;
 		int kTile = balancedTileSize;
 		#pragma loop name main#1 
