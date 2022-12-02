@@ -4,7 +4,7 @@ cd papi/
 echo "Running experiments in $PWD"
 ./compile.sh
 
-for i in {1..10};
+for i in {1..5};
 do
     ./run-local.sh >> ../results.csv
 done
@@ -15,7 +15,7 @@ cd ../speed-up/
 echo "Running experiments in $PWD"
 ./compile.sh
 
-for i in {1..10};
+for i in {1..5};
 do
     ./run-local.sh >> ../results.csv
 done
