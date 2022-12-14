@@ -95,28 +95,35 @@ int main(int argc, char const *argv[])
 	else
 	{
 		initAndMeasure(&eventSet, event);
-		int balancedTileSize =15;
+		int balancedTileSize = ((cacheSize/32)/cores);
+		int jj;
+		int jTile = balancedTileSize;
 		int kk;
 		int kTile = balancedTileSize;
 		#pragma loop name main#1 
-		#pragma cetus private(i, j, k, kk) 
+		#pragma cetus private(i, j, jj, k, kk) 
 		#pragma cetus parallel 
-		#pragma omp parallel for private(i, j, k, kk)
-		for (i=0; i<n; i ++ )
+		#pragma omp parallel for private(i, j, jj, k, kk)
+		for ((jj=0); jj<m; jj+=jTile)
 		{
 			#pragma loop name main#1#0 
-			#pragma cetus private(j, k, kk) 
-			for (kk=0; kk<n; kk+=kTile)
+			#pragma cetus private(i, j, k, kk) 
+			for (i=0; i<n; i ++ )
 			{
 				#pragma loop name main#1#0#0 
-				#pragma cetus private(j, k) 
-				for (j=0; j<m; j ++ )
+				#pragma cetus private(j, k, kk) 
+				for ((kk=0); kk<n; kk+=kTile)
 				{
 					#pragma loop name main#1#0#0#0 
-					#pragma cetus private(k) 
-					for (k=kk; k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
+					#pragma cetus private(j, k) 
+					for ((j=jj); j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
 					{
-						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
+						#pragma loop name main#1#0#0#0#0 
+						#pragma cetus private(k) 
+						for ((k=kk); k<((((-1+kTile)+kk)<n) ? ((-1+kTile)+kk) : n); k ++ )
+						{
+							d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
+						}
 					}
 				}
 			}

@@ -65,7 +65,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = 15; //16-way mapped cache - 1 integer
+		int balancedTileSize = (cacheSize / 32 )/cores ;
 		int jj;
 		int jTile = balancedTileSize;
 		#pragma loop name main#1 
