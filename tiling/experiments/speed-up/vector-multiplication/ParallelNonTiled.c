@@ -5,7 +5,7 @@
 int main(int argc, char const *argv[])
 {
 
-	int n = 5;
+	int m = 300, n = 300;
 
 	int cores = atoi(argv[1]);
 	int cacheSize = atoi(argv[2]);
@@ -17,17 +17,25 @@ int main(int argc, char const *argv[])
 
 	if (argc > 3)
 	{
-		n = atoi(argv[3]);
+		m = atoi(argv[3]);
 	}
 
+	n = m;
 
-	float *a = (float *)calloc(n*n, sizeof(float *));
+	if (argc > 4)
+	{
+		n = atoi(argv[4]);
+	}
+	
+
+
+	float *a = (float *)calloc(m*n, sizeof(float *));
 	float *b = (float *)calloc(n, sizeof(float *));
-	float *c = (float *)calloc(n, sizeof(float *));
+	float *c = (float *)calloc(m, sizeof(float *));
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
-		printf("vector-mult,parallel-non-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, n);
+		printf("vector-mult,parallel-non-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, m, n);
 		return 1;
 	}
 
@@ -36,13 +44,12 @@ int main(int argc, char const *argv[])
 	for (p = 0; p < n; p++)
 	{
 
-		for (z = 0; z < n; z++)
+		for (z = 0; z < m; z++)
 		{
-			a[p*n + z] = rand() * 1000;
+			a[z*n + p] = rand() * 1000;
 		}
 		
 		b[p] = rand() * 1000;
-		c[p] = rand() * 1000;
 	}
 
 	int i, j;
@@ -54,7 +61,7 @@ int main(int argc, char const *argv[])
 	#pragma cetus private(i, j)
 	#pragma cetus parallel
 	#pragma omp parallel for private(i, j)
-	for (i = 0; i < n; i++)
+	for (i = 0; i < m; i++)
 	{
 		#pragma loop name main #0 #0
 		#pragma cetus private(j)
@@ -72,7 +79,7 @@ int main(int argc, char const *argv[])
     free(b);
     free(c);
 
-	printf("vector-mult,parallel-non-tiled,%d,speed-up,%d,%d,%f\n", cores, n, n, time);
+	printf("vector-mult,parallel-non-tiled,%d,speed-up,%d,%d,%f\n", cores, m, n, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

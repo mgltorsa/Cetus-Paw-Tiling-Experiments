@@ -7,7 +7,7 @@
 
 int main(int argc, char const *argv[])
 {
-	int n = 300, m = n;
+	int n = 300;
 
 	int cores = atoi(argv[1]);
 	int cacheSize = atoi(argv[2]);
@@ -29,12 +29,6 @@ int main(int argc, char const *argv[])
 		n = atoi(argv[4]);
 	}
 
-	m = n;
-
-	if (argc > 5)
-	{
-		m = atoi(argv[5]);
-	}
 
 	float **a = (float **)calloc(n , sizeof(float *));
 	float **b = (float **)calloc(n , sizeof(float *));
@@ -42,7 +36,7 @@ int main(int argc, char const *argv[])
 
 	if (a == NULL || b == NULL)
 	{
-		printf("jacobi,parallel-non-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
+		printf("jacobi,parallel-non-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, n);
 		return 1;
 	}
 
@@ -50,8 +44,8 @@ int main(int argc, char const *argv[])
 
 	for (z = 0; z < n; z++)
 	{
-		a[z] = (float *)calloc(m , sizeof(float));
-		b[z] = (float *)calloc(m , sizeof(float));
+		a[z] = (float *)calloc(n , sizeof(float));
+		b[z] = (float *)calloc(n , sizeof(float));
 	}
 
 	for (z = 0; z < n; z++)
@@ -93,7 +87,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-non-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, m, measurement);
+    printf("jacobi,parallel-non-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, n, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;
