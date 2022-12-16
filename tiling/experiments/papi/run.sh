@@ -16,7 +16,7 @@ BINARY_FOLDER=bin
 TYPE=0
 
 
-for i in {1..32}; do
+for i in {1..8}; do
     #Matrix mult
     srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $MATRIX_MULT_M &
     
@@ -50,7 +50,7 @@ for i in {1..32}; do
 done
 
 TYPE=1
-for i in {1..32}; do
+for i in {1..8}; do
     #Matrix mult
     srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $MATRIX_MULT_M &
     

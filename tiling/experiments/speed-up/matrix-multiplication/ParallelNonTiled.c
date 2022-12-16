@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 
 int main(int argc, char *argv[])
 {
@@ -91,7 +92,7 @@ int main(int argc, char *argv[])
     free(b);
     free(d);
 
-    printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
+    printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, n, m,0, time);
 
     return 0;
 }

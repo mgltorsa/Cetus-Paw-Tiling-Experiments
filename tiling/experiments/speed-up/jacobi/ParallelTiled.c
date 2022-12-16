@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
-
+	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
 	double start = omp_get_wtime();
 
 	if ((((1+(-2*m))+(m*m))<=100000)&&(cacheSize>((8*m)*m)))
@@ -68,7 +68,6 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = ((cacheSize/4)/cores);
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;
@@ -110,7 +109,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-paw-tiled,%d,speed-up,%d,%d,%f\n", cores, m, m, time);
+    printf("jacobi,parallel-paw-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, m, m, balancedTileSize, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

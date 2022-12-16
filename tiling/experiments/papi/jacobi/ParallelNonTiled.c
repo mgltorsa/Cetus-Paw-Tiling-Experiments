@@ -87,7 +87,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-non-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, m, m, measurement);
+    printf("jacobi,parallel-non-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, m, m, 0, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

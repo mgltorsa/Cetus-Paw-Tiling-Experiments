@@ -1,0 +1,576 @@
+matrix-mult,parallel-non-tiled,1,speed-up,1673,1673,33.415796
+matrix-mult,parallel-paw-tiled,1,speed-up,1673,1673,38.170073
+vector-mult,parallel-non-tiled,1,speed-up,2500,3353,0.033762
+matrix-mult,parallel-paw-single-tiled,1,speed-up,1673,1673,26.564861
+vector-mult,parallel-paw-tiled,1,speed-up,2500,3353,0.037912
+vector-mult,parallel-paw-single-tiled,1,speed-up,2500,3353,0.039078
+jacobi,parallel-non-tiled,1,speed-up,2897,2897,0.140114
+jacobi,parallel-paw-tiled,1,speed-up,2897,2897,0.119370
+jacobi,parallel-paw-single-tiled,1,speed-up,2897,2897,0.114611
+matrix-mult,parallel-non-tiled,2,speed-up,1673,1673,16.729293
+matrix-mult,parallel-paw-tiled,2,speed-up,1673,1673,37.759593
+vector-mult,parallel-non-tiled,2,speed-up,2500,3353,0.020692
+matrix-mult,parallel-non-tiled,1,speed-up,1673,1673,34.808047
+matrix-mult,parallel-paw-single-tiled,2,speed-up,1673,1673,32.752309
+matrix-mult,parallel-paw-tiled,1,speed-up,1673,1673,37.955778
+vector-mult,parallel-paw-single-tiled,2,speed-up,2500,3353,0.030822
+vector-mult,parallel-paw-tiled,2,speed-up,2500,3353,0.038041
+vector-mult,parallel-non-tiled,1,speed-up,2500,3353,0.033761
+jacobi,parallel-non-tiled,2,speed-up,2897,2897,0.057558
+jacobi,parallel-paw-tiled,2,speed-up,2897,2897,0.144040
+jacobi,parallel-paw-single-tiled,2,speed-up,2897,2897,0.117311
+matrix-mult,parallel-non-tiled,3,speed-up,1673,1673,10.920236
+matrix-mult,parallel-paw-single-tiled,1,speed-up,1673,1673,27.521354
+vector-mult,parallel-paw-tiled,1,speed-up,2500,3353,0.038014
+vector-mult,parallel-paw-single-tiled,1,speed-up,2500,3353,0.039096
+jacobi,parallel-paw-tiled,1,speed-up,2897,2897,0.128398
+jacobi,parallel-non-tiled,1,speed-up,2897,2897,0.145253
+jacobi,parallel-paw-single-tiled,1,speed-up,2897,2897,0.146943
+matrix-mult,parallel-paw-tiled,3,speed-up,1673,1673,30.011382
+vector-mult,parallel-non-tiled,3,speed-up,2500,3353,0.016325
+matrix-mult,parallel-non-tiled,2,speed-up,1673,1673,16.831295
+matrix-mult,parallel-paw-single-tiled,3,speed-up,1673,1673,32.930175
+vector-mult,parallel-paw-single-tiled,3,speed-up,2500,3353,0.020344
+vector-mult,parallel-paw-tiled,3,speed-up,2500,3353,0.041457
+jacobi,parallel-non-tiled,3,speed-up,2897,2897,0.042236
+jacobi,parallel-paw-tiled,3,speed-up,2897,2897,0.144941
+jacobi,parallel-paw-single-tiled,3,speed-up,2897,2897,0.115817
+matrix-mult,parallel-paw-tiled,2,speed-up,1673,1673,38.699639
+vector-mult,parallel-non-tiled,2,speed-up,2500,3353,0.021705
+matrix-mult,parallel-non-tiled,4,speed-up,1673,1673,8.279485
+matrix-mult,parallel-paw-single-tiled,2,speed-up,1673,1673,33.792774
+vector-mult,parallel-paw-single-tiled,2,speed-up,2500,3353,0.024148
+vector-mult,parallel-paw-tiled,2,speed-up,2500,3353,0.038253
+jacobi,parallel-non-tiled,2,speed-up,2897,2897,0.072720
+jacobi,parallel-paw-tiled,2,speed-up,2897,2897,0.129414
+matrix-mult,parallel-paw-tiled,4,speed-up,1673,1673,37.006995
+jacobi,parallel-paw-single-tiled,2,speed-up,2897,2897,0.150153
+vector-mult,parallel-non-tiled,4,speed-up,2500,3353,0.017594
+matrix-mult,parallel-non-tiled,3,speed-up,1673,1673,10.981209
+matrix-mult,parallel-paw-single-tiled,4,speed-up,1673,1673,27.705987
+vector-mult,parallel-paw-single-tiled,4,speed-up,2500,3353,0.018086
+vector-mult,parallel-paw-tiled,4,speed-up,2500,3353,0.038090
+jacobi,parallel-non-tiled,4,speed-up,2897,2897,0.029406
+jacobi,parallel-paw-tiled,4,speed-up,2897,2897,0.144738
+jacobi,parallel-paw-single-tiled,4,speed-up,2897,2897,0.113886
+matrix-mult,parallel-paw-tiled,3,speed-up,1673,1673,34.276600
+vector-mult,parallel-non-tiled,3,speed-up,2500,3353,0.016203
+matrix-mult,parallel-non-tiled,5,speed-up,1673,1673,6.550666
+matrix-mult,parallel-paw-single-tiled,3,speed-up,1673,1673,25.735385
+matrix-mult,parallel-paw-tiled,5,speed-up,1673,1673,31.475093
+vector-mult,parallel-paw-single-tiled,3,speed-up,2500,3353,0.016739
+vector-mult,parallel-paw-tiled,3,speed-up,2500,3353,0.038699
+vector-mult,parallel-non-tiled,5,speed-up,2500,3353,0.012848
+jacobi,parallel-non-tiled,3,speed-up,2897,2897,0.048623
+jacobi,parallel-paw-tiled,3,speed-up,2897,2897,0.127717
+jacobi,parallel-paw-single-tiled,3,speed-up,2897,2897,0.146895
+matrix-mult,parallel-non-tiled,4,speed-up,1673,1673,8.652176
+matrix-mult,parallel-paw-single-tiled,5,speed-up,1673,1673,31.625891
+vector-mult,parallel-paw-tiled,5,speed-up,2500,3353,0.044234
+vector-mult,parallel-paw-single-tiled,5,speed-up,2500,3353,0.046517
+jacobi,parallel-non-tiled,5,speed-up,2897,2897,0.089368
+jacobi,parallel-paw-tiled,5,speed-up,2897,2897,0.118959
+jacobi,parallel-paw-single-tiled,5,speed-up,2897,2897,0.114015
+matrix-mult,parallel-paw-tiled,4,speed-up,1673,1673,37.338783
+vector-mult,parallel-non-tiled,4,speed-up,2500,3353,0.013708
+matrix-mult,parallel-non-tiled,6,speed-up,1673,1673,6.077292
+matrix-mult,parallel-paw-tiled,6,speed-up,1673,1673,33.820047
+vector-mult,parallel-non-tiled,6,speed-up,2500,3353,0.020558
+matrix-mult,parallel-paw-single-tiled,4,speed-up,1673,1673,34.173100
+vector-mult,parallel-paw-single-tiled,4,speed-up,2500,3353,0.013342
+vector-mult,parallel-paw-tiled,4,speed-up,2500,3353,0.038097
+jacobi,parallel-non-tiled,4,speed-up,2897,2897,0.036388
+jacobi,parallel-paw-tiled,4,speed-up,2897,2897,0.155391
+jacobi,parallel-paw-single-tiled,4,speed-up,2897,2897,0.147373
+matrix-mult,parallel-non-tiled,5,speed-up,1673,1673,7.079722
+matrix-mult,parallel-paw-single-tiled,6,speed-up,1673,1673,32.131714
+vector-mult,parallel-paw-single-tiled,6,speed-up,2500,3353,0.011410
+vector-mult,parallel-paw-tiled,6,speed-up,2500,3353,0.057581
+jacobi,parallel-non-tiled,6,speed-up,2897,2897,0.041233
+jacobi,parallel-paw-tiled,6,speed-up,2897,2897,0.121474
+jacobi,parallel-paw-single-tiled,6,speed-up,2897,2897,0.117042
+matrix-mult,parallel-non-tiled,7,speed-up,1673,1673,4.627311
+matrix-mult,parallel-paw-tiled,5,speed-up,1673,1673,38.815773
+vector-mult,parallel-non-tiled,5,speed-up,2500,3353,0.051574
+matrix-mult,parallel-paw-tiled,7,speed-up,1673,1673,30.252812
+vector-mult,parallel-non-tiled,7,speed-up,2500,3353,0.035955
+matrix-mult,parallel-paw-single-tiled,5,speed-up,1673,1673,34.477353
+vector-mult,parallel-paw-single-tiled,5,speed-up,2500,3353,0.045530
+vector-mult,parallel-paw-tiled,5,speed-up,2500,3353,0.038261
+jacobi,parallel-non-tiled,5,speed-up,2897,2897,0.031302
+jacobi,parallel-paw-tiled,5,speed-up,2897,2897,0.150569
+jacobi,parallel-paw-single-tiled,5,speed-up,2897,2897,0.148324
+matrix-mult,parallel-non-tiled,6,speed-up,1673,1673,6.143954
+matrix-mult,parallel-paw-single-tiled,7,speed-up,1673,1673,29.308125
+vector-mult,parallel-paw-single-tiled,7,speed-up,2500,3353,0.026626
+vector-mult,parallel-paw-tiled,7,speed-up,2500,3353,0.038827
+jacobi,parallel-non-tiled,7,speed-up,2897,2897,0.037764
+jacobi,parallel-paw-tiled,7,speed-up,2897,2897,0.157290
+jacobi,parallel-paw-single-tiled,7,speed-up,2897,2897,0.114562
+matrix-mult,parallel-non-tiled,8,speed-up,1673,1673,4.499044
+matrix-mult,parallel-paw-tiled,6,speed-up,1673,1673,38.258993
+vector-mult,parallel-non-tiled,6,speed-up,2500,3353,0.007732
+matrix-mult,parallel-paw-tiled,8,speed-up,1673,1673,30.737273
+vector-mult,parallel-non-tiled,8,speed-up,2500,3353,0.022750
+matrix-mult,parallel-paw-single-tiled,6,speed-up,1673,1673,33.220836
+vector-mult,parallel-paw-single-tiled,6,speed-up,2500,3353,0.024836
+vector-mult,parallel-paw-tiled,6,speed-up,2500,3353,0.054557
+jacobi,parallel-non-tiled,6,speed-up,2897,2897,0.057421
+jacobi,parallel-paw-tiled,6,speed-up,2897,2897,0.155202
+jacobi,parallel-paw-single-tiled,6,speed-up,2897,2897,0.166722
+matrix-mult,parallel-paw-single-tiled,8,speed-up,1673,1673,31.895224
+vector-mult,parallel-paw-single-tiled,8,speed-up,2500,3353,0.018332
+vector-mult,parallel-paw-tiled,8,speed-up,2500,3353,0.050543
+jacobi,parallel-non-tiled,8,speed-up,2897,2897,0.043383
+jacobi,parallel-paw-tiled,8,speed-up,2897,2897,0.159519
+jacobi,parallel-paw-single-tiled,8,speed-up,2897,2897,0.127068
+matrix-mult,parallel-non-tiled,7,speed-up,1673,1673,5.215811
+matrix-mult,parallel-non-tiled,9,speed-up,1673,1673,5.533179
+matrix-mult,parallel-paw-tiled,9,speed-up,1673,1673,32.667633
+matrix-mult,parallel-paw-tiled,7,speed-up,1673,1673,36.388765
+vector-mult,parallel-non-tiled,9,speed-up,2500,3353,0.043369
+vector-mult,parallel-non-tiled,7,speed-up,2500,3353,0.020225
+matrix-mult,parallel-paw-single-tiled,9,speed-up,1673,1673,33.047966
+vector-mult,parallel-paw-single-tiled,9,speed-up,2500,3353,0.026082
+vector-mult,parallel-paw-tiled,9,speed-up,2500,3353,0.052210
+jacobi,parallel-non-tiled,9,speed-up,2897,2897,0.032318
+jacobi,parallel-paw-tiled,9,speed-up,2897,2897,0.187070
+matrix-mult,parallel-paw-single-tiled,7,speed-up,1673,1673,33.952131
+jacobi,parallel-paw-single-tiled,9,speed-up,2897,2897,0.122815
+vector-mult,parallel-paw-single-tiled,7,speed-up,2500,3353,0.028658
+vector-mult,parallel-paw-tiled,7,speed-up,2500,3353,0.051844
+jacobi,parallel-non-tiled,7,speed-up,2897,2897,0.044124
+jacobi,parallel-paw-tiled,7,speed-up,2897,2897,0.147662
+jacobi,parallel-paw-single-tiled,7,speed-up,2897,2897,0.159462
+matrix-mult,parallel-non-tiled,10,speed-up,1673,1673,3.263179
+matrix-mult,parallel-non-tiled,8,speed-up,1673,1673,4.583985
+matrix-mult,parallel-paw-tiled,10,speed-up,1673,1673,34.786345
+vector-mult,parallel-non-tiled,10,speed-up,2500,3353,0.064320
+matrix-mult,parallel-paw-tiled,8,speed-up,1673,1673,37.025084
+vector-mult,parallel-non-tiled,8,speed-up,2500,3353,0.022303
+matrix-mult,parallel-paw-single-tiled,10,speed-up,1673,1673,25.489190
+vector-mult,parallel-paw-single-tiled,10,speed-up,2500,3353,0.036011
+vector-mult,parallel-paw-tiled,10,speed-up,2500,3353,0.061196
+jacobi,parallel-non-tiled,10,speed-up,2897,2897,0.030871
+jacobi,parallel-paw-tiled,10,speed-up,2897,2897,0.171949
+jacobi,parallel-paw-single-tiled,10,speed-up,2897,2897,0.136694
+matrix-mult,parallel-paw-single-tiled,8,speed-up,1673,1673,26.481353
+vector-mult,parallel-paw-single-tiled,8,speed-up,2500,3353,0.024690
+vector-mult,parallel-paw-tiled,8,speed-up,2500,3353,0.053997
+jacobi,parallel-non-tiled,8,speed-up,2897,2897,0.043555
+jacobi,parallel-paw-tiled,8,speed-up,2897,2897,0.167982
+jacobi,parallel-paw-single-tiled,8,speed-up,2897,2897,0.150613
+matrix-mult,parallel-non-tiled,11,speed-up,1673,1673,4.768436
+matrix-mult,parallel-non-tiled,9,speed-up,1673,1673,3.792327
+matrix-mult,parallel-paw-tiled,11,speed-up,1673,1673,38.952045
+vector-mult,parallel-non-tiled,11,speed-up,2500,3353,0.048673
+matrix-mult,parallel-paw-tiled,9,speed-up,1673,1673,39.251523
+vector-mult,parallel-non-tiled,9,speed-up,2500,3353,0.031951
+matrix-mult,parallel-paw-single-tiled,11,speed-up,1673,1673,28.146641
+vector-mult,parallel-paw-single-tiled,11,speed-up,2500,3353,0.023159
+vector-mult,parallel-paw-tiled,11,speed-up,2500,3353,0.058435
+jacobi,parallel-non-tiled,11,speed-up,2897,2897,0.060938
+jacobi,parallel-paw-tiled,11,speed-up,2897,2897,0.142095
+jacobi,parallel-paw-single-tiled,11,speed-up,2897,2897,0.133722
+matrix-mult,parallel-non-tiled,12,speed-up,1673,1673,4.380721
+matrix-mult,parallel-paw-single-tiled,9,speed-up,1673,1673,33.113766
+vector-mult,parallel-paw-tiled,9,speed-up,2500,3353,0.077423
+vector-mult,parallel-paw-single-tiled,9,speed-up,2500,3353,0.077527
+jacobi,parallel-non-tiled,9,speed-up,2897,2897,0.044234
+jacobi,parallel-paw-tiled,9,speed-up,2897,2897,0.166786
+jacobi,parallel-paw-single-tiled,9,speed-up,2897,2897,0.158060
+matrix-mult,parallel-non-tiled,10,speed-up,1673,1673,3.323093
+matrix-mult,parallel-paw-tiled,12,speed-up,1673,1673,30.845288
+vector-mult,parallel-non-tiled,12,speed-up,2500,3353,0.025060
+matrix-mult,parallel-paw-tiled,10,speed-up,1673,1673,32.818321
+vector-mult,parallel-non-tiled,10,speed-up,2500,3353,0.027721
+matrix-mult,parallel-paw-single-tiled,12,speed-up,1673,1673,33.290464
+vector-mult,parallel-paw-single-tiled,12,speed-up,2500,3353,0.041976
+vector-mult,parallel-paw-tiled,12,speed-up,2500,3353,0.056442
+jacobi,parallel-non-tiled,12,speed-up,2897,2897,0.034699
+jacobi,parallel-paw-tiled,12,speed-up,2897,2897,0.145399
+jacobi,parallel-paw-single-tiled,12,speed-up,2897,2897,0.136510
+matrix-mult,parallel-non-tiled,13,speed-up,1673,1673,4.175863
+matrix-mult,parallel-paw-single-tiled,10,speed-up,1673,1673,31.574648
+vector-mult,parallel-paw-single-tiled,10,speed-up,2500,3353,0.028865
+vector-mult,parallel-paw-tiled,10,speed-up,2500,3353,0.063262
+jacobi,parallel-non-tiled,10,speed-up,2897,2897,0.073037
+jacobi,parallel-paw-tiled,10,speed-up,2897,2897,0.133201
+jacobi,parallel-paw-single-tiled,10,speed-up,2897,2897,0.118437
+matrix-mult,parallel-non-tiled,11,speed-up,1673,1673,3.089830
+matrix-mult,parallel-paw-tiled,13,speed-up,1673,1673,37.339026
+vector-mult,parallel-non-tiled,13,speed-up,2500,3353,0.038346
+matrix-mult,parallel-paw-tiled,11,speed-up,1673,1673,37.800495
+vector-mult,parallel-non-tiled,11,speed-up,2500,3353,0.007673
+matrix-mult,parallel-paw-single-tiled,13,speed-up,1673,1673,27.593302
+vector-mult,parallel-paw-single-tiled,13,speed-up,2500,3353,0.023028
+vector-mult,parallel-paw-tiled,13,speed-up,2500,3353,0.058442
+jacobi,parallel-non-tiled,13,speed-up,2897,2897,0.025816
+jacobi,parallel-paw-tiled,13,speed-up,2897,2897,0.158450
+jacobi,parallel-paw-single-tiled,13,speed-up,2897,2897,0.138390
+matrix-mult,parallel-non-tiled,14,speed-up,1673,1673,3.079453
+matrix-mult,parallel-paw-single-tiled,11,speed-up,1673,1673,33.186035
+vector-mult,parallel-paw-single-tiled,11,speed-up,2500,3353,0.020015
+vector-mult,parallel-paw-tiled,11,speed-up,2500,3353,0.052383
+jacobi,parallel-non-tiled,11,speed-up,2897,2897,0.039985
+jacobi,parallel-paw-tiled,11,speed-up,2897,2897,0.131650
+jacobi,parallel-paw-single-tiled,11,speed-up,2897,2897,0.128556
+matrix-mult,parallel-non-tiled,12,speed-up,1673,1673,4.227883
+matrix-mult,parallel-paw-tiled,14,speed-up,1673,1673,38.855572
+vector-mult,parallel-non-tiled,14,speed-up,2500,3353,0.017307
+matrix-mult,parallel-paw-tiled,12,speed-up,1673,1673,29.295794
+vector-mult,parallel-non-tiled,12,speed-up,2500,3353,0.037863
+matrix-mult,parallel-paw-single-tiled,14,speed-up,1673,1673,28.111494
+vector-mult,parallel-paw-single-tiled,14,speed-up,2500,3353,0.019589
+vector-mult,parallel-paw-tiled,14,speed-up,2500,3353,0.055513
+jacobi,parallel-non-tiled,14,speed-up,2897,2897,0.043219
+jacobi,parallel-paw-tiled,14,speed-up,2897,2897,0.141482
+jacobi,parallel-paw-single-tiled,14,speed-up,2897,2897,0.136014
+matrix-mult,parallel-non-tiled,15,speed-up,1673,1673,2.331045
+matrix-mult,parallel-paw-single-tiled,12,speed-up,1673,1673,32.858115
+vector-mult,parallel-paw-single-tiled,12,speed-up,2500,3353,0.021744
+vector-mult,parallel-paw-tiled,12,speed-up,2500,3353,0.056304
+jacobi,parallel-non-tiled,12,speed-up,2897,2897,0.053774
+jacobi,parallel-paw-tiled,12,speed-up,2897,2897,0.128591
+jacobi,parallel-paw-single-tiled,12,speed-up,2897,2897,0.129380
+matrix-mult,parallel-non-tiled,13,speed-up,1673,1673,2.934480
+matrix-mult,parallel-paw-tiled,15,speed-up,1673,1673,29.855785
+vector-mult,parallel-non-tiled,15,speed-up,2500,3353,0.021940
+matrix-mult,parallel-paw-tiled,13,speed-up,1673,1673,31.522240
+vector-mult,parallel-non-tiled,13,speed-up,2500,3353,0.018568
+matrix-mult,parallel-paw-single-tiled,15,speed-up,1673,1673,31.854651
+vector-mult,parallel-paw-single-tiled,15,speed-up,2500,3353,0.027211
+vector-mult,parallel-paw-tiled,15,speed-up,2500,3353,0.040165
+jacobi,parallel-non-tiled,15,speed-up,2897,2897,0.029011
+jacobi,parallel-paw-tiled,15,speed-up,2897,2897,0.152813
+jacobi,parallel-paw-single-tiled,15,speed-up,2897,2897,0.136232
+matrix-mult,parallel-non-tiled,16,speed-up,1673,1673,2.107988
+matrix-mult,parallel-paw-single-tiled,13,speed-up,1673,1673,33.168898
+vector-mult,parallel-paw-single-tiled,13,speed-up,2500,3353,0.022566
+vector-mult,parallel-paw-tiled,13,speed-up,2500,3353,0.056680
+jacobi,parallel-non-tiled,13,speed-up,2897,2897,0.048932
+jacobi,parallel-paw-tiled,13,speed-up,2897,2897,0.133393
+jacobi,parallel-paw-single-tiled,13,speed-up,2897,2897,0.116492
+matrix-mult,parallel-non-tiled,14,speed-up,1673,1673,3.057897
+matrix-mult,parallel-paw-tiled,16,speed-up,1673,1673,33.022243
+vector-mult,parallel-non-tiled,16,speed-up,2500,3353,0.017729
+matrix-mult,parallel-paw-tiled,14,speed-up,1673,1673,38.497845
+vector-mult,parallel-non-tiled,14,speed-up,2500,3353,0.021364
+matrix-mult,parallel-paw-single-tiled,16,speed-up,1673,1673,33.029490
+vector-mult,parallel-paw-single-tiled,16,speed-up,2500,3353,0.023592
+vector-mult,parallel-paw-tiled,16,speed-up,2500,3353,0.042139
+jacobi,parallel-non-tiled,16,speed-up,2897,2897,0.025342
+jacobi,parallel-paw-tiled,16,speed-up,2897,2897,0.159267
+jacobi,parallel-paw-single-tiled,16,speed-up,2897,2897,0.126477
+matrix-mult,parallel-non-tiled,17,speed-up,1673,1673,3.616689
+matrix-mult,parallel-paw-single-tiled,14,speed-up,1673,1673,32.912482
+vector-mult,parallel-paw-single-tiled,14,speed-up,2500,3353,0.020732
+vector-mult,parallel-paw-tiled,14,speed-up,2500,3353,0.055207
+jacobi,parallel-non-tiled,14,speed-up,2897,2897,0.031391
+jacobi,parallel-paw-tiled,14,speed-up,2897,2897,0.140679
+jacobi,parallel-paw-single-tiled,14,speed-up,2897,2897,0.127811
+matrix-mult,parallel-non-tiled,15,speed-up,1673,1673,3.096104
+matrix-mult,parallel-paw-tiled,17,speed-up,1673,1673,34.656253
+vector-mult,parallel-non-tiled,17,speed-up,2500,3353,0.030617
+matrix-mult,parallel-paw-tiled,15,speed-up,1673,1673,38.304078
+vector-mult,parallel-non-tiled,15,speed-up,2500,3353,0.022566
+matrix-mult,parallel-paw-single-tiled,17,speed-up,1673,1673,26.752725
+vector-mult,parallel-paw-single-tiled,17,speed-up,2500,3353,0.048095
+vector-mult,parallel-paw-tiled,17,speed-up,2500,3353,0.063540
+jacobi,parallel-non-tiled,17,speed-up,2897,2897,0.047185
+jacobi,parallel-paw-tiled,17,speed-up,2897,2897,0.139564
+jacobi,parallel-paw-single-tiled,17,speed-up,2897,2897,0.149988
+matrix-mult,parallel-non-tiled,18,speed-up,1673,1673,2.802969
+matrix-mult,parallel-paw-single-tiled,15,speed-up,1673,1673,32.753018
+vector-mult,parallel-paw-single-tiled,15,speed-up,2500,3353,0.023970
+vector-mult,parallel-paw-tiled,15,speed-up,2500,3353,0.052658
+jacobi,parallel-non-tiled,15,speed-up,2897,2897,0.036111
+jacobi,parallel-paw-tiled,15,speed-up,2897,2897,0.133235
+jacobi,parallel-paw-single-tiled,15,speed-up,2897,2897,0.125573
+matrix-mult,parallel-non-tiled,16,speed-up,1673,1673,3.035316
+matrix-mult,parallel-paw-tiled,18,speed-up,1673,1673,32.707640
+vector-mult,parallel-non-tiled,18,speed-up,2500,3353,0.049560
+matrix-mult,parallel-paw-tiled,16,speed-up,1673,1673,29.247724
+vector-mult,parallel-non-tiled,16,speed-up,2500,3353,0.019117
+matrix-mult,parallel-paw-single-tiled,18,speed-up,1673,1673,32.731720
+vector-mult,parallel-paw-single-tiled,18,speed-up,2500,3353,0.032468
+vector-mult,parallel-paw-tiled,18,speed-up,2500,3353,0.059876
+jacobi,parallel-non-tiled,18,speed-up,2897,2897,0.046052
+jacobi,parallel-paw-tiled,18,speed-up,2897,2897,0.144536
+jacobi,parallel-paw-single-tiled,18,speed-up,2897,2897,0.145870
+matrix-mult,parallel-non-tiled,19,speed-up,1673,1673,2.663514
+matrix-mult,parallel-paw-single-tiled,16,speed-up,1673,1673,34.172994
+vector-mult,parallel-paw-single-tiled,16,speed-up,2500,3353,0.019021
+vector-mult,parallel-paw-tiled,16,speed-up,2500,3353,0.052806
+jacobi,parallel-non-tiled,16,speed-up,2897,2897,0.040111
+jacobi,parallel-paw-tiled,16,speed-up,2897,2897,0.135499
+jacobi,parallel-paw-single-tiled,16,speed-up,2897,2897,0.126486
+matrix-mult,parallel-non-tiled,17,speed-up,1673,1673,3.857415
+matrix-mult,parallel-paw-tiled,19,speed-up,1673,1673,34.379563
+vector-mult,parallel-non-tiled,19,speed-up,2500,3353,0.018527
+matrix-mult,parallel-paw-tiled,17,speed-up,1673,1673,31.248596
+vector-mult,parallel-non-tiled,17,speed-up,2500,3353,0.027931
+matrix-mult,parallel-paw-single-tiled,19,speed-up,1673,1673,32.925056
+vector-mult,parallel-paw-single-tiled,19,speed-up,2500,3353,0.026863
+vector-mult,parallel-paw-tiled,19,speed-up,2500,3353,0.055354
+jacobi,parallel-non-tiled,19,speed-up,2897,2897,0.049096
+jacobi,parallel-paw-tiled,19,speed-up,2897,2897,0.137472
+jacobi,parallel-paw-single-tiled,19,speed-up,2897,2897,0.145769
+matrix-mult,parallel-non-tiled,20,speed-up,1673,1673,2.540847
+matrix-mult,parallel-paw-single-tiled,17,speed-up,1673,1673,33.264606
+vector-mult,parallel-paw-tiled,17,speed-up,2500,3353,0.050399
+vector-mult,parallel-paw-single-tiled,17,speed-up,2500,3353,0.057753
+jacobi,parallel-non-tiled,17,speed-up,2897,2897,0.050844
+jacobi,parallel-paw-tiled,17,speed-up,2897,2897,0.155055
+jacobi,parallel-paw-single-tiled,17,speed-up,2897,2897,0.141940
+matrix-mult,parallel-non-tiled,18,speed-up,1673,1673,2.789577
+matrix-mult,parallel-paw-tiled,20,speed-up,1673,1673,34.719515
+vector-mult,parallel-non-tiled,20,speed-up,2500,3353,0.025109
+matrix-mult,parallel-paw-tiled,18,speed-up,1673,1673,38.278114
+vector-mult,parallel-non-tiled,18,speed-up,2500,3353,0.030525
+matrix-mult,parallel-paw-single-tiled,20,speed-up,1673,1673,32.022166
+vector-mult,parallel-paw-single-tiled,20,speed-up,2500,3353,0.025287
+vector-mult,parallel-paw-tiled,20,speed-up,2500,3353,0.056566
+jacobi,parallel-non-tiled,20,speed-up,2897,2897,0.026810
+jacobi,parallel-paw-tiled,20,speed-up,2897,2897,0.159161
+jacobi,parallel-paw-single-tiled,20,speed-up,2897,2897,0.140045
+matrix-mult,parallel-non-tiled,21,speed-up,1673,1673,1.638116
+matrix-mult,parallel-paw-single-tiled,18,speed-up,1673,1673,32.147969
+vector-mult,parallel-paw-single-tiled,18,speed-up,2500,3353,0.022562
+vector-mult,parallel-paw-tiled,18,speed-up,2500,3353,0.058844
+jacobi,parallel-non-tiled,18,speed-up,2897,2897,0.044098
+jacobi,parallel-paw-tiled,18,speed-up,2897,2897,0.164554
+jacobi,parallel-paw-single-tiled,18,speed-up,2897,2897,0.144038
+matrix-mult,parallel-non-tiled,19,speed-up,1673,1673,2.746920
+matrix-mult,parallel-paw-tiled,21,speed-up,1673,1673,33.424562
+vector-mult,parallel-non-tiled,21,speed-up,2500,3353,0.020266
+matrix-mult,parallel-paw-tiled,19,speed-up,1673,1673,29.510965
+vector-mult,parallel-non-tiled,19,speed-up,2500,3353,0.035377
+matrix-mult,parallel-paw-single-tiled,21,speed-up,1673,1673,30.800876
+vector-mult,parallel-paw-single-tiled,21,speed-up,2500,3353,0.022726
+vector-mult,parallel-paw-tiled,21,speed-up,2500,3353,0.054787
+jacobi,parallel-non-tiled,21,speed-up,2897,2897,0.016994
+jacobi,parallel-paw-tiled,21,speed-up,2897,2897,0.133116
+jacobi,parallel-paw-single-tiled,21,speed-up,2897,2897,0.137100
+matrix-mult,parallel-non-tiled,22,speed-up,1673,1673,2.258737
+matrix-mult,parallel-paw-single-tiled,19,speed-up,1673,1673,32.501795
+vector-mult,parallel-paw-single-tiled,19,speed-up,2500,3353,0.024286
+vector-mult,parallel-paw-tiled,19,speed-up,2500,3353,0.059653
+jacobi,parallel-non-tiled,19,speed-up,2897,2897,0.035054
+jacobi,parallel-paw-tiled,19,speed-up,2897,2897,0.142112
+jacobi,parallel-paw-single-tiled,19,speed-up,2897,2897,0.165316
+matrix-mult,parallel-non-tiled,20,speed-up,1673,1673,2.509616
+matrix-mult,parallel-paw-tiled,22,speed-up,1673,1673,31.364312
+vector-mult,parallel-non-tiled,22,speed-up,2500,3353,0.018072
+matrix-mult,parallel-paw-tiled,20,speed-up,1673,1673,34.737387
+vector-mult,parallel-non-tiled,20,speed-up,2500,3353,0.027475
+matrix-mult,parallel-paw-single-tiled,22,speed-up,1673,1673,33.021306
+vector-mult,parallel-paw-single-tiled,22,speed-up,2500,3353,0.014290
+vector-mult,parallel-paw-tiled,22,speed-up,2500,3353,0.050325
+jacobi,parallel-non-tiled,22,speed-up,2897,2897,0.035035
+jacobi,parallel-paw-tiled,22,speed-up,2897,2897,0.140211
+jacobi,parallel-paw-single-tiled,22,speed-up,2897,2897,0.132035
+matrix-mult,parallel-non-tiled,23,speed-up,1673,1673,1.466392
+matrix-mult,parallel-paw-single-tiled,20,speed-up,1673,1673,32.578939
+vector-mult,parallel-paw-single-tiled,20,speed-up,2500,3353,0.021454
+vector-mult,parallel-paw-tiled,20,speed-up,2500,3353,0.058240
+jacobi,parallel-non-tiled,20,speed-up,2897,2897,0.038241
+jacobi,parallel-paw-tiled,20,speed-up,2897,2897,0.127381
+jacobi,parallel-paw-single-tiled,20,speed-up,2897,2897,0.134727
+matrix-mult,parallel-non-tiled,21,speed-up,1673,1673,1.679455
+matrix-mult,parallel-paw-tiled,23,speed-up,1673,1673,37.985251
+vector-mult,parallel-non-tiled,23,speed-up,2500,3353,0.014069
+matrix-mult,parallel-paw-single-tiled,23,speed-up,1673,1673,26.349583
+vector-mult,parallel-paw-single-tiled,23,speed-up,2500,3353,0.021362
+vector-mult,parallel-paw-tiled,23,speed-up,2500,3353,0.053402
+jacobi,parallel-non-tiled,23,speed-up,2897,2897,0.022123
+jacobi,parallel-paw-tiled,23,speed-up,2897,2897,0.128710
+jacobi,parallel-paw-single-tiled,23,speed-up,2897,2897,0.135963
+matrix-mult,parallel-paw-tiled,21,speed-up,1673,1673,37.898050
+vector-mult,parallel-non-tiled,21,speed-up,2500,3353,0.026289
+matrix-mult,parallel-non-tiled,24,speed-up,1673,1673,1.854157
+matrix-mult,parallel-paw-single-tiled,21,speed-up,1673,1673,31.767923
+vector-mult,parallel-paw-single-tiled,21,speed-up,2500,3353,0.034597
+vector-mult,parallel-paw-tiled,21,speed-up,2500,3353,0.051981
+jacobi,parallel-non-tiled,21,speed-up,2897,2897,0.031121
+jacobi,parallel-paw-tiled,21,speed-up,2897,2897,0.146827
+jacobi,parallel-paw-single-tiled,21,speed-up,2897,2897,0.162247
+matrix-mult,parallel-non-tiled,22,speed-up,1673,1673,2.234192
+matrix-mult,parallel-paw-tiled,24,speed-up,1673,1673,38.196895
+vector-mult,parallel-non-tiled,24,speed-up,2500,3353,0.011636
+matrix-mult,parallel-paw-single-tiled,24,speed-up,1673,1673,31.285281
+vector-mult,parallel-paw-single-tiled,24,speed-up,2500,3353,0.017171
+vector-mult,parallel-paw-tiled,24,speed-up,2500,3353,0.040566
+jacobi,parallel-non-tiled,24,speed-up,2897,2897,0.025500
+jacobi,parallel-paw-tiled,24,speed-up,2897,2897,0.153262
+jacobi,parallel-paw-single-tiled,24,speed-up,2897,2897,0.137084
+matrix-mult,parallel-paw-tiled,22,speed-up,1673,1673,37.738155
+vector-mult,parallel-non-tiled,22,speed-up,2500,3353,0.014777
+matrix-mult,parallel-non-tiled,25,speed-up,1673,1673,1.414584
+matrix-mult,parallel-paw-tiled,25,speed-up,1673,1673,30.394340
+vector-mult,parallel-non-tiled,25,speed-up,2500,3353,0.010913
+matrix-mult,parallel-paw-single-tiled,22,speed-up,1673,1673,32.256903
+vector-mult,parallel-paw-single-tiled,22,speed-up,2500,3353,0.015607
+vector-mult,parallel-paw-tiled,22,speed-up,2500,3353,0.050768
+jacobi,parallel-non-tiled,22,speed-up,2897,2897,0.027139
+jacobi,parallel-paw-tiled,22,speed-up,2897,2897,0.140909
+jacobi,parallel-paw-single-tiled,22,speed-up,2897,2897,0.135662
+matrix-mult,parallel-non-tiled,23,speed-up,1673,1673,1.915533
+matrix-mult,parallel-paw-single-tiled,25,speed-up,1673,1673,32.936336
+vector-mult,parallel-paw-single-tiled,25,speed-up,2500,3353,0.024968
+vector-mult,parallel-paw-tiled,25,speed-up,2500,3353,0.103690
+jacobi,parallel-non-tiled,25,speed-up,2897,2897,0.010604
+jacobi,parallel-paw-tiled,25,speed-up,2897,2897,0.158209
+jacobi,parallel-paw-single-tiled,25,speed-up,2897,2897,0.148228
+matrix-mult,parallel-non-tiled,26,speed-up,1673,1673,2.169307
+matrix-mult,parallel-paw-tiled,23,speed-up,1673,1673,37.787058
+vector-mult,parallel-non-tiled,23,speed-up,2500,3353,0.010636
+matrix-mult,parallel-paw-tiled,26,speed-up,1673,1673,37.267002
+vector-mult,parallel-non-tiled,26,speed-up,2500,3353,0.050489
+matrix-mult,parallel-paw-single-tiled,23,speed-up,1673,1673,32.494904
+vector-mult,parallel-paw-single-tiled,23,speed-up,2500,3353,0.027282
+vector-mult,parallel-paw-tiled,23,speed-up,2500,3353,0.049108
+jacobi,parallel-non-tiled,23,speed-up,2897,2897,0.026373
+jacobi,parallel-paw-tiled,23,speed-up,2897,2897,0.141557
+jacobi,parallel-paw-single-tiled,23,speed-up,2897,2897,0.119178
+matrix-mult,parallel-non-tiled,24,speed-up,1673,1673,1.817416
+matrix-mult,parallel-paw-single-tiled,26,speed-up,1673,1673,26.377586
+vector-mult,parallel-paw-single-tiled,26,speed-up,2500,3353,0.034262
+vector-mult,parallel-paw-tiled,26,speed-up,2500,3353,0.081173
+jacobi,parallel-non-tiled,26,speed-up,2897,2897,0.027006
+jacobi,parallel-paw-tiled,26,speed-up,2897,2897,0.132181
+jacobi,parallel-paw-single-tiled,26,speed-up,2897,2897,0.141075
+matrix-mult,parallel-non-tiled,27,speed-up,1673,1673,1.885673
+matrix-mult,parallel-paw-tiled,24,speed-up,1673,1673,35.143882
+vector-mult,parallel-non-tiled,24,speed-up,2500,3353,0.018678
+matrix-mult,parallel-paw-tiled,27,speed-up,1673,1673,37.979909
+vector-mult,parallel-non-tiled,27,speed-up,2500,3353,0.022233
+matrix-mult,parallel-paw-single-tiled,24,speed-up,1673,1673,26.275774
+vector-mult,parallel-paw-single-tiled,24,speed-up,2500,3353,0.020263
+vector-mult,parallel-paw-tiled,24,speed-up,2500,3353,0.041223
+jacobi,parallel-non-tiled,24,speed-up,2897,2897,0.019143
+jacobi,parallel-paw-tiled,24,speed-up,2897,2897,0.141313
+jacobi,parallel-paw-single-tiled,24,speed-up,2897,2897,0.119427
+matrix-mult,parallel-non-tiled,25,speed-up,1673,1673,2.363894
+matrix-mult,parallel-paw-single-tiled,27,speed-up,1673,1673,30.302786
+vector-mult,parallel-paw-single-tiled,27,speed-up,2500,3353,0.015767
+vector-mult,parallel-paw-tiled,27,speed-up,2500,3353,0.045557
+jacobi,parallel-non-tiled,27,speed-up,2897,2897,0.024520
+jacobi,parallel-paw-tiled,27,speed-up,2897,2897,0.138461
+jacobi,parallel-paw-single-tiled,27,speed-up,2897,2897,0.145615
+matrix-mult,parallel-non-tiled,28,speed-up,1673,1673,1.870365
+matrix-mult,parallel-paw-tiled,25,speed-up,1673,1673,36.596255
+vector-mult,parallel-non-tiled,25,speed-up,2500,3353,0.018603
+matrix-mult,parallel-paw-single-tiled,25,speed-up,1673,1673,29.375657
+vector-mult,parallel-paw-single-tiled,25,speed-up,2500,3353,0.039232
+vector-mult,parallel-paw-tiled,25,speed-up,2500,3353,0.060341
+jacobi,parallel-non-tiled,25,speed-up,2897,2897,0.040053
+jacobi,parallel-paw-tiled,25,speed-up,2897,2897,0.119532
+jacobi,parallel-paw-single-tiled,25,speed-up,2897,2897,0.181768
+matrix-mult,parallel-paw-tiled,28,speed-up,1673,1673,37.149152
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+srun: error: Unable to create step for job 3938801: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,26,speed-up,1673,1673,1.341153
+matrix-mult,parallel-paw-tiled,26,speed-up,1673,1673,29.595689
+vector-mult,parallel-non-tiled,26,speed-up,2500,3353,0.026827
+matrix-mult,parallel-paw-single-tiled,26,speed-up,1673,1673,32.241089
+vector-mult,parallel-paw-single-tiled,26,speed-up,2500,3353,0.015793
+vector-mult,parallel-paw-tiled,26,speed-up,2500,3353,0.046419
+jacobi,parallel-non-tiled,26,speed-up,2897,2897,0.078614
+jacobi,parallel-paw-tiled,26,speed-up,2897,2897,0.119413
+jacobi,parallel-paw-single-tiled,26,speed-up,2897,2897,0.137623
+matrix-mult,parallel-non-tiled,27,speed-up,1673,1673,1.766448
+matrix-mult,parallel-paw-tiled,27,speed-up,1673,1673,37.743243
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed
+srun: error: Unable to create step for job 3938802: Job/step already completing or completed

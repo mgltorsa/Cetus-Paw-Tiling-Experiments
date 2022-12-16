@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 
 int main(int argc, char const *argv[])
 {
@@ -53,7 +54,8 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
-
+	
+	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
 	double start = omp_get_wtime();
 
 
@@ -75,7 +77,6 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = ((cacheSize/4)/cores);
 		int jj;
 		int jTile = balancedTileSize;
 		#pragma cetus parallel 
@@ -123,7 +124,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%f\n", cores, m, n, time);
+	printf("vector-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, m, n, balancedTileSize, time);
 	_ret_val_0 = 0;
 	return _ret_val_0;
 }
