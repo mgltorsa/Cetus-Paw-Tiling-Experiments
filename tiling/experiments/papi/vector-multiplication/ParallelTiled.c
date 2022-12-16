@@ -39,9 +39,10 @@ int main(int argc, char const * argv[])
 	}
 
 	int p = 0;
+	int z = 0;
 	for (p = 0; p < n; p++)
 	{
-		for (int z = 0; z < n; z++)
+		for (z = 0; z < n; z++)
 		{
 			a[p*n + z] = rand() * 1000;
 		}
