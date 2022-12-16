@@ -28,8 +28,7 @@ int main(int argc, char const * argv[])
 	}
 
 	float *a = (float *)calloc(n * n, sizeof(float *));
-	float *b = (float *)calloc(n , sizeof(float *));
-	float *c = (float *)calloc(n , sizeof(float *));
+	float b[n], c[n];
 
 
 	if (a == NULL || b == NULL || c == NULL)
