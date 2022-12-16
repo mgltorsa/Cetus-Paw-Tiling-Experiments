@@ -1,6 +1,7 @@
 #!/bin/bash
 
-WORKSPACE_FOLDER=/home/mgltorsa/workspace/cetus-experiments
+WORKSPACE_FOLDER=/lustre/parot/users/2896/mgltorsa/cetus/paw-tiling/Cetus-Paw-Tiling-Experiments
+PAPI_DIR=/lustre/parot/sw/papi/src/install/3.7
 PROJECT_PATH="-I${PAPI_DIR}/include -I${WORKSPACE_FOLDER}/lib"
 PROJECT_LIB="-L${PAPI_DIR}/lib"
 PROJECT_EXTRA="-lpapi"
