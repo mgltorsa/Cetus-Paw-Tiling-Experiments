@@ -18,7 +18,7 @@ echo "Running experiments in $PWD"
 
 for i in {1..5};
 do
-    ./run-local.sh >> ../results.csv
+    ssbatch run.sh
 done
 
 echo "Finish experiments in $PWD"
@@ -29,7 +29,7 @@ echo "Running experiments in $PWD"
 
 for i in {1..5};
 do
-    ./run-local.sh >> ../results.csv
+    ssbatch run.sh
 done
 echo "Finish experiments in $PWD"
 
