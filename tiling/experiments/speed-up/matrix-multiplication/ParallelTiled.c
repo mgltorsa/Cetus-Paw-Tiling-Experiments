@@ -62,7 +62,7 @@ int main(int argc, char const *argv[])
 
 	double start = omp_get_wtime();
 
-	if (((m * n) * n) <= 100000)
+	if ((((m*n)*n)<=100000)&&(cacheSize>(((64*m)*n)+((32*n)*n))))
 	{
 		#pragma loop name main #0
 		#pragma cetus private(i, j, k)

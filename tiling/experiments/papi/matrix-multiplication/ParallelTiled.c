@@ -73,7 +73,7 @@ int main(int argc, char const *argv[])
 	//getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
 
-	if (((m * n) * n) <= 100000)
+	if ((((m*n)*n)<=100000)&&(cacheSize>(((64*m)*n)+((32*n)*n))))
 	{
 		#pragma loop name main #0
 		#pragma cetus private(i, j, k)
