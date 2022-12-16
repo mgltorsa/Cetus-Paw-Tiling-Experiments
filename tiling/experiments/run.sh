@@ -9,7 +9,8 @@
 #SBATCH --output=../results.csv    # Standard output and error log
 #SBATCH --open-mode=append
 
-BINARY_FOLDER=bin
+EXECUTION_TIME_PAPI_BINARY_FOLDER=speed-up/bin
+PAPI_BINARY_FOLDER=papi/bin
 CAVINESS_CACHE=16777216 #Caviness CACHE
 DARWIN_CACHE=1
 CACHE=$DARWIN_CACHE 
@@ -22,19 +23,19 @@ do
     for i in {1..32}
     do
         #Matrix mult
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" $N &
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$CACHE" $N &
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" $N &
         wait
         #vector
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$CACHE" $N &
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$CACHE" $N &
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$CACHE" $N &
         wait
         #jacobi
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$CACHE" $N &
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelTiled "$i" "$CACHE" $N &
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/jacobi/ParallelTiled "$i" "$CACHE" $N &
+        srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $EXECUTION_TIME_PAPI_BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$CACHE" $N &
         wait
     done
     
@@ -43,28 +44,28 @@ do
         TYPE=0
         for i in {1..32}; do
             #Matrix mult
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
-            
-            wait
-            
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
-            
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
-            
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
-            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
             
             wait
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/jacobi/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            
+            
+            wait
+            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
             
             
             
@@ -73,27 +74,27 @@ do
         TYPE=1
         for i in {1..32}; do
             #Matrix mult
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
-            
-            wait
-            
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
-            
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
-            
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
             
             wait
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/vector-multiplication/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
             
-            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
+            
+            wait
+            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/jacobi/ParallelNonTiled "$i" "$CACHE" "$TYPE" $N &
+            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/jacobi/ParallelTiled "$i" "$CACHE" "$TYPE" $N &
+            
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $PAPI_BINARY_FOLDER/jacobi/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
             
             wait
         done
