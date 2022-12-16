@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=matrix-mult-job
+#SBATCH --job-name=execution-time-job
 #SBATCH --ntasks=2
 #SBATCH --cpus-per-task=32
 #SBATCH --nodes=2

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=matrix-mult-job
+#SBATCH --job-name=papi-experiments
 #SBATCH --ntasks=2
 #SBATCH --cpus-per-task=32
 #SBATCH --nodes=2
