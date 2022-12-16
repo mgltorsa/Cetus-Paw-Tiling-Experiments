@@ -11,6 +11,8 @@
 
 BINARY_FOLDER=bin
 
+. ./../setup.sh
+
 TYPE=0
 
 

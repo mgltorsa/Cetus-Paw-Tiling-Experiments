@@ -11,6 +11,8 @@
 
 BINARY_FOLDER=bin
 
+. ./../setup.sh
+
 for i in {1..32}
 do
     #Matrix mult
