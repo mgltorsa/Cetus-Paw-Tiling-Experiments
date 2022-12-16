@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+	int balancedTileSize = 15;
 
 	if (((m*n)<=100000)&&(cacheSize>(((4*m)+(4*n))+((4*m)*n))))
 	{

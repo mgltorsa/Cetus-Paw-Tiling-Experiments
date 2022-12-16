@@ -73,7 +73,7 @@ int main(int argc, char const *argv[])
 
 	//getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
-	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+	int balancedTileSize = 15;
 
 	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
 	{
