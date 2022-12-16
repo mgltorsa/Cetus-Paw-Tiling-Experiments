@@ -91,7 +91,7 @@ int main(int argc, char const * argv[])
 				reduce[reduce_span_0]=0;
 			}
 			#pragma loop name main#1 
-			#pragma omp parallel for private(i, ii, j, jj) reduction()
+			#pragma omp parallel for private(i, ii, j, jj)
 			#pragma cetus for  
 			for ((ii=0); ii<n; ii+=iTile)
 			{
