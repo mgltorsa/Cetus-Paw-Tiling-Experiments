@@ -4,7 +4,7 @@ WORKSPACE_FOLDER=/lustre/parot/users/2896/mgltorsa/cetus/paw-tiling/Cetus-Paw-Ti
 PAPI_DIR=/lustre/parot/sw/papi/src/install/3.7
 PROJECT_PATH="-I${PAPI_DIR}/include -I${WORKSPACE_FOLDER}/lib"
 PROJECT_LIB="-L${PAPI_DIR}/lib"
-PROJECT_EXTRA="-lpapi"
+PROJECT_EXTRA="-lpapi -lm"
 BINARY_FOLDER=bin
 
 mkdir $BINARY_FOLDER
