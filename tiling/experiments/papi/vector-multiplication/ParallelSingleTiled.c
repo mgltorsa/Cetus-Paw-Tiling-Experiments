@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 #include <papi.h>
 #include <papi_libs.h>
 
@@ -59,7 +60,7 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-	int balancedTileSize =15;
+	int balancedTileSize = (sqrt(cacheSize*0.7/4)/cores);
 
 	if (((m*n)<=100000)&&(cacheSize>(((4*m)+(4*n))+((4*m)*n))))
 	{

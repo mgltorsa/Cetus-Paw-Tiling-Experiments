@@ -50,7 +50,7 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-	int balancedTileSize =15;
+	int balancedTileSize = (sqrt(cacheSize*0.7/4)/cores);
 	double start = omp_get_wtime();
 	if ((((1+(-2*m))+(m*m))<=100000)&&(cacheSize>((8*m)*m)))
 	{

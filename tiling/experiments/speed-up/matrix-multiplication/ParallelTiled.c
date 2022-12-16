@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 
 int main(int argc, char const *argv[])
 {
@@ -60,7 +61,7 @@ int main(int argc, char const *argv[])
 	int i, j, k;
 	int _ret_val_0;
 
-	int balancedTileSize =15;
+	int balancedTileSize = (sqrt(cacheSize*0.7/4)/cores);
 
 	double start = omp_get_wtime();
 

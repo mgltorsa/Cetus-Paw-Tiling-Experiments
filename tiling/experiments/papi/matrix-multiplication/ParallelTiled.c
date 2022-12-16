@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
+#include <math.h>
 #include <papi.h>
 #include <papi_libs.h>
 
@@ -72,7 +73,7 @@ int main(int argc, char const *argv[])
 
 	//getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
-	int balancedTileSize =15;
+	int balancedTileSize = (sqrt(cacheSize*0.7/4)/cores);
 
 	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
 	{
