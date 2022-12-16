@@ -83,7 +83,7 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-    	int balancedTileSize = ((cacheSize/32)/cores);
+		int balancedTileSize = ((cacheSize/4)/cores);
 		int jj;
 		int jTile = balancedTileSize;
 		int kk;

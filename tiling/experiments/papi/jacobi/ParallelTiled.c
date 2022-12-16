@@ -80,7 +80,7 @@ int main(int argc, char const *argv[])
 	else
 	{
 		initAndMeasure(&eventSet, event);
-		int balancedTileSize = ((cacheSize/32)/cores);
+		int balancedTileSize = ((cacheSize/4)/cores);
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;

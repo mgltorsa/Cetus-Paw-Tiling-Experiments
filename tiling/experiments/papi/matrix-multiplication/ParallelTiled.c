@@ -95,7 +95,7 @@ int main(int argc, char const *argv[])
 	else
 	{
 		initAndMeasure(&eventSet, event);
-		int balancedTileSize = ((cacheSize/32)/cores);
+		int balancedTileSize = ((cacheSize/4)/cores);
 		int jj;
 		int jTile = balancedTileSize;
 		int kk;
