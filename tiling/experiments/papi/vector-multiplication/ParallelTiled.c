@@ -85,21 +85,21 @@ int main(int argc, char const * argv[])
 		#pragma cetus reduction(+: c[i]) 
 		#pragma cetus parallel 
 		#pragma omp parallel for private(i, ii, j, jj) reduction(+: c[i])
-		for ((ii=0); ii<n; ii+=iTile)
+		for (ii=0; ii<n; ii+=iTile)
 		{
 			#pragma loop name main#1#0 
 			#pragma cetus private(i, j, jj) 
 			#pragma cetus reduction(+: c[i]) 
-			for ((jj=0); jj<n; jj+=jTile)
+			for (jj=0; jj<n; jj+=jTile)
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(i, j) 
-				for ((i=ii); i<((((-1+iTile)+ii)<n) ? ((-1+iTile)+ii) : n); i ++ )
+				for (i=ii; i<((((-1+iTile)+ii)<n) ? ((-1+iTile)+ii) : n); i ++ )
 				{
 					#pragma loop name main#1#0#0#0 
 					#pragma cetus private(j) 
 					#pragma cetus reduction(+: c[i]) 
-					for ((j=jj); j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
+					for (j=jj; j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
 					{
 						c[i]+=(a[(i*n)+j]*b[j]);
 					}
