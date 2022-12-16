@@ -73,26 +73,42 @@ int main(int argc, char const *argv[])
 	else
 	{
 		initAndMeasure(&eventSet, event);
-		int balancedTileSize = (cacheSize / 32 )/cores ; //16-way mapped cache - 1 integer
+		int balancedTileSize = ((cacheSize/32)/cores);
 		int jj;
 		int jTile = balancedTileSize;
-		#pragma loop name main#1 
+		#pragma cetus parallel 
 		#pragma cetus private(i, j, jj) 
-		#pragma cetus reduction(+: c[i]) 
-		for (jj=0; jj<n; jj+=jTile)
 		{
-			#pragma loop name main#1#0 
-			#pragma cetus private(i, j) 
-			#pragma cetus parallel 
-			#pragma omp parallel for private(i, j)
-			for (i=0; i<n; i ++ )
+			float * reduce = (float * )malloc(n*sizeof (float));
+			int reduce_span_0;
+			for (reduce_span_0=0; reduce_span_0<n; reduce_span_0 ++ )
 			{
-				#pragma loop name main#1#0#0 
-				#pragma cetus private(j) 
-				#pragma cetus reduction(+: c[i]) 
-				for (j=jj; j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
+				reduce[reduce_span_0]=0;
+			}
+			#pragma loop name main#1 
+			#pragma cetus for  
+			for ((jj=0); jj<n; jj+=jTile)
+			{
+				#pragma loop name main#1#0 
+				#pragma cetus private(i, j) 
+				#pragma cetus parallel 
+				#pragma omp parallel for private(i, j)
+				for (i=0; i<n; i ++ )
 				{
-					c[i]+=(a[(i*n)+j]*b[j]);
+					#pragma loop name main#1#0#0 
+					#pragma cetus private(j) 
+					/* #pragma cetus reduction(+: c[i])  */
+					for ((j=jj); j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
+					{
+						reduce[i]+=(a[(i*n)+j]*b[j]);
+					}
+				}
+			}
+			#pragma cetus critical  
+			{
+				for (reduce_span_0=0; reduce_span_0<n; reduce_span_0 ++ )
+				{
+					c[reduce_span_0]+=reduce[reduce_span_0];
 				}
 			}
 		}
