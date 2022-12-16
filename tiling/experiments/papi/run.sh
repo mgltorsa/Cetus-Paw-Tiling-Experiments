@@ -15,6 +15,7 @@ N=1673
 
 TYPE=0
 
+
 for i in {1..32}; do
     #Matrix mult
     srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$i" "$CACHE" "$TYPE" $N &
