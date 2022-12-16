@@ -72,7 +72,7 @@ int main(int argc, char const * argv[])
     //getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
 
-	if ((((m*n)*n)<=100000)&&(cacheSize>(((64*m)*n)+((32*n)*n))))
+	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
 	{
 		#pragma cetus private(i, j, k) 
 		#pragma cetus parallel 

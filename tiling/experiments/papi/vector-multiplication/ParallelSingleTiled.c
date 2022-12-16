@@ -59,7 +59,7 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-	if (((m*n)<=100000)&&(cacheSize>(((32*m)+(32*n))+((32*m)*n))))
+	if (((m*n)<=100000)&&(cacheSize>(((4*m)+(4*n))+((4*m)*n))))
 	{
 		#pragma loop name main#0 
 		#pragma cetus private(i, j) 
