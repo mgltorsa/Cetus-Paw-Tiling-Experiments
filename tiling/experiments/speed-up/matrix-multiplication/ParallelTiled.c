@@ -60,6 +60,8 @@ int main(int argc, char const *argv[])
 	int i, j, k;
 	int _ret_val_0;
 
+	int balancedTileSize = ((cacheSize*0.7/4)/cores);
+
 	double start = omp_get_wtime();
 
 	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
@@ -83,7 +85,6 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		int balancedTileSize = ((cacheSize/4)/cores);
 		int jj;
 		int jTile = balancedTileSize;
 		int kk;
@@ -132,7 +133,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(d);
 
-	printf("matrix-mult,parallel-paw-tiled,%d,speed-up,%d,%d,%f\n", cores, n, m, time);
+	printf("matrix-mult,parallel-paw-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, n, m, balancedTileSize, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

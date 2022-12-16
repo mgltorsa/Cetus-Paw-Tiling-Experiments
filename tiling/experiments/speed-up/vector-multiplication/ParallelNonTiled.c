@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
     free(b);
     free(c);
 
-	printf("vector-mult,parallel-non-tiled,%d,speed-up,%d,%d,%f\n", cores, m, n, time);
+	printf("vector-mult,parallel-non-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, m, n,0, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

@@ -78,7 +78,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-non-tiled,%d,speed-up,%d,%d,%f\n", cores, m, m, time);
+    printf("jacobi,parallel-non-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, m, m,0, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

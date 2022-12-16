@@ -86,7 +86,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-non-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, m, n, measurement);
+	printf("vector-mult,parallel-non-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, m, n, 0, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

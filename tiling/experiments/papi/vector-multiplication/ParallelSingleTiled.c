@@ -59,6 +59,8 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
+	int balancedTileSize = ((cacheSize*0.7/4)/cores);
+
 	if (((m*n)<=100000)&&(cacheSize>(((4*m)+(4*n))+((4*m)*n))))
 	{
 		#pragma loop name main#0 
@@ -77,10 +79,9 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		initAndMeasure(&eventSet, event);
-		int balancedTileSize = ((cacheSize/4)/cores);
 		int jj;
 		int jTile = balancedTileSize;
+		initAndMeasure(&eventSet, event);
 		#pragma cetus parallel 
 		#pragma cetus private(i, j, jj) 
 		{
@@ -126,7 +127,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-single-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, m, n, measurement);
+	printf("vector-mult,parallel-paw-single-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, m, n, balancedTileSize, measurement);
 	_ret_val_0 = 0;
 	return _ret_val_0;
 }

@@ -72,6 +72,7 @@ int main(int argc, char const *argv[])
 
 	//getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
+	int balancedTileSize = ((cacheSize*0.7/4)/cores);
 
 	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
 	{
@@ -94,12 +95,11 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		initAndMeasure(&eventSet, event);
-		int balancedTileSize = ((cacheSize/4)/cores);
 		int jj;
 		int jTile = balancedTileSize;
 		int kk;
 		int kTile = balancedTileSize;
+		initAndMeasure(&eventSet, event);
 		#pragma loop name main#1 
 		#pragma cetus private(i, j, jj, k, kk) 
 		#pragma cetus parallel 
@@ -144,7 +144,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(d);
 
-	printf("matrix-mult,parallel-paw-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, m, measurement);
+	printf("matrix-mult,parallel-paw-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, n, m, balancedTileSize, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

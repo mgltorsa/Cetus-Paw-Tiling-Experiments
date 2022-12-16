@@ -62,7 +62,7 @@ int main(int argc, char const *argv[])
 
     //getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
-	
+	int balancedTileSize = ((cacheSize*0.7/4)/cores);
 	if ((((1+(-2*m))+(m*m))<=100000)&&(cacheSize>((8*m)*m)))
 	{
 		#pragma loop name main #0
@@ -79,12 +79,11 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		initAndMeasure(&eventSet, event);
-		int balancedTileSize = ((cacheSize/4)/cores);
 		int ii;
 		int iTile = balancedTileSize;
 		int jj;
 		int jTile = balancedTileSize;
+		initAndMeasure(&eventSet, event);
 		#pragma loop name main#1 
 		#pragma cetus private(i, ii, j, jj) 
 		#pragma cetus parallel 
@@ -122,7 +121,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-paw-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, m, m, measurement);
+    printf("jacobi,parallel-paw-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, m, m, balancedTileSize, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

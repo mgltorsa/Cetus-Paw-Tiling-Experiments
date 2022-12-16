@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
     free(b);
     free(d);
 
-    printf("matrix-mult,parallel-non-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, m, measurement);
+    printf("matrix-mult,parallel-non-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, n, m, 0, measurement);
 
     return 0;
 }
