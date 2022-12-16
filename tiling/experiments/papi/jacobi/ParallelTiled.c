@@ -122,7 +122,7 @@ int main(int argc, char const *argv[])
     free(a);
     free(b);
 
-    printf("jacobi,parallel-paw-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, m, measurement);
+    printf("jacobi,parallel-paw-tiled,%d,%s,%d,%d,%lld\n", cores, eventLabel, n, n, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;
