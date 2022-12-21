@@ -28,6 +28,13 @@ int main(int argc, char const *argv[])
 		m = atoi(argv[4]);
 	}
 
+	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+
+
+    if(argc > 5) {
+        balancedTileSize = atoi(argv[5]);
+    }
+
 
 	float **a = (float **)calloc(n, sizeof(float *));
 	float **b = (float **)calloc(n, sizeof(float *));
@@ -60,8 +67,6 @@ int main(int argc, char const *argv[])
 
 	int i, j, k;
 	int _ret_val_0;
-
-	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
 
 	double start = omp_get_wtime();
 
