@@ -65,6 +65,12 @@ int main(int argc, char const * argv[])
 	//getting works performance here. Check
 	// initAndMeasure(&eventSet, event);
 	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+
+	if (argc > 6)
+	{
+		balancedTileSize = atoi(argv[6]);
+	}
+
 	if (((m*n)<=100000)&&(cacheSize>(((4*m)+(4*n))+((4*m)*n))))
 	{
 		#pragma loop name main#0 

@@ -74,6 +74,12 @@ int main(int argc, char const * argv[])
 	// initAndMeasure(&eventSet, event);
 	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
 
+	if (argc > 6)
+	{
+		balancedTileSize = atoi(argv[6]);
+	}
+
+
 	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
 	{
 		#pragma cetus private(i, j, k) 
