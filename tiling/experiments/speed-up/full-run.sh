@@ -16,7 +16,7 @@ LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 
 . ./../setup.sh
 
-for i in {1..8}
+for i in {1..12..3}
 do
     #Matrix mult
     srun --nodes=1 --ntasks=1 --cpus-per-task=$i --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$i" "$CACHE" $MATRIX_MULT_M
