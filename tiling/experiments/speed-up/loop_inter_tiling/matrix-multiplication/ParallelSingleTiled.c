@@ -30,20 +30,13 @@ int main(int argc, char const *argv[])
         m = atoi(argv[4]);
     }
 
-    int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
-
-    if(argc > 5) {
-        balancedTileSize = atoi(argv[5]);
-    }
-
-
     float **a = (float **)calloc(n, sizeof(float *));
     float **b = (float **)calloc(n, sizeof(float *));
     float **d = (float **)calloc(n, sizeof(float *));
 
     if (a == NULL || b == NULL || d == NULL)
     {
-        printf("matrix-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
+        printf("matrix-mult,parallel-paw-single-tiled-loop-inter,%d,speed-up,%d,%d,mem-allocation-error\n", cores, n, m);
         return 1;
     }
 
@@ -69,6 +62,7 @@ int main(int argc, char const *argv[])
     int i, j, k;
     int _ret_val_0;
 
+	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
     double start = omp_get_wtime();
 
 	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
@@ -99,20 +93,19 @@ int main(int argc, char const *argv[])
 		#pragma cetus private(i, j, jj, k) 
 		#pragma cetus parallel 
 		#pragma omp parallel for private(i, j, jj, k)
-		for (jj=0; jj<m; jj+=jTile)
+		for (i=0; i<n; i ++ )
 		{
 			#pragma loop name main#1#0 
-			#pragma cetus private(i, j, k) 
-			#pragma cetus parallel 
-			for (i=0; i<n; i ++ )
+			#pragma cetus private(j, jj, k) 
+			for (jj=0; jj<m; jj+=jTile)
 			{
 				#pragma loop name main#1#0#0 
 				#pragma cetus private(j, k) 
-				for (j=jj; j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
+				for (k=0; k<n; k ++ )
 				{
 					#pragma loop name main#1#0#0#0 
-					#pragma cetus private(k) 
-					for (k=0; k<n; k ++ )
+					#pragma cetus private(j) 
+					for (j=jj; j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
 					{
 						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
 					}
@@ -135,7 +128,7 @@ int main(int argc, char const *argv[])
     free(b);
     free(d);
 
-    printf("matrix-mult,parallel-paw-single-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, n, m, balancedTileSize, time);
+    printf("matrix-mult,parallel-paw-single-tiled-loop-inter,%d,speed-up,%d,%d,%d,%f\n", cores, n, m, balancedTileSize, time);
     _ret_val_0 = 0;
     return _ret_val_0;
 }

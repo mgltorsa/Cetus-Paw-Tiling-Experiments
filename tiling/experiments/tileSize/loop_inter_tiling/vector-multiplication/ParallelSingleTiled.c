@@ -1,15 +1,14 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 #include <math.h>
 
-int main(int argc, char const * argv[])
+int main(int argc, char const *argv[])
 {
 	int m = 300, n=300;
 
 	int cores = atoi(argv[1]);
 	int cacheSize = atoi(argv[2]);
-
 
 	if (cores > 0)
 	{
@@ -37,7 +36,7 @@ int main(int argc, char const * argv[])
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
-		printf("vector-mult,parallel-paw-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, m, n);
+		printf("vector-mult,parallel-paw-single-tiled-loop-inter,%d,speed-up,%d,%d,mem-allocation-error\n", cores, m, n);
 		return 1;
 	}
 
@@ -55,13 +54,15 @@ int main(int argc, char const * argv[])
 
 	int i, j;
 	int _ret_val_0;
+	
 	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
 
 	if(argc > 5) {
         balancedTileSize = atoi(argv[5]);
     }
-
+	
 	double start = omp_get_wtime();
+
 
 	if (((m*n)<=100000)&&(cacheSize>(((4*m)+(4*n))+((4*m)*n))))
 	{
@@ -81,12 +82,11 @@ int main(int argc, char const * argv[])
 	}
 	else
 	{
-		int ii;
-		int iTile = balancedTileSize;
 		int jj;
 		int jTile = balancedTileSize;
 		#pragma cetus parallel 
-		#pragma cetus private(i, ii, j, jj) 
+		#pragma cetus private(i, j, jj) 
+		#pragma omp parallel private(i, j, jj)
 		{
 			float * reduce = (float * )malloc(m*sizeof (float));
 			int reduce_span_0;
@@ -95,30 +95,25 @@ int main(int argc, char const * argv[])
 				reduce[reduce_span_0]=0;
 			}
 			#pragma loop name main#1 
-			#pragma omp parallel for private(i, ii, j, jj)
 			#pragma cetus for  
-			for (ii=0; ii<m; ii+=iTile)
+			#pragma omp for
+			for (jj=0; jj<n; jj+=jTile)
 			{
 				#pragma loop name main#1#0 
-				#pragma cetus private(i, j, jj) 
-				/* #pragma cetus reduction(+: c[i])  */
-				for (jj=0; jj<n; jj+=jTile)
+				#pragma cetus private(i, j) 
+				for (i=0; i<m; i ++ )
 				{
 					#pragma loop name main#1#0#0 
-					#pragma cetus private(i, j) 
-					for (i=ii; i<((((-1+iTile)+ii)<m) ? ((-1+iTile)+ii) : m); i ++ )
+					#pragma cetus private(j) 
+					/* #pragma cetus reduction(+: c[i])  */
+					for (j=jj; j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
 					{
-						#pragma loop name main#1#0#0#0 
-						#pragma cetus private(j) 
-						/* #pragma cetus reduction(+: c[i])  */
-						for (j=jj; j<((((-1+jTile)+jj)<n) ? ((-1+jTile)+jj) : n); j ++ )
-						{
-							reduce[i]+=(a[(i*n)+j]*b[j]);
-						}
+						reduce[i]+=(a[(i*n)+j]*b[j]);
 					}
 				}
 			}
 			#pragma cetus critical  
+			#pragma omp critical
 			{
 				for (reduce_span_0=0; reduce_span_0<m; reduce_span_0 ++ )
 				{
@@ -128,14 +123,14 @@ int main(int argc, char const * argv[])
 		}
 	}
 
-    double end = omp_get_wtime();
+	double end = omp_get_wtime();
 	double time = end - start;
 
 	free(a);
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, m, n, balancedTileSize, time);
-	_ret_val_0=0;
+	printf("vector-mult,parallel-paw-single-tiled-loop-inter,%d,speed-up,%d,%d,%d,%f\n", cores, m, n, balancedTileSize, time);
+	_ret_val_0 = 0;
 	return _ret_val_0;
 }

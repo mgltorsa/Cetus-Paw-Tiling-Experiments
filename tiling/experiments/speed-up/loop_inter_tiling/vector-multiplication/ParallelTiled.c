@@ -37,7 +37,7 @@ int main(int argc, char const * argv[])
 
 	if (a == NULL || b == NULL || c == NULL)
 	{
-		printf("vector-mult,parallel-paw-tiled,%d,speed-up,%d,%d,mem-allocation-error\n", cores, m, n);
+		printf("vector-mult,parallel-paw-tiled-loop-inter,%d,speed-up,%d,%d,mem-allocation-error\n", cores, m, n);
 		return 1;
 	}
 
@@ -56,10 +56,6 @@ int main(int argc, char const * argv[])
 	int i, j;
 	int _ret_val_0;
 	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
-
-	if(argc > 5) {
-        balancedTileSize = atoi(argv[5]);
-    }
 
 	double start = omp_get_wtime();
 
@@ -135,7 +131,7 @@ int main(int argc, char const * argv[])
 	free(b);
 	free(c);
 
-	printf("vector-mult,parallel-paw-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, m, n, balancedTileSize, time);
+	printf("vector-mult,parallel-paw-tiled-loop-inter,%d,speed-up,%d,%d,%d,%f\n", cores, m, n, balancedTileSize, time);
 	_ret_val_0=0;
 	return _ret_val_0;
 }
