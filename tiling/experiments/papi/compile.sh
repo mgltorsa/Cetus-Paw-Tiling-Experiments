@@ -4,6 +4,12 @@ WORKSPACE_FOLDER=$PWD/../../..
 PAPI_DIR=$WORKDIR/sw/papi/src/install/3.7
 PROJECT_PATH="-I${PAPI_DIR}/include -I${WORKSPACE_FOLDER}/lib"
 PROJECT_LIB="-L${PAPI_DIR}/lib"
+
+echo "$WORKSPACE"
+echo "$PAPI_DIR"
+echo "$PROJECT_PATH"
+echo "$PROJECT_LIB"
+
 PROJECT_EXTRA="-lpapi -lm"
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter
@@ -21,6 +27,9 @@ mkdir $LOOP_INTER_BINARY_FOLDER/vector-multiplication
 mkdir $LOOP_INTER_BINARY_FOLDER/jacobi
 
 #Matrix
+echo "script"
+echo "gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp matrix-multiplication/ParallelNonTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled $PROJECT_EXTRA"
+
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp matrix-multiplication/ParallelNonTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled $PROJECT_EXTRA
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp matrix-multiplication/ParallelTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelTiled $PROJECT_EXTRA
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp matrix-multiplication/ParallelSingleTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled $PROJECT_EXTRA
