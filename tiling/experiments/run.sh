@@ -11,6 +11,8 @@
 
 ## Setting up params
 
+. ../setup.sh
+
 for j in {1..10}
 do
 
