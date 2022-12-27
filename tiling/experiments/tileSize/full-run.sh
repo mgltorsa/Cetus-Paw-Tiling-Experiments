@@ -24,13 +24,13 @@ do
     srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $tileSize
     srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $tileSize
     #vector
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/vector-multiplication/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/vector-multiplication/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N $tileSize
     #jacobi
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/jacobi/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/jacobi/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/jacobi/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/jacobi/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/jacobi/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $BINARY_FOLDER/jacobi/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M $tileSize
 
     #Loop interchange
     #LP-Matrix mult
@@ -38,11 +38,11 @@ do
     srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $tileSize
     srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $tileSize
     #LP-vector
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N $tileSize
     #LP-jacobi
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/jacobi/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/jacobi/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/jacobi/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M    
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/jacobi/ParallelNonTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/jacobi/ParallelTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M $tileSize
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$SLURM_ARRAY_TASK_ID --exclusive $LOOP_INTER_BINARY_FOLDER/jacobi/ParallelSingleTiled "$SLURM_ARRAY_TASK_ID" "$CACHE" $JACOBI_M $tileSize
 done
