@@ -9,11 +9,6 @@
 #SBATCH --output=results.csv    # Standard output and error log
 #SBATCH --open-mode=append
 
-EXECUTION_TIME_PAPI_BINARY_FOLDER=speed-up/bin
-PAPI_BINARY_FOLDER=papi/bin
-
-
-
 ## Setting up params
 
 for j in {1..10}
