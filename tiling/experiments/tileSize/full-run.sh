@@ -1,14 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=execution-time-job
-#SBATCH --ntasks=1
+#SBATCH --job-name=tile-sizes-job
+#SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
-#SBATCH --nodes=1
+#SBATCH --nodes=3
+#SBATCH --array=16-2016:64%3
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
 #SBATCH --output=../results.csv    # Standard output and error log
 #SBATCH --open-mode=append
-#SBATCH --array=16-2016:64%1
 
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter

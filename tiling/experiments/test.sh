@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --nodes=2
-#SBATCH --array=1-5%1
+#SBATCH --array=1-5%2
 #SBATCH --output=test.log
 #SBATCH --open-mode=append
 
