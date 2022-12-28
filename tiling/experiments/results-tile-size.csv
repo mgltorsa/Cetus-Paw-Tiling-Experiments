@@ -546,7 +546,8 @@ jacobi,parallel-paw-tiled-loop-inter,12,speed-up,4858,4858,656,0.056916
 jacobi,parallel-paw-single-tiled-loop-inter,12,speed-up,4858,4858,656,0.057034
 matrix-mult,parallel-non-tiled,12,speed-up,2805,2805,0,29.133334
 matrix-mult,parallel-paw-tiled,12,speed-up,2805,2805,720,46.223931
-matrix-mult,parallel-paw-single-tiled,12,speed-up,2805,2805,720,73.458602matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,143.801322
+matrix-mult,parallel-paw-single-tiled,12,speed-up,2805,2805,720,73.458602
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,143.801322
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,16,93.249750
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,16,112.134338
 vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.073132
