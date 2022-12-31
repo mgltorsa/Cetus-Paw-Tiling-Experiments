@@ -118,30 +118,6 @@ jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1104,0.168436
 matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,21.967303
 matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1104,21.849161
 matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1104,21.579396
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
-srun: error: Unable to create step for job 15399759: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,141.506243
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1168,126.955430
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1168,130.289097
@@ -396,40 +372,6 @@ jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1360,0.139528
 jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1360,0.139518
 matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,54.160912
 matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1360,104.126429
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
-srun: error: Unable to create step for job 15399821: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,247.196390
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1424,171.455617
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1424,245.891581
@@ -477,31 +419,6 @@ jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1424,0.159826
 jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1424,0.210076
 matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.281389
 matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1424,21.782634
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
-srun: error: Unable to create step for job 15399843: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,245.222824
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,144,135.628975
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,144,235.443523
@@ -757,39 +674,6 @@ jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1616,0.146499
 matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,53.689084
 matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1616,124.120918
 matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1616,184.224441
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
-srun: error: Unable to create step for job 15399899: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,144.395614
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1680,129.633421
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1680,130.836796
@@ -973,39 +857,6 @@ jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1744,0.146350
 matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,44.770608
 matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1744,105.598467
 matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1744,146.168446
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
-srun: error: Unable to create step for job 15399916: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,142.334174
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1808,130.378399
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1808,132.354470
@@ -1116,40 +967,6 @@ jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1872,0.150163
 jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1872,0.153731
 matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,48.586844
 matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1872,117.124574
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
-srun: error: Unable to create step for job 15399974: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,140.889888
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1936,132.716360
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1936,132.467552
@@ -1567,21 +1384,6 @@ jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,400,0.085988
 matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,38.460263
 matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,400,27.154516
 matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,400,52.891098
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
-srun: error: Unable to create step for job 15399604: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,257.508542
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,464,148.600266
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,464,253.246072
@@ -1857,19 +1659,6 @@ matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,656,41.356563
 matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,656,67.478418
 vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024366
 vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,656,0.046729
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
-srun: error: Unable to create step for job 15399676: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,272.722638
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,720,176.404383
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,720,256.758131
@@ -1927,21 +1716,6 @@ jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,720,0.087405
 matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,37.964830
 matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,720,49.163515
 matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,720,91.084333
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
-srun: error: Unable to create step for job 15399678: Job/step already completing or completed
 matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,142.429423
 matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,784,126.612828
 matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,784,132.299367
