@@ -38,5 +38,14 @@ int main(int argc, char const *argv[])
 
     val = stopMeasure(eventSet2);
     printf("Got: %llu\n", val);
+
+    int m = 2805;
+    n=2805;
+    int cacheSize = 47185920;
+    int gg =(((m*n)*n)<=100000);
+    int cc = (cacheSize>(((8*m)*n)+((4*n)*n)));
+    
+    printf("Multiply: %d\n", gg)
+    printf("Multiply: %d\n", cc)
     return 0;
 }
