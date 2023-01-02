@@ -2,8 +2,8 @@
 #SBATCH --job-name=tile-sizes-job
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
-#SBATCH --nodes=4
-#SBATCH --array=16-2016:64%4
+#SBATCH --nodes=6
+#SBATCH --array=16-2016:64%6
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
