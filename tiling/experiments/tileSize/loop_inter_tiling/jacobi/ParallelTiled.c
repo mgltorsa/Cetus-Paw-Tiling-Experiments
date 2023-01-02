@@ -20,9 +20,8 @@ int main(int argc, char const *argv[])
 		m = atoi(argv[3]);
 	}
 
-
-	float **a = (float **)calloc(m , sizeof(float *));
-	float **b = (float **)calloc(m , sizeof(float *));
+	float **a = (float **)calloc(m, sizeof(float *));
+	float **b = (float **)calloc(m, sizeof(float *));
 
 	if (a == NULL || b == NULL)
 	{
@@ -34,8 +33,8 @@ int main(int argc, char const *argv[])
 
 	for (z = 0; z < m; z++)
 	{
-		a[z] = (float *)calloc(m , sizeof(float));
-		b[z] = (float *)calloc(m , sizeof(float));
+		a[z] = (float *)calloc(m, sizeof(float));
+		b[z] = (float *)calloc(m, sizeof(float));
 	}
 
 	for (z = 0; z < m; z++)
@@ -49,72 +48,56 @@ int main(int argc, char const *argv[])
 
 	int i, j;
 	int _ret_val_0;
-	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+	int balancedTileSize = (sqrt((double)(cacheSize * 0.7 / 4)) / cores);
 
-	if(argc > 4) {
-        balancedTileSize = atoi(argv[4]);
-    }
-	
+	if (argc > 4)
+	{
+		balancedTileSize = atoi(argv[4]);
+	}
+
 	double start = omp_get_wtime();
 
-	if ((((1+(-2*m))+(m*m))<=100000)&&(cacheSize>((8*m)*m)))
+	int jj;
+	int jTile = balancedTileSize;
+	int ii;
+	int iTile = balancedTileSize;
+	#pragma loop name main #1
+	#pragma cetus private(i, ii, j, jj)
+	for (jj = 1; jj < (m - 1); jj += jTile)
 	{
-		#pragma loop name main #0
-		#pragma cetus private(i, j)
-		for (i = 1; i < (m - 1); i++)
+		#pragma loop name main #1 #0
+		#pragma cetus private(i, ii, j)
+		for (ii = 1; ii < (m - 1); ii += iTile)
 		{
-			#pragma loop name main #0 #0
-			#pragma cetus private(j)
-			for (j = 1; j < (m - 1); j++)
+			#pragma loop name main #1 #0 #0
+			#pragma cetus private(i, j)
+			#pragma cetus parallel
+			#pragma omp parallel for private(i, j)
+			for (j = jj; j < ((((-1 + jTile) + jj) < (m - 1)) ? ((-1 + jTile) + jj) : (m - 1)); j++)
 			{
-				a[i][j] = (0.2 * ((((b[j][i] + b[j - 1][i]) + b[j][i - 1]) + b[j + 1][i]) + b[j][i + 1]));
-			}
-		}
-	}
-	else
-	{
-		int jj;
-		int jTile = balancedTileSize;
-		int ii;
-		int iTile = balancedTileSize;
-		#pragma loop name main#1 
-		#pragma cetus private(i, ii, j, jj) 
-		for (jj=1; jj<(m-1); jj+=jTile)
-		{
-			#pragma loop name main#1#0 
-			#pragma cetus private(i, ii, j) 
-			for (ii=1; ii<(m-1); ii+=iTile)
-			{
-				#pragma loop name main#1#0#0 
-				#pragma cetus private(i, j) 
-				#pragma cetus parallel 
-				#pragma omp parallel for private(i, j)
-				for (j=jj; j<((((-1+jTile)+jj)<(m-1)) ? ((-1+jTile)+jj) : (m-1)); j ++ )
+				#pragma loop name main #1 #0 #0 #0
+				#pragma cetus private(i)
+				for (i = ii; i < ((((-1 + iTile) + ii) < (m - 1)) ? ((-1 + iTile) + ii) : (m - 1)); i++)
 				{
-					#pragma loop name main#1#0#0#0 
-					#pragma cetus private(i) 
-					for (i=ii; i<((((-1+iTile)+ii)<(m-1)) ? ((-1+iTile)+ii) : (m-1)); i ++ )
-					{
-						a[i][j]=(0.2*((((b[j][i]+b[j-1][i])+b[j][i-1])+b[j+1][i])+b[j][i+1]));
-					}
+					a[i][j] = (0.2 * ((((b[j][i] + b[j - 1][i]) + b[j][i - 1]) + b[j + 1][i]) + b[j][i + 1]));
 				}
 			}
 		}
 	}
 
 	double end = omp_get_wtime();
-    double time = end - start;
+	double time = end - start;
 
-    for (z = 0; z < m; z++)
-    {
-        free(a[z]);
-        free(b[z]);
-    }
+	for (z = 0; z < m; z++)
+	{
+		free(a[z]);
+		free(b[z]);
+	}
 
-    free(a);
-    free(b);
+	free(a);
+	free(b);
 
-    printf("jacobi,parallel-paw-tiled-loop-inter,%d,speed-up,%d,%d,%d,%f\n", cores, m, m, balancedTileSize, time);
+	printf("jacobi,parallel-paw-tiled-loop-inter,%d,speed-up,%d,%d,%d,%f\n", cores, m, m, balancedTileSize, time);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

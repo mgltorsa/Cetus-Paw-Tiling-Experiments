@@ -11,11 +11,11 @@ int main(int argc, char const *argv[])
 
 	int cores = atoi(argv[1]);
 	int cacheSize = atoi(argv[2]);
-	
-	//PAPI Measurements
+
+	// PAPI Measurements
 	int eventType = atoi(argv[3]);
 	int eventSet = createEmptyEventSet();
-    int event = getEvent(eventType);
+	int event = getEvent(eventType);
 	char *eventLabel = getEventLabel(eventType);
 
 	if (cores > 0)
@@ -28,15 +28,12 @@ int main(int argc, char const *argv[])
 		m = atoi(argv[4]);
 	}
 
-
-
-	float **a = (float **)calloc(m , sizeof(float *));
-	float **b = (float **)calloc(m , sizeof(float *));
-
+	float **a = (float **)calloc(m, sizeof(float *));
+	float **b = (float **)calloc(m, sizeof(float *));
 
 	if (a == NULL || b == NULL)
 	{
-		printf("jacobi,parallel-paw-single-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores,eventLabel, m, m);
+		printf("jacobi,parallel-paw-single-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, m, m);
 		return 1;
 	}
 
@@ -44,8 +41,8 @@ int main(int argc, char const *argv[])
 
 	for (z = 0; z < m; z++)
 	{
-		a[z] = (float *)calloc(m , sizeof(float));
-		b[z] = (float *)calloc(m , sizeof(float));
+		a[z] = (float *)calloc(m, sizeof(float));
+		b[z] = (float *)calloc(m, sizeof(float));
 	}
 
 	for (z = 0; z < m; z++)
@@ -60,23 +57,30 @@ int main(int argc, char const *argv[])
 	int i, j;
 	int _ret_val_0;
 
-
-    //getting works performance here. Check
-	// initAndMeasure(&eventSet, event);
-	int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+	// getting works performance here. Check
+	//  initAndMeasure(&eventSet, event);
+	int balancedTileSize = (sqrt((double)(cacheSize * 0.7 / 4)) / cores);
 
 	if (argc > 5)
 	{
 		balancedTileSize = atoi(argv[5]);
 	}
 
-	if ((((1+(-2*m))+(m*m))<=100000)&&(cacheSize>((8*m)*m)))
+	int ii;
+	int iTile = balancedTileSize;
+
+	initAndMeasure(&eventSet, event);
+	#pragma loop name main #1
+	#pragma cetus private(i, ii, j)
+	#pragma cetus parallel
+	#pragma omp parallel for private(i, ii, j)
+	for (ii = 1; ii < (m - 1); ii += iTile)
 	{
-		#pragma loop name main #0
+		#pragma loop name main #1 #0
 		#pragma cetus private(i, j)
-		for (i = 1; i < (m - 1); i++)
+		for (i = ii; i < ((((-1 + iTile) + ii) < (m - 1)) ? ((-1 + iTile) + ii) : (m - 1)); i++)
 		{
-			#pragma loop name main #0 #0
+			#pragma loop name main #1 #0 #0
 			#pragma cetus private(j)
 			for (j = 1; j < (m - 1); j++)
 			{
@@ -84,46 +88,19 @@ int main(int argc, char const *argv[])
 			}
 		}
 	}
-	else
-	{
-
-		int ii;
-		int iTile = balancedTileSize;
-		
-		initAndMeasure(&eventSet, event);
-		#pragma loop name main#1 
-		#pragma cetus private(i, ii, j) 
-		#pragma cetus parallel 
-		#pragma omp parallel for private(i, ii, j)
-		for (ii=1; ii<(m-1); ii+=iTile)
-		{
-			#pragma loop name main#1#0 
-			#pragma cetus private(i, j) 
-			for (i=ii; i<((((-1+iTile)+ii)<(m-1)) ? ((-1+iTile)+ii) : (m-1)); i ++ )
-			{
-				#pragma loop name main#1#0#0 
-				#pragma cetus private(j) 
-				for (j=1; j<(m-1); j ++ )
-				{
-					a[i][j]=(0.2*((((b[j][i]+b[j-1][i])+b[j][i-1])+b[j+1][i])+b[j][i+1]));
-				}
-			}
-		}
-	}
 
 	long_long measurement = stopMeasure(eventSet);
 
+	for (z = 0; z < m; z++)
+	{
+		free(a[z]);
+		free(b[z]);
+	}
 
-    for (z = 0; z < m; z++)
-    {
-        free(a[z]);
-        free(b[z]);
-    }
+	free(a);
+	free(b);
 
-    free(a);
-    free(b);
-
-    printf("jacobi,parallel-paw-single-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, m, m, balancedTileSize, measurement);
+	printf("jacobi,parallel-paw-single-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, m, m, balancedTileSize, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

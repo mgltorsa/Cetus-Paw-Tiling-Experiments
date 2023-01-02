@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     int n = 300, m = n;
 
     int cores = atoi(argv[1]);
-    int cacheSize =atoi(argv[2]);
+    int cacheSize = atoi(argv[2]);
 
     // int cores = 4;
     // int cacheSize = 8 * 1024 * 1024;
@@ -30,12 +30,12 @@ int main(int argc, char const *argv[])
         m = atoi(argv[4]);
     }
 
-    int balancedTileSize = (sqrt( (double) (cacheSize*0.7/4) )/cores);
+    int balancedTileSize = (sqrt((double)(cacheSize * 0.7 / 4)) / cores);
 
-    if(argc > 5) {
+    if (argc > 5)
+    {
         balancedTileSize = atoi(argv[5]);
     }
-
 
     float **a = (float **)calloc(n, sizeof(float *));
     float **b = (float **)calloc(n, sizeof(float *));
@@ -71,55 +71,32 @@ int main(int argc, char const *argv[])
 
     double start = omp_get_wtime();
 
-	if ((((m*n)*n)<=100000)&&(cacheSize>(((8*m)*n)+((4*n)*n))))
-	{
-		#pragma loop name main#0 
-		#pragma cetus private(i, j, k) 
-		#pragma cetus parallel 
-		for (i=0; i<n; i ++ )
-		{
-			#pragma loop name main#0#0 
-			#pragma cetus private(j, k) 
-			for (j=0; j<m; j ++ )
-			{
-				#pragma loop name main#0#0#0 
-				#pragma cetus private(k) 
-				for (k=0; k<n; k ++ )
-				{
-					d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
-				}
-			}
-		}
-	}
-	else
-	{
-		int jj;
-		int jTile = balancedTileSize;
-		#pragma loop name main#1 
-		#pragma cetus private(i, j, jj, k) 
-		#pragma cetus parallel 
-		#pragma omp parallel for private(i, j, jj, k)
-		for (jj=0; jj<m; jj+=jTile)
-		{
-			#pragma loop name main#1#0 
-			#pragma cetus private(i, j, k) 
-			#pragma cetus parallel 
-			for (i=0; i<n; i ++ )
-			{
-				#pragma loop name main#1#0#0 
-				#pragma cetus private(j, k) 
-				for (j=jj; j<((((-1+jTile)+jj)<m) ? ((-1+jTile)+jj) : m); j ++ )
-				{
-					#pragma loop name main#1#0#0#0 
-					#pragma cetus private(k) 
-					for (k=0; k<n; k ++ )
-					{
-						d[i][j]=(d[i][j]+(a[i][k]*b[k][j]));
-					}
-				}
-			}
-		}
-	}
+    int jj;
+    int jTile = balancedTileSize;
+    #pragma loop name main #1
+    #pragma cetus private(i, j, jj, k)
+    #pragma cetus parallel
+    #pragma omp parallel for private(i, j, jj, k)
+    for (jj = 0; jj < m; jj += jTile)
+    {
+        #pragma loop name main #1 #0
+        #pragma cetus private(i, j, k)
+        #pragma cetus parallel
+        for (i = 0; i < n; i++)
+        {
+            #pragma loop name main #1 #0 #0
+            #pragma cetus private(j, k)
+            for (j = jj; j < ((((-1 + jTile) + jj) < m) ? ((-1 + jTile) + jj) : m); j++)
+            {
+                #pragma loop name main #1 #0 #0 #0
+                #pragma cetus private(k)
+                for (k = 0; k < n; k++)
+                {
+                    d[i][j] = (d[i][j] + (a[i][k] * b[k][j]));
+                }
+            }
+        }
+    }
 
     double end = omp_get_wtime();
     double time = end - start;

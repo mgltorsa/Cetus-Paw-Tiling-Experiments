@@ -42,10 +42,10 @@ int main(int argc, char const *argv[])
     int m = 2805;
     int n= 2805;
     int cacheSize = 47185920;
-    int gg =(((m*n)*n));
+    int gg =m*n*n;
 
     printf("Multiply: %d\n", gg);
-    if(gg<=100000) {
+    if(gg>100000) {
         int dd=(((8*m)*n)+((4*n)*n));
         int cc = (cacheSize>dd);
         printf("Multiply: %d\n", cc);
