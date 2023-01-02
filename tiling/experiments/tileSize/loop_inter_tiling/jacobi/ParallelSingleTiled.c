@@ -56,9 +56,9 @@ int main(int argc, char const *argv[])
 		balancedTileSize = atoi(argv[4]);
 	}
 
-	double start = omp_get_wtime();
 	int ii;
 	int iTile = balancedTileSize;
+	double start = omp_get_wtime();
 	#pragma loop name main #1
 	#pragma cetus private(i, ii, j)
 	for (ii = 1; ii < (m - 1); ii += iTile)

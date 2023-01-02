@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 
     initAndMeasure(&eventSet, event);
     
-   #pragma loop name main#0 
+    #pragma loop name main#0 
 	#pragma cetus private(i, j, k) 
 	#pragma cetus parallel 
 	#pragma omp parallel for private(i, j, k)

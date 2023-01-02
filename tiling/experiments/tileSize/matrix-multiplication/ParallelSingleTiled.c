@@ -69,10 +69,10 @@ int main(int argc, char const *argv[])
     int i, j, k;
     int _ret_val_0;
 
-    double start = omp_get_wtime();
 
     int jj;
     int jTile = balancedTileSize;
+    double start = omp_get_wtime();
     #pragma loop name main #1
     #pragma cetus private(i, j, jj, k)
     #pragma cetus parallel

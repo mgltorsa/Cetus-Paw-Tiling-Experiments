@@ -67,12 +67,12 @@ int main(int argc, char const *argv[])
 		balancedTileSize = atoi(argv[5]);
 	}
 
-	double start = omp_get_wtime();
 
 	int kk;
 	int kTile = balancedTileSize;
 	int jj;
 	int jTile = balancedTileSize;
+	double start = omp_get_wtime();
 	#pragma loop name main #1
 	#pragma cetus private(i, j, jj, k, kk)
 	#pragma cetus parallel
