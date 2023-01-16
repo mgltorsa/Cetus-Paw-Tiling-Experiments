@@ -8183,3 +8183,2309 @@ srun: error: Unable to create step for job 15411204: Job/step already completing
 srun: error: Unable to create step for job 15411204: Job/step already completing or completed
 srun: error: Unable to create step for job 15411204: Job/step already completing or completed
 GG: r00n49
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,321.963542
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1040,178.043382
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1040,325.370832
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090772
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1040,0.110973
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1040,0.109099
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527745
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1040,0.278798
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1040,0.526876
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,129.731368
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1040,126.766834
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1040,126.603876
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090829
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1040,0.110930
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1040,0.101720
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.605008
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1040,0.350331
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1040,0.355334
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,87.838284
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1040,71.870516
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1040,122.127201
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053568
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1040,0.065073
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1040,0.061963
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184955
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1040,0.129856
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1040,0.234368
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.819080
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1040,35.800224
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1040,34.248099
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.055480
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1040,0.067648
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1040,0.081224
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.181519
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1040,0.138692
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1040,0.137108
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,51.429340
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1040,71.020050
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1040,120.412656
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+srun: error: Unable to create step for job 15425791: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,245.424291
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1104,150.344700
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1104,243.642698
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090839
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1104,0.111103
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1104,0.109090
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529657
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1104,0.287933
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1104,0.528096
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,126.807215
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1104,124.854992
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1104,123.494676
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090768
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1104,0.110851
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1104,0.101703
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.658268
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1104,0.354759
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1104,0.360846
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,68.783898
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1104,68.363130
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1104,102.019626
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.055094
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1104,0.070689
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1104,0.062076
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184621
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1104,0.145161
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1104,0.248666
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.477236
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1104,34.101442
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1104,34.160753
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053492
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1104,0.067978
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1104,0.081625
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.191094
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1104,0.138121
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1104,0.140699
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.978044
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1104,66.244016
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1104,109.856884
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033356
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1104,0.068236
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1104,0.039171
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.121265
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1104,0.122734
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1104,0.177330
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.092461
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1104,21.531405
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1104,21.790474
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033154
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,1104,0.071210
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,1104,0.048113
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.119065
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,1104,0.091137
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,1104,0.087720
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,34.375264
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,1104,65.260839
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,1104,107.554169
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+srun: error: Unable to create step for job 15425793: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,243.416170
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1168,152.318144
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1168,242.572182
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091257
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1168,0.110750
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1168,0.109105
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528709
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1168,0.295269
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1168,0.528750
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,127.424962
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1168,124.703240
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1168,124.074900
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090803
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1168,0.110961
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1168,0.101731
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.601121
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1168,0.348747
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1168,0.354926
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,70.067848
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1168,71.570693
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1168,113.210839
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053623
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1168,0.071354
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1168,0.061939
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185157
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1168,0.152488
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1168,0.261787
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.463602
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1168,34.054131
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1168,34.102477
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053592
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1168,0.071184
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1168,0.085305
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.193066
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1168,0.140478
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1168,0.137550
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,44.928507
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1168,68.796194
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1168,113.427448
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033426
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1168,0.074151
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1168,0.039795
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.120988
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1168,0.127617
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1168,0.200163
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,21.984456
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1168,21.799006
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1168,21.726635
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033513
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,1168,0.071161
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,1168,0.048647
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.119037
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,1168,0.094361
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,1168,0.087575
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,34.345667
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,1168,68.579626
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+srun: error: Unable to create step for job 15425799: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,323.229562
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1232,186.743505
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1232,315.012236
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090816
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1232,0.110753
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1232,0.109430
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529550
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1232,0.304185
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1232,0.527144
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,128.958900
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1232,128.049947
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1232,126.552118
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090828
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1232,0.110945
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1232,0.101696
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.604598
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1232,0.349418
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1232,0.353143
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,84.354222
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1232,84.421657
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1232,145.862127
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053721
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1232,0.074727
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1232,0.062131
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184210
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1232,0.137966
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1232,0.188342
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,36.526779
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1232,33.964134
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1232,35.673146
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.056041
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1232,0.075369
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1232,0.050837
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189826
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1232,0.141244
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1232,0.137514
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,53.156037
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1232,83.898778
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1232,145.829867
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+srun: error: Unable to create step for job 15425802: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,241.888364
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1296,156.041311
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1296,248.022418
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090839
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1296,0.110883
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1296,0.108945
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528349
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1296,0.308992
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1296,0.538804
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,127.132287
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1296,123.864103
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1296,124.220294
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090805
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1296,0.111113
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1296,0.101784
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.606774
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1296,0.360281
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1296,0.364474
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.504351
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1296,80.337985
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1296,122.108716
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053585
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1296,0.077384
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1296,0.061893
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183771
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1296,0.140456
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1296,0.193883
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.024607
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1296,34.022207
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1296,34.207818
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053549
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1296,0.080482
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1296,0.054710
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.190461
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1296,0.138534
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1296,0.138630
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,50.257236
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1296,75.335445
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1296,120.411579
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033649
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1296,0.077890
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1296,0.039018
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118742
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1296,0.143550
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1296,0.194315
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.025132
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1296,21.602286
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1296,21.579209
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033244
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,1296,0.077489
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,1296,0.053126
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.119650
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,1296,0.089506
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,1296,0.088105
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.230327
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,1296,78.985736
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+srun: error: Unable to create step for job 15425805: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,245.913509
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1360,156.304262
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1360,242.122377
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.096921
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1360,0.110640
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1360,0.108714
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527680
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1360,0.391152
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1360,0.528822
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,128.862747
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1360,125.283210
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1360,124.913445
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090829
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1360,0.110762
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1360,0.128676
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.601824
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1360,0.357548
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1360,0.359847
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,75.227151
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1360,86.935888
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1360,127.406865
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053787
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1360,0.081088
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1360,0.062016
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184388
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1360,0.150200
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1360,0.215440
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.484656
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1360,34.499337
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1360,34.861985
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.055531
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1360,0.080336
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1360,0.055251
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.188170
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1360,0.141037
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1360,0.138391
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,47.215942
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1360,82.200747
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1360,126.364265
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033599
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1360,0.080346
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1360,0.039011
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.116112
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1360,0.152609
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1360,0.204026
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.046768
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1360,21.553015
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1360,21.563783
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034144
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,1360,0.080598
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,1360,0.055458
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.116524
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,1360,0.091256
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,1360,0.090430
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,36.519922
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+srun: error: Unable to create step for job 15425809: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,324.969791
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1424,204.699379
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1424,318.276326
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091050
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1424,0.111060
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1424,0.108990
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528307
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1424,0.335219
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1424,0.527361
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,129.360138
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1424,126.560198
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1424,126.335792
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091224
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1424,0.111023
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1424,0.102311
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.606218
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1424,0.360500
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1424,0.367998
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,87.745076
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1424,105.048200
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1424,159.840226
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.055580
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1424,0.083675
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1424,0.062060
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183622
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1424,0.180770
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1424,0.211850
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,36.142250
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1424,34.184206
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1424,35.364619
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053890
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1424,0.084727
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1424,0.059493
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.190951
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1424,0.137970
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1424,0.138035
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,51.797178
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1424,100.653808
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+srun: error: Unable to create step for job 15425811: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,241.243256
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,144,137.153857
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,144,239.723821
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091144
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,144,0.118149
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,144,0.117544
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527279
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,144,0.345381
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,144,0.523456
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,127.235745
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,144,125.353057
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,144,128.704224
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090845
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,144,0.117836
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,144,0.110745
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.607377
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,144,0.401170
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,144,0.406778
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.949033
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,144,40.570848
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,144,70.237917
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.055438
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,144,0.064503
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,144,0.063665
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183287
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,144,0.148303
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,144,0.193475
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.890753
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,144,34.531726
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,144,36.166447
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.055420
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,144,0.064719
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,144,0.060111
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.187401
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,144,0.153707
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,144,0.151977
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.503476
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,144,26.220366
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,144,47.081817
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033205
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,144,0.040376
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,144,0.039990
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118348
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,144,0.090707
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,144,0.121196
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.020824
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,144,21.729952
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,144,22.713047
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034220
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,144,0.040340
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,144,0.040560
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.118090
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,144,0.104237
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,144,0.096128
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,34.416936
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,144,18.052020
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,144,34.642884
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024243
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,144,0.031503
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,144,0.029813
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.087585
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,144,0.075304
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,144,0.100157
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.909929
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,144,15.727696
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,144,16.230062
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024332
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,144,0.032010
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,144,0.028661
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.088066
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,144,0.085104
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,144,0.069209
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,241.555103
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1488,162.398995
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1488,238.095064
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.097136
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1488,0.111101
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1488,0.108872
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528831
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1488,0.351495
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1488,0.528824
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,126.672719
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1488,123.621080
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1488,123.604518
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091011
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1488,0.110735
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1488,0.101796
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.624857
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1488,0.374355
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1488,0.377588
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,71.155943
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1488,92.114929
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1488,129.426111
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.055719
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1488,0.083035
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1488,0.062168
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185815
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1488,0.167776
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1488,0.215894
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.080139
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1488,33.923973
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1488,35.887057
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053597
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1488,0.086486
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1488,0.059128
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.194909
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1488,0.145812
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1488,0.154596
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,46.155438
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1488,85.460967
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1488,128.067389
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.034303
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1488,0.086588
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1488,0.038673
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.120181
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1488,0.172120
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1488,0.218435
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.008443
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1488,21.610656
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1488,21.582772
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034289
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,1488,0.087139
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,1488,0.065473
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117988
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,1488,0.090070
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,1488,0.092574
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.140297
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+srun: error: Unable to create step for job 15425812: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,249.190944
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1552,159.626352
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1552,245.943388
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091005
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1552,0.110644
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1552,0.108662
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528053
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1552,0.376160
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1552,0.528874
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,130.239727
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1552,130.386960
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1552,128.513068
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090834
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1552,0.111466
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1552,0.101573
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.603198
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1552,0.375059
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1552,0.384874
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,72.269565
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1552,97.736814
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1552,141.864605
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053586
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1552,0.089684
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1552,0.062065
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184839
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1552,0.188023
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1552,0.228487
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.655028
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1552,34.064668
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1552,35.446748
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053406
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1552,0.089776
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1552,0.063501
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189969
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1552,0.143944
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1552,0.143649
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,44.825004
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1552,93.411833
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1552,139.323941
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.034338
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1552,0.089539
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1552,0.038844
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.121337
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1552,0.190609
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1552,0.227427
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.222978
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1552,21.764014
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+srun: error: Unable to create step for job 15425815: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,324.832433
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1616,208.610181
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1616,321.471244
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090977
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1616,0.112238
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1616,0.109236
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529044
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1616,0.400131
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1616,0.527027
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,129.462394
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1616,126.008405
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1616,126.410957
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090965
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1616,0.110957
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1616,0.101695
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.643549
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1616,0.387141
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1616,0.396270
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,84.273258
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1616,127.804845
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1616,169.087693
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053995
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1616,0.096137
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1616,0.061962
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183196
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1616,0.196749
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1616,0.231391
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.897344
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1616,34.945384
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1616,34.084346
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053523
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1616,0.092402
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1616,0.063479
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.191724
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1616,0.145168
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1616,0.175006
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,51.221971
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+srun: error: Unable to create step for job 15425817: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,238.693498
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1680,166.432607
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1680,244.079272
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090894
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1680,0.110885
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1680,0.108845
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528810
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1680,0.412163
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1680,0.529124
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,126.124572
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1680,123.563670
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1680,123.412942
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090857
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1680,0.110704
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1680,0.102049
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.636259
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1680,0.401231
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1680,0.406837
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,77.293734
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1680,97.489381
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1680,142.126254
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053414
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1680,0.094777
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1680,0.061941
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184631
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1680,0.209906
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1680,0.235306
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.656513
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1680,34.507982
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1680,34.000497
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053627
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1680,0.098895
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1680,0.065231
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.207010
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1680,0.153802
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1680,0.151556
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,46.585885
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1680,98.629626
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1680,141.809582
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033217
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1680,0.096026
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1680,0.038687
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.120840
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1680,0.204992
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1680,0.238546
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,21.907709
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1680,21.648694
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+srun: error: Unable to create step for job 15425818: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,311.891038
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,16,132.369838
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,16,295.423225
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091058
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,16,0.100687
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,16,0.141548
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527105
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,16,0.255345
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,16,0.495960
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,126.724531
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,16,112.250107
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,16,159.442640
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.095434
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,16,0.100663
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,16,0.133832
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.621890
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,16,0.311718
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,16,0.335380
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,86.517369
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,16,37.409272
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,16,82.487079
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053443
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,16,0.058453
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,16,0.065994
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183467
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,16,0.113385
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,16,0.174645
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.118012
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,16,31.010279
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,16,44.015949
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053426
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,16,0.061532
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,16,0.067791
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189743
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,16,0.415094
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,16,0.124279
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,50.724281
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,16,23.475625
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,16,51.920684
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033121
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,16,0.036557
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,16,0.041001
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.116909
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,16,0.072550
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,16,0.112936
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,23.274414
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,16,19.716377
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,16,27.009133
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034120
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,16,0.036618
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,16,0.043002
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117091
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,16,0.359996
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,16,0.074935
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,35.950634
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,16,16.690598
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,16,35.637965
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.026342
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,16,0.027044
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,16,0.029161
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.087140
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,16,0.054757
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,16,0.084083
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.931132
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+srun: error: Unable to create step for job 15425754: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,244.416299
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1744,165.997926
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1744,244.431952
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.096806
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1744,0.110789
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1744,0.108655
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527856
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1744,0.421902
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1744,0.526585
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,130.050445
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1744,127.354611
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1744,127.511820
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090909
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1744,0.110637
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1744,0.101484
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.623789
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1744,0.402755
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1744,0.404308
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,72.409493
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1744,108.978064
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1744,156.786534
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053412
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1744,0.098461
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1744,0.061854
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185860
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1744,0.212759
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1744,0.241286
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.827903
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1744,35.072182
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1744,34.523709
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053511
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1744,0.097758
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1744,0.067381
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.190052
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1744,0.154349
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1744,0.148406
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,44.741799
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1744,108.166428
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1744,155.739658
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+srun: error: Unable to create step for job 15425822: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,324.686678
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1808,220.281832
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1808,314.946583
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091173
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1808,0.110801
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1808,0.108884
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527255
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1808,0.431178
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1808,0.527321
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,128.666435
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1808,125.204975
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1808,126.131696
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090745
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1808,0.119837
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1808,0.101651
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.605212
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1808,0.412468
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1808,0.414033
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,86.159819
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1808,137.266602
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1808,200.378752
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053558
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1808,0.101365
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1808,0.064339
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183471
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1808,0.216942
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1808,0.248939
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,36.392988
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1808,34.150105
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1808,35.499174
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053836
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1808,0.101673
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1808,0.069526
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.186945
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1808,0.154079
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+srun: error: Unable to create step for job 15425823: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,246.192410
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1872,168.189644
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1872,237.393755
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090826
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1872,0.110802
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1872,0.108867
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528767
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1872,0.446150
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1872,0.528510
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,127.048278
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1872,123.670976
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1872,124.824966
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090867
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1872,0.110713
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1872,0.101869
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.627415
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1872,0.430375
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1872,0.433502
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,70.992094
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1872,121.578300
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1872,157.422647
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053851
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1872,0.104425
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1872,0.064234
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185646
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1872,0.232080
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1872,0.255330
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.219711
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1872,33.874814
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1872,34.505834
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053506
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1872,0.104595
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1872,0.071196
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.188904
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1872,0.152265
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1872,0.155985
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,44.578602
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1872,115.907209
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1872,154.561231
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+srun: error: Unable to create step for job 15425824: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,145.410252
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,1936,133.236544
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,1936,134.397193
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.075092
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,1936,0.094604
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,1936,0.090330
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.351215
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,1936,0.372335
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,1936,0.346809
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,103.987937
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,1936,103.908921
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,1936,103.959889
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.075086
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,1936,0.094719
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,1936,0.086134
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.237549
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,1936,0.231089
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,1936,0.230822
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,44.191459
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,1936,98.908378
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,1936,100.108785
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.046888
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,1936,0.074915
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,1936,0.051808
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.117596
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,1936,0.176282
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,1936,0.164534
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,27.788588
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,1936,27.735062
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,1936,27.732842
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.045182
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,1936,0.073765
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,1936,0.055924
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.086071
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,1936,0.088094
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,1936,0.090678
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,28.168660
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,1936,98.588326
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,1936,99.752707
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.034774
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,1936,0.069806
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,1936,0.036153
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.080690
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,1936,0.180150
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,1936,0.165484
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,16.146942
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,1936,16.225997
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,1936,16.163908
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033481
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,1936,0.073644
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,1936,0.056313
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.058616
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,1936,0.059226
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,1936,0.063988
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,22.170329
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,1936,98.591370
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,1936,99.657985
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.026260
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,1936,0.073546
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,1936,0.032372
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.060432
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,1936,0.175926
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,1936,0.166171
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,11.959309
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,1936,11.984716
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,1936,11.990175
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.027983
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,1936,0.073045
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,1936,0.057571
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.049744
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,1936,0.050746
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,1936,0.055912
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,325.559353
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,2000,242.056395
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,2000,320.156393
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090713
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,2000,0.110692
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,2000,0.109071
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529639
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,2000,0.478238
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,2000,0.553946
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,129.212742
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,2000,125.217794
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,2000,126.595615
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091131
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,2000,0.110686
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,2000,0.101787
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.605387
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,2000,0.439546
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,2000,0.440760
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,86.086897
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,2000,164.268589
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,2000,216.421485
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053538
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,2000,0.113419
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,2000,0.061856
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.190330
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,2000,0.256644
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,2000,0.263498
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.674609
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,2000,33.947063
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+srun: error: Unable to create step for job 15425753: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,238.737839
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,208,135.339215
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,208,243.602613
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091749
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,208,0.115182
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,208,0.112358
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529573
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,208,0.336138
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,208,0.525939
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,125.145500
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,208,125.227132
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,208,126.998905
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091204
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,208,0.115378
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,208,0.105593
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.602101
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,208,0.376724
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,208,0.381304
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.300386
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,208,45.372469
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,208,80.630704
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.054462
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,208,0.066686
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,208,0.063769
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185216
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,208,0.140599
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,208,0.188573
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.722194
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,208,34.728935
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,208,34.915971
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.054302
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,208,0.066529
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,208,0.059951
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.182942
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,208,0.149584
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,208,0.143460
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,50.474755
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,208,25.467991
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,208,45.883142
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033605
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,208,0.043750
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,208,0.039698
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118549
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,208,0.101955
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,208,0.136560
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.125013
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,208,22.203131
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,208,22.467860
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033585
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,208,0.043507
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,208,0.037767
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117963
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,208,0.100178
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,208,0.091619
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,34.699912
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,208,24.708011
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,208,47.111824
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024446
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,208,0.030810
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,208,0.029305
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.088568
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,208,0.080999
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,208,0.108701
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.938394
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,208,15.804988
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,208,16.073738
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024634
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,208,0.030609
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,208,0.029937
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.086370
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,208,0.075218
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,208,0.066900
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,322.173188
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,272,150.999979
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,272,322.538841
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090951
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,272,0.112774
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,272,0.110644
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527197
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,272,0.373745
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,272,0.525702
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,129.177219
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,272,127.911315
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,272,128.877234
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090826
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,272,0.112748
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,272,0.104176
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.604676
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,272,0.361154
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,272,0.366112
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,85.484334
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,272,46.675271
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,272,97.714297
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.055554
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,272,0.070646
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,272,0.062496
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.187809
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,272,0.148624
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,272,0.200168
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.086017
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,272,34.994064
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,272,35.680253
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053576
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,272,0.067988
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,272,0.065189
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.188077
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,272,0.143055
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,272,0.139092
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,51.912853
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,272,33.249818
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,272,68.051390
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.034066
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,272,0.037997
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,272,0.040443
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.116777
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,272,0.098795
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,272,0.133265
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.375954
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,272,21.975557
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,272,22.048543
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034078
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,272,0.038054
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,272,0.036887
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.115819
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,272,0.095476
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,272,0.087304
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,37.192139
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+srun: error: Unable to create step for job 15425762: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,238.532377
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,336,144.574871
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,336,238.994900
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090967
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,336,0.112025
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,336,0.109849
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527569
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,336,0.315516
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,336,0.526692
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,127.073378
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,336,124.585345
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,336,124.820857
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090936
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,336,0.111958
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,336,0.102985
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.606323
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,336,0.360439
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,336,0.366794
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,71.284375
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,336,57.308770
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,336,94.714611
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053518
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,336,0.063903
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,336,0.062251
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.186334
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,336,0.146002
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,336,0.204144
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.393124
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,336,34.227426
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,336,34.997926
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053925
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,336,0.063368
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,336,0.068719
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.194003
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,336,0.142442
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,336,0.139925
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,46.319755
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,336,38.707336
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,336,66.566620
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033258
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,336,0.047020
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,336,0.040203
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118874
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,336,0.083627
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,336,0.122794
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.287648
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,336,21.585668
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,336,21.846930
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034018
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,336,0.046977
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,336,0.045431
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.118825
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,336,0.091928
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,336,0.090401
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,32.738368
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,336,22.727223
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,336,38.972759
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024333
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,336,0.046869
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,336,0.028587
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.087796
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,336,0.082819
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,336,0.115926
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.912441
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,336,15.679844
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,336,15.756865
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024394
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,336,0.045122
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,336,0.031212
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.086090
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,336,0.069910
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,336,0.064567
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,238.303612
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,400,143.429763
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,400,241.625754
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090765
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,400,0.111595
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,400,0.109473
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527487
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,400,0.282946
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,400,0.527154
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,125.597406
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,400,123.260694
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,400,123.526686
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091185
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,400,0.112103
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,400,0.102420
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.602096
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,400,0.348948
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,400,0.354204
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.279610
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,400,47.256138
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,400,77.982930
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.054371
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,400,0.074520
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,400,0.063572
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184921
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,400,0.127021
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,400,0.183799
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.799749
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,400,34.544147
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,400,34.569663
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053973
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,400,0.074047
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,400,0.064298
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189671
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,400,0.158026
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,400,0.136715
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.106561
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,400,46.885353
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,400,77.407245
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033681
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,400,0.053159
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,400,0.039272
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118860
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,400,0.093119
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,400,0.133450
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.107009
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,400,21.739833
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,400,21.776053
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033590
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,400,0.053522
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,400,0.036396
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117072
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,400,0.091489
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,400,0.086985
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.827350
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,400,26.563417
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,400,45.221401
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024504
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,400,0.029262
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,400,0.029084
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.088618
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,400,0.092928
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,400,0.133035
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.919359
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,400,15.643194
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,400,15.738965
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024445
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,400,0.029278
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,400,0.036303
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.086353
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,400,0.068443
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,400,0.064666
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,329.182269
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,464,167.172359
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,464,315.606808
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091714
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,464,0.111939
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,464,0.109515
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527886
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,464,0.271437
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,464,0.527707
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,130.882680
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,464,127.588726
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,464,127.550405
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091023
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,464,0.111501
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,464,0.130786
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.605259
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,464,0.348211
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,464,0.356020
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,85.872798
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,464,58.765236
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,464,111.931284
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053535
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,464,0.059562
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,464,0.062704
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.186695
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,464,0.143006
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,464,0.201921
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.978769
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,464,35.265982
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,464,34.952347
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.055647
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,464,0.059293
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,464,0.059197
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.187233
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,464,0.137247
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,464,0.139414
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,51.123846
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,464,32.797165
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,464,61.151543
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033543
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,464,0.059509
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,464,0.039038
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.116482
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,464,0.102681
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,464,0.147980
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.108913
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,464,22.023925
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,464,21.974098
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+srun: error: Unable to create step for job 15425767: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,246.811450
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,528,150.843285
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,528,239.621674
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090784
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,528,0.111590
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,528,0.109064
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527649
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,528,0.272069
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,528,0.528483
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,126.636012
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,528,123.830237
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,528,124.270550
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090976
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,528,0.111377
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,528,0.102197
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.606948
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,528,0.353931
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,528,0.361427
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.009150
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,528,62.389581
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,528,99.371868
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053506
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,528,0.065950
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,528,0.062135
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.187254
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,528,0.153135
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,528,0.229251
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.387326
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,528,34.071478
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,528,34.827578
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053444
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,528,0.065763
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,528,0.062851
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.192177
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,528,0.142350
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,528,0.139198
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.272676
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,528,34.672843
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,528,55.171792
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.034039
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,528,0.036854
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,528,0.038845
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.119727
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,528,0.117558
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,528,0.166747
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.164359
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,528,21.579673
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,528,21.698569
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034091
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,528,0.036682
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,528,0.045372
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.119459
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,528,0.091635
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,528,0.088519
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,32.964887
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,528,35.036707
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,528,55.135760
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024203
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,528,0.037438
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,528,0.029077
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.090161
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,528,0.065627
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,528,0.093701
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.913850
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,528,15.622122
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,528,15.673873
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024353
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,528,0.038158
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,528,0.047187
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.088190
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,528,0.069770
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,528,0.065258
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,244.475723
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,592,149.672948
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,592,236.719743
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.096705
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,592,0.111015
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,592,0.109279
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.530709
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,592,0.272359
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,592,0.529352
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,125.252359
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,592,123.036824
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,592,123.037089
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.093706
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,592,0.111039
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,592,0.102298
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.603304
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,592,0.350083
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,592,0.355826
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.245037
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,592,68.970564
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,592,112.457574
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.054261
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,592,0.073283
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,592,0.063002
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184672
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,592,0.125360
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,592,0.202917
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.916623
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,592,33.955717
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,592,34.109965
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.054465
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,592,0.073647
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,592,0.069412
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.188694
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,592,0.137812
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,592,0.138278
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,49.815195
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,592,38.347631
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,592,62.054513
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033857
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,592,0.041103
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,592,0.039335
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118872
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,592,0.124645
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,592,0.180573
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.150975
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,592,21.666924
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,592,21.774148
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033602
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,592,0.042418
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,592,0.050110
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117294
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,592,0.102694
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,592,0.088094
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,35.076749
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,592,37.826680
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,592,61.291147
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024578
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,592,0.041407
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,592,0.028664
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.088882
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,592,0.073117
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,592,0.104688
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.918336
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,592,15.595204
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,592,15.660068
+srun: error: Unable to create step for job 15425774: Job/step already completing or completed
+srun: error: Unable to create step for job 15425774: Job/step already completing or completed
+srun: error: Unable to create step for job 15425774: Job/step already completing or completed
+srun: error: Unable to create step for job 15425774: Job/step already completing or completed
+srun: error: Unable to create step for job 15425774: Job/step already completing or completed
+srun: error: Unable to create step for job 15425774: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,323.592131
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,656,170.721761
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,656,319.641131
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090806
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,656,0.111267
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,656,0.109190
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527414
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,656,0.273473
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,656,0.527884
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,130.278924
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,656,127.782820
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,656,126.887346
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091074
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,656,0.133322
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,656,0.102798
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.605496
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,656,0.348684
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,656,0.356676
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,86.057483
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,656,83.388256
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,656,152.094223
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053498
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,656,0.078461
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,656,0.062169
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.180906
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,656,0.137847
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,656,0.195292
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.273260
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,656,35.239483
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,656,34.731271
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053551
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,656,0.080503
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,656,0.054117
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.186836
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,656,0.138870
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,656,0.138743
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,52.317825
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,656,45.124355
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,656,80.373835
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+srun: error: Unable to create step for job 15425775: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,240.665605
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,720,151.802047
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,720,238.691377
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090821
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,720,0.111350
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,720,0.109020
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527561
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,720,0.271715
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,720,0.528617
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,127.086556
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,720,123.838201
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,720,125.415969
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090956
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,720,0.111203
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,720,0.102090
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.625480
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,720,0.355381
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,720,0.363044
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,70.601746
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,720,48.084553
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,720,72.892549
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053576
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,720,0.084402
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,720,0.064601
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.189655
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,720,0.146651
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,720,0.210462
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.219273
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,720,34.125156
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,720,34.716136
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053505
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,720,0.084801
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,720,0.058061
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.193050
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,720,0.139521
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,720,0.141437
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,50.615961
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,720,46.586552
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,720,70.764942
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033249
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,720,0.050429
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,720,0.040659
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.117008
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,720,0.084026
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,720,0.121774
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.282012
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,720,21.526356
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,720,21.624041
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.034037
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,720,0.048047
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,720,0.060519
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117370
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,720,0.089077
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,720,0.088012
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.629243
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,720,45.562112
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,720,72.017127
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024343
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,720,0.048118
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,720,0.029333
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.088188
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,720,0.087183
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,720,0.121126
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.907604
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,720,15.573192
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,720,15.605219
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024170
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,720,0.049846
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,720,0.032425
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.086267
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,720,0.068217
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,720,0.065375
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,244.462272
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,784,149.360583
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,784,237.136680
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091100
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,784,0.110811
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,784,0.108877
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529052
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,784,0.273562
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,784,0.527956
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,125.065952
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,784,122.831766
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,784,122.787315
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090829
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,784,0.110985
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,784,0.101679
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.601752
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,784,0.349567
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,784,0.357110
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.705472
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,784,49.619109
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,784,75.643477
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053949
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,784,0.091185
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,784,0.064477
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.184217
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,784,0.154300
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,784,0.226004
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.932059
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,784,34.235024
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,784,34.141446
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.054214
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,784,0.091350
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,784,0.062841
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189312
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,784,0.137483
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,784,0.138473
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.183749
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,784,48.910190
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,784,77.872473
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033683
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,784,0.052298
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,784,0.039523
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.119163
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,784,0.091611
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,784,0.131169
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.155861
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,784,21.554426
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,784,21.672931
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033731
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,784,0.052183
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,784,0.035099
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117160
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,784,0.088981
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,784,0.088044
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.952361
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,784,49.085422
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,784,82.963100
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024611
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,784,0.052353
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,784,0.028750
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.089001
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,784,0.091603
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,784,0.131217
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.948820
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,784,15.577500
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,784,15.621004
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024625
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,784,0.052140
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,784,0.034979
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.086139
+srun: error: Unable to create step for job 15425782: Job/step already completing or completed
+srun: error: Unable to create step for job 15425782: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,240.578760
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,80,135.033068
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,80,234.341632
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.090889
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,80,0.116957
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,80,0.118720
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.528842
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,80,0.330639
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,80,0.531739
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,125.328816
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,80,123.343071
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,80,130.306179
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090791
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,80,0.116803
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,80,0.113130
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.601953
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,80,0.379501
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,80,0.391331
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,76.304406
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,80,39.952873
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,80,71.195895
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.054038
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,80,0.067275
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,80,0.065289
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185551
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,80,0.134626
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,80,0.181468
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.708892
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,80,34.428089
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,80,36.418897
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.054289
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,80,0.067639
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,80,0.064246
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.208377
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,80,0.157668
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,80,0.145109
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.754670
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,80,27.886377
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,80,50.948045
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.033603
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,80,0.040073
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,80,0.040294
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118647
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,80,0.089476
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,80,0.121142
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,22.022070
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,80,21.678533
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,80,23.151233
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033593
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,80,0.040188
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,80,0.040981
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117599
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,80,0.138219
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,80,0.091744
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.663459
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,80,19.810815
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,80,37.908845
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024584
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,80,0.029967
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,80,0.029353
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.088580
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,80,0.064147
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,80,0.086872
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.942949
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,80,15.681669
+matrix-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,2805,2805,80,16.660895
+vector-mult,parallel-non-tiled-loop-inter,10,speed-up,4000,5896,0,0.024565
+vector-mult,parallel-paw-tiled-loop-inter,10,speed-up,4000,5896,80,0.030034
+vector-mult,parallel-paw-single-tiled-loop-inter,10,speed-up,4000,5896,80,0.031337
+jacobi,parallel-non-tiled-loop-inter,10,speed-up,4858,4858,0,0.086198
+jacobi,parallel-paw-tiled-loop-inter,10,speed-up,4858,4858,80,0.156215
+jacobi,parallel-paw-single-tiled-loop-inter,10,speed-up,4858,4858,80,0.067744
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,325.300952
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,848,174.223786
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,848,323.015074
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091091
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,848,0.111127
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,848,0.109281
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.529668
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,848,0.272176
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,848,0.526574
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,129.533813
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,848,127.651911
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,848,127.118976
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091216
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,848,0.111133
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,848,0.101854
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.605553
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,848,0.349737
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,848,0.359830
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,87.486438
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,848,56.109146
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,848,101.211951
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053729
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,848,0.054943
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,848,0.062275
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.183318
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,848,0.162963
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,848,0.240963
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,36.935631
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,848,34.167983
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,848,35.789916
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053563
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,848,0.057175
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,848,0.068870
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189549
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,848,0.140272
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,848,0.139736
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,51.832660
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,848,56.301674
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,848,104.008668
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+srun: error: Unable to create step for job 15425783: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,240.365200
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,912,152.908757
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,912,237.413566
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091132
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,912,0.111081
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,912,0.109405
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.527560
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,912,0.279864
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,912,0.528258
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,126.550499
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,912,123.238526
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,912,124.857070
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.091287
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,912,0.133026
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,912,0.102978
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.620627
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,912,0.356262
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,912,0.423322
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,70.747135
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,912,58.441181
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,912,87.550020
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.053561
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,912,0.058120
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,912,0.064510
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.192756
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,912,0.173935
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,912,0.252865
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,35.120428
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,912,34.424678
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,912,34.771345
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.053801
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,912,0.058326
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,912,0.072970
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.190354
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,912,0.138611
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,912,0.143051
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,45.166944
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,912,56.491551
+matrix-mult,parallel-paw-single-tiled,7,speed-up,2805,2805,912,85.616519
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.034566
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,912,0.058366
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,912,0.038911
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.121613
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,912,0.106484
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,912,0.148673
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,21.958330
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,912,21.630337
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,912,21.806189
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033536
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,912,0.058220
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,912,0.040961
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.118502
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,912,0.091862
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,912,0.090688
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,34.466156
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,912,56.146133
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,912,96.562219
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+srun: error: Unable to create step for job 15425785: Job/step already completing or completed
+matrix-mult,parallel-non-tiled,1,speed-up,2805,2805,0,244.999715
+matrix-mult,parallel-paw-tiled,1,speed-up,2805,2805,976,151.209527
+matrix-mult,parallel-paw-single-tiled,1,speed-up,2805,2805,976,236.180953
+vector-mult,parallel-non-tiled,1,speed-up,4000,5896,0,0.091076
+vector-mult,parallel-paw-tiled,1,speed-up,4000,5896,976,0.111006
+vector-mult,parallel-paw-single-tiled,1,speed-up,4000,5896,976,0.108796
+jacobi,parallel-non-tiled,1,speed-up,4858,4858,0,0.530141
+jacobi,parallel-paw-tiled,1,speed-up,4858,4858,976,0.278204
+jacobi,parallel-paw-single-tiled,1,speed-up,4858,4858,976,0.531952
+matrix-mult,parallel-non-tiled-loop-inter,1,speed-up,2805,2805,0,125.257715
+matrix-mult,parallel-paw-tiled-loop-inter,1,speed-up,2805,2805,976,122.577322
+matrix-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,2805,2805,976,122.493742
+vector-mult,parallel-non-tiled-loop-inter,1,speed-up,4000,5896,0,0.090900
+vector-mult,parallel-paw-tiled-loop-inter,1,speed-up,4000,5896,976,0.110893
+vector-mult,parallel-paw-single-tiled-loop-inter,1,speed-up,4000,5896,976,0.101782
+jacobi,parallel-non-tiled-loop-inter,1,speed-up,4858,4858,0,0.602304
+jacobi,parallel-paw-tiled-loop-inter,1,speed-up,4858,4858,976,0.349101
+jacobi,parallel-paw-single-tiled-loop-inter,1,speed-up,4858,4858,976,0.355446
+matrix-mult,parallel-non-tiled,4,speed-up,2805,2805,0,69.419988
+matrix-mult,parallel-paw-tiled,4,speed-up,2805,2805,976,60.404828
+matrix-mult,parallel-paw-single-tiled,4,speed-up,2805,2805,976,91.346813
+vector-mult,parallel-non-tiled,4,speed-up,4000,5896,0,0.054257
+vector-mult,parallel-paw-tiled,4,speed-up,4000,5896,976,0.062638
+vector-mult,parallel-paw-single-tiled,4,speed-up,4000,5896,976,0.062766
+jacobi,parallel-non-tiled,4,speed-up,4858,4858,0,0.185121
+jacobi,parallel-paw-tiled,4,speed-up,4858,4858,976,0.123014
+jacobi,parallel-paw-single-tiled,4,speed-up,4858,4858,976,0.221966
+matrix-mult,parallel-non-tiled-loop-inter,4,speed-up,2805,2805,0,34.770049
+matrix-mult,parallel-paw-tiled-loop-inter,4,speed-up,2805,2805,976,33.944859
+matrix-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,2805,2805,976,34.114810
+vector-mult,parallel-non-tiled-loop-inter,4,speed-up,4000,5896,0,0.054238
+vector-mult,parallel-paw-tiled-loop-inter,4,speed-up,4000,5896,976,0.062445
+vector-mult,parallel-paw-single-tiled-loop-inter,4,speed-up,4000,5896,976,0.074906
+jacobi,parallel-non-tiled-loop-inter,4,speed-up,4858,4858,0,0.189472
+jacobi,parallel-paw-tiled-loop-inter,4,speed-up,4858,4858,976,0.138037
+jacobi,parallel-paw-single-tiled-loop-inter,4,speed-up,4858,4858,976,0.138137
+matrix-mult,parallel-non-tiled,7,speed-up,2805,2805,0,46.087339
+matrix-mult,parallel-paw-tiled,7,speed-up,2805,2805,976,59.367067
+slurmstepd: error: *** STEP 15425789.38 ON r00g01 CANCELLED AT 2023-01-14T21:51:21 ***
+srun: error: r00g01: task 0: Terminated
+srun: Force Terminated job step 15425789.38
+vector-mult,parallel-non-tiled,7,speed-up,4000,5896,0,0.038741
+vector-mult,parallel-paw-tiled,7,speed-up,4000,5896,976,0.062669
+vector-mult,parallel-paw-single-tiled,7,speed-up,4000,5896,976,0.039158
+jacobi,parallel-non-tiled,7,speed-up,4858,4858,0,0.118822
+jacobi,parallel-paw-tiled,7,speed-up,4858,4858,976,0.109845
+jacobi,parallel-paw-single-tiled,7,speed-up,4858,4858,976,0.156041
+matrix-mult,parallel-non-tiled-loop-inter,7,speed-up,2805,2805,0,21.982015
+matrix-mult,parallel-paw-tiled-loop-inter,7,speed-up,2805,2805,976,21.597447
+matrix-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,2805,2805,976,21.526239
+vector-mult,parallel-non-tiled-loop-inter,7,speed-up,4000,5896,0,0.033699
+vector-mult,parallel-paw-tiled-loop-inter,7,speed-up,4000,5896,976,0.062176
+vector-mult,parallel-paw-single-tiled-loop-inter,7,speed-up,4000,5896,976,0.042067
+jacobi,parallel-non-tiled-loop-inter,7,speed-up,4858,4858,0,0.117489
+jacobi,parallel-paw-tiled-loop-inter,7,speed-up,4858,4858,976,0.088204
+jacobi,parallel-paw-single-tiled-loop-inter,7,speed-up,4858,4858,976,0.088404
+matrix-mult,parallel-non-tiled,10,speed-up,2805,2805,0,33.565711
+matrix-mult,parallel-paw-tiled,10,speed-up,2805,2805,976,59.971436
+matrix-mult,parallel-paw-single-tiled,10,speed-up,2805,2805,976,99.616474
+vector-mult,parallel-non-tiled,10,speed-up,4000,5896,0,0.024473
+vector-mult,parallel-paw-tiled,10,speed-up,4000,5896,976,0.062608
+vector-mult,parallel-paw-single-tiled,10,speed-up,4000,5896,976,0.029073
+jacobi,parallel-non-tiled,10,speed-up,4858,4858,0,0.089024
+jacobi,parallel-paw-tiled,10,speed-up,4858,4858,976,0.109995
+jacobi,parallel-paw-single-tiled,10,speed-up,4858,4858,976,0.155386
+matrix-mult,parallel-non-tiled-loop-inter,10,speed-up,2805,2805,0,15.959449
+matrix-mult,parallel-paw-tiled-loop-inter,10,speed-up,2805,2805,976,15.571203
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
+srun: error: Unable to create step for job 15425789: Job/step already completing or completed
