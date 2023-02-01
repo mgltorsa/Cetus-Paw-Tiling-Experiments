@@ -17,6 +17,27 @@ LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 #do
 for j in {1..20}
 do
+    #Matrix mult
+    ./$BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
+
+    #vector
+    ./$BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
+
+    #jacobi
+    ./$BINARY_FOLDER/jacobi/ParallelNonTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
+
+
+    #Loop interchange
+    #LP-Matrix mult
+    ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
+     
+    #LP-vector
+    ./$LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
+
+    #LP-jacobi
+    ./$LOOP_INTER_BINARY_FOLDER/jacobi/ParallelNonTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
+              
+
     for k in {16..2016..64}
     do
         TILE_SIZE=$k
@@ -26,44 +47,38 @@ do
             CORES=$i
 
             #Matrix mult
-            ./$BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
-                
+
             ./$BINARY_FOLDER/matrix-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
                 
             ./$BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
                 
-                #vector
-            ./$BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
-                
+            #vector
+
             ./$BINARY_FOLDER/vector-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
                 
             ./$BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
                 
-                #jacobi
-            ./$BINARY_FOLDER/jacobi/ParallelNonTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
+            #jacobi
                 
             ./$BINARY_FOLDER/jacobi/ParallelTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
                 
             ./$BINARY_FOLDER/jacobi/ParallelSingleTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
                 
 
-                #Loop interchange
-                #LP-Matrix mult
-            ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
+            #Loop interchange
+            #LP-Matrix mult
                 
             ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
                 
             ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
                 
-                #LP-vector
-            ./$LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
+            #LP-vector
                 
             ./$LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
                 
             ./$LOOP_INTER_BINARY_FOLDER/vector-multiplication/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_VECTOR_MULT_M $MATRIX_VECTOR_MULT_N "$TILE_SIZE"
                 
-                #LP-jacobi
-            ./$LOOP_INTER_BINARY_FOLDER/jacobi/ParallelNonTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
+            #LP-jacobi
                 
             ./$LOOP_INTER_BINARY_FOLDER/jacobi/ParallelTiled "$CORES" "$CACHE" $JACOBI_M "$TILE_SIZE"
                 
