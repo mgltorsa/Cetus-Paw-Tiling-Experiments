@@ -22,7 +22,7 @@ do
 
    #Loop interchange
    #LP-Matrix mult
-   ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
+   #./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
               
 
     for k in {16..2016..64}
@@ -37,9 +37,9 @@ do
           #Loop interchange
           #LP-Matrix mult
                 
-          ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
+          # ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
                 
-          ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
+          # ./$LOOP_INTER_BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
                 
     done
   done
