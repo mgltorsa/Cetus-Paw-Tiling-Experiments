@@ -2,11 +2,12 @@
 #SBATCH --job-name=tile-sizes-job
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
-#SBATCH --nodes=6
-#SBATCH --array=16-2016:64%6
+#SBATCH --nodes=1
+#SBATCH --array=16-79:64%1
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
+#SBATCH --time=24:00:00
 
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter

@@ -17,6 +17,7 @@ mkdir $LOOP_INTER_BINARY_FOLDER/vector-multiplication
 mkdir $LOOP_INTER_BINARY_FOLDER/jacobi
 
 #Matrix
+gcc -g -fopenmp matrix-multiplication/NonTiled.c -o $BINARY_FOLDER/matrix-multiplication/NonTiled $PROJECT_EXTRA
 gcc -g -fopenmp matrix-multiplication/ParallelNonTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled $PROJECT_EXTRA
 gcc -g -fopenmp matrix-multiplication/ParallelTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelTiled $PROJECT_EXTRA
 gcc -g -fopenmp matrix-multiplication/ParallelSingleTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelSingleTiled $PROJECT_EXTRA
