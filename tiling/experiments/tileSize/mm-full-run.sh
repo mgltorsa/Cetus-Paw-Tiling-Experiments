@@ -34,7 +34,7 @@ do
     
     for k in {16..79..64}
     do
-        TILE_SIZE=$SLURM_ARRAY_TASK_ID
+        TILE_SIZE=$k
         #Matrix mult
         
         ./$BINARY_FOLDER/matrix-multiplication/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M "$TILE_SIZE"
