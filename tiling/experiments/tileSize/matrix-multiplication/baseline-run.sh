@@ -24,7 +24,7 @@ done
 
 for j in {1..10}
 do
-    CORES=0
+    CORES=1
     ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
     
 done
