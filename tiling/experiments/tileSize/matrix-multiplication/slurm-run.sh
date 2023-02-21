@@ -15,6 +15,8 @@ LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 
 . ../../setup.sh
 
+echo "$CACHE and $MATRIX_MULT_M"
+
 srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --exclusive $BINARY_FOLDER/NonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
 wait
 
