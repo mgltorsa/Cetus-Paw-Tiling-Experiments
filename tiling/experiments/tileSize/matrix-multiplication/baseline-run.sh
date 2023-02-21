@@ -14,8 +14,6 @@ BINARY_FOLDER=bin
 
 . ../../setup.sh
 
-echo "$CACHE and $MATRIX_MULT_M"
-
 for i in {1..10}
 do
     ./$BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M

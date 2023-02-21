@@ -15,8 +15,6 @@ LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 
 . ../../setup.sh
 
-echo "$CACHE and $MATRIX_MULT_M"
-
 
 for i in {1..12..3}
 do
