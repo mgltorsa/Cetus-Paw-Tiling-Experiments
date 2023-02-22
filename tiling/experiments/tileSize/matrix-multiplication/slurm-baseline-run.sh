@@ -17,9 +17,8 @@ BINARY_FOLDER=bin
 
 
 
-for j in {1..12..3}
-do
-    CORES=1
-    ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
-    
-done
+
+CORES=1
+./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
+
+
