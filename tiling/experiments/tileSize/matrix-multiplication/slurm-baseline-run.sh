@@ -10,7 +10,16 @@
 #SBATCH --time=32:00:00
 #SBATCH --constraint='Gen2'
 
-. ../../setup.sh
+BINARY_FOLDER=bin
 
-./slurm-baseline-run.sh
-./variations-run.sh
+
+./$BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
+
+
+
+for j in {1..12..3}
+do
+    CORES=1
+    ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
+    
+done

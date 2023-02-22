@@ -13,12 +13,9 @@
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 
-. ../../setup.sh
-
-
 for i in {1..12..3}
 do
-    CORES=$i    
+    CORES=$i
     
     for j in {16..2016..64}
     do

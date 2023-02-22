@@ -9,5 +9,8 @@
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
 #SBATCH --time=32:00:00
 #SBATCH --constraint='Gen2'
+
+. ../../setup.sh
+
 ./baseline-run.sh
 ./variations-run.sh
