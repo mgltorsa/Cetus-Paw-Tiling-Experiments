@@ -7,12 +7,11 @@ PROJECT_LIB="-L${PAPI_DIR}/lib"
 PROJECT_EXTRA="-lpapi -lm"
 
 BINARY_FOLDER=bin
-PROJECT_EXTRA="-lm"
 
 mkdir $BINARY_FOLDER
 
 echo "script"
-echo "gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp matrix-multiplication/ParallelNonTiled.c -o $BINARY_FOLDER/matrix-multiplication/ParallelNonTiled $PROJECT_EXTRA"
+echo "gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp ParallelNonTiled.c -o $BINARY_FOLDER/ParallelNonTiled $PROJECT_EXTRA"
 
 
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp NonTiled.c -o $BINARY_FOLDER/NonTiled $PROJECT_EXTRA
