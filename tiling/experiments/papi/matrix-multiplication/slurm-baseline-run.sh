@@ -9,6 +9,7 @@
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
 #SBATCH --time=32:00:00
 #SBATCH --constraint='Gen2'
+. ../../setup.sh
 
 BINARY_FOLDER=bin
 

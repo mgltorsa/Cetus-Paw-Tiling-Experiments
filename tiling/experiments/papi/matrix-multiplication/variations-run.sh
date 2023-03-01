@@ -10,6 +10,8 @@
 #SBATCH --time=32:00:00
 #SBATCH --constraint='Gen2'
 
+. ../../setup.sh
+
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 
