@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=mm-tile-sizes-job
+#SBATCH --job-name=mm-papi-variations
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=13
 #SBATCH --nodes=3
