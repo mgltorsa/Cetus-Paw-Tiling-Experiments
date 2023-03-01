@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=mm-tile-sizes-job
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=13
+#SBATCH --cpus-per-task=10
 #SBATCH --nodes=3
 #SBATCH --array=1-10%3
 #SBATCH --exclusive

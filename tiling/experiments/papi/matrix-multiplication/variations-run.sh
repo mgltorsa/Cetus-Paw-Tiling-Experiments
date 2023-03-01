@@ -23,9 +23,11 @@ do
         for j in {16..2016..64}
         do
             TILE_SIZE=$j
-            ./$BINARY_FOLDER/ParallelTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
-            
-            ./$BINARY_FOLDER/ParallelSingleTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            wait
+
+            srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelSingleTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            wait
             
         done
     done

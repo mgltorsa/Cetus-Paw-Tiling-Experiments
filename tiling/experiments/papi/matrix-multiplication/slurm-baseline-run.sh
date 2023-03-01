@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=mm-tile-sizes-job
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=13
+#SBATCH --cpus-per-task=1
 #SBATCH --nodes=3
 #SBATCH --array=1-10%3
 #SBATCH --exclusive
@@ -15,15 +15,16 @@ BINARY_FOLDER=bin
 TYPE=0
 CORES=1
 
-./$BINARY_FOLDER/NonTiled "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/NonTiled "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+wait
 
-./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
-
+srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+wait
 
 TYPE=1
-./$BINARY_FOLDER/NonTiled "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/NonTiled "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+wait
 
-
-./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
-
+srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+wait
 
