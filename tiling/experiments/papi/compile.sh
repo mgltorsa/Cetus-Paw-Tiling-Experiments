@@ -4,13 +4,13 @@ WORKSPACE_FOLDER=$PWD/../../..
 PAPI_DIR=$WORKDIR/sw/papi/src/install/3.7
 PROJECT_PATH="-I${PAPI_DIR}/include -I${WORKSPACE_FOLDER}/lib"
 PROJECT_LIB="-L${PAPI_DIR}/lib"
+PROJECT_EXTRA="-lpapi -lm"
 
 echo "$WORKSPACE"
 echo "$PAPI_DIR"
 echo "$PROJECT_PATH"
 echo "$PROJECT_LIB"
 
-PROJECT_EXTRA="-lpapi -lm"
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 

@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
 
 	if (a == NULL || b == NULL || d == NULL)
 	{
-		printf("matrix-mult,parallel-paw-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
+		printf("matrix-mult,parallel-paw-tiled-v2,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
 		return 1;
 	}
 
@@ -83,25 +83,25 @@ int main(int argc, char const *argv[])
 	initAndMeasure(&eventSet, event);
 	#pragma loop name main #1
 	#pragma cetus private(i, j, jj, k, kk)
-	#pragma cetus parallel
-	#pragma omp parallel for private(i, j, jj, k, kk)
-	for (jj = 0; jj < m; jj += jTile)
+	for ((jj = 0); jj < m; jj += jTile)
 	{
 		#pragma loop name main #1 #0
 		#pragma cetus private(i, j, k, kk)
+		#pragma cetus parallel
+		#pragma omp parallel for private(i, j, k, kk)
 		for (i = 0; i < n; i++)
 		{
 			#pragma loop name main #1 #0 #0
 			#pragma cetus private(j, k, kk)
-			for (kk = 0; kk < n; kk += kTile)
+			for ((kk = 0); kk < n; kk += kTile)
 			{
 				#pragma loop name main #1 #0 #0 #0
 				#pragma cetus private(j, k)
-				for (j = jj; j < ((((-1 + jTile) + jj) < m) ? ((-1 + jTile) + jj) : m); j++)
+				for ((j = jj); j < ((((-1 + jTile) + jj) < m) ? ((-1 + jTile) + jj) : m); j++)
 				{
 					#pragma loop name main #1 #0 #0 #0 #0
 					#pragma cetus private(k)
-					for (k = kk; k < ((((-1 + kTile) + kk) < n) ? ((-1 + kTile) + kk) : n); k++)
+					for ((k = kk); k < ((((-1 + kTile) + kk) < n) ? ((-1 + kTile) + kk) : n); k++)
 					{
 						d[i][j] = (d[i][j] + (a[i][k] * b[k][j]));
 					}
@@ -123,7 +123,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(d);
 
-	printf("matrix-mult,parallel-paw-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, n, m, balancedTileSize, measurement);
+	printf("matrix-mult,parallel-paw-tiled-v2,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, n, m, balancedTileSize, measurement);
 
 	_ret_val_0 = 0;
 	return _ret_val_0;

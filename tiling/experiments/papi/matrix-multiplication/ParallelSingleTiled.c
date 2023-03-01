@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
 
 	if (a == NULL || b == NULL || d == NULL)
 	{
-		printf("matrix-mult,parallel-paw-single-tiled,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
+		printf("matrix-mult,parallel-paw-single-tiled-v2,%d,%s,%d,%d,mem-allocation-error\n", cores, eventLabel, n, m);
 		return 1;
 	}
 
@@ -80,28 +80,28 @@ int main(int argc, char const *argv[])
 	int jTile = balancedTileSize;
 	initAndMeasure(&eventSet, event);
 	#pragma loop name main #1
-	#pragma cetus private(i, j, jj, k)
-	#pragma cetus parallel
-	#pragma omp parallel for private(i, j, jj, k)
-	for (jj = 0; jj < m; jj += jTile)
-	{
-		#pragma loop name main #1 #0
-		#pragma cetus private(i, j, k)
-		for (i = 0; i < n; i++)
-		{
-			#pragma loop name main #1 #0 #0
-			#pragma cetus private(j, k)
-			for (j = jj; j < ((((-1 + jTile) + jj) < m) ? ((-1 + jTile) + jj) : m); j++)
-			{
-				#pragma loop name main #1 #0 #0 #0
-				#pragma cetus private(k)
-				for (k = 0; k < n; k++)
-				{
-					d[i][j] = (d[i][j] + (a[i][k] * b[k][j]));
-				}
-			}
-		}
-	}
+    #pragma cetus private(i, j, jj, k)
+    for ((jj = 0); jj < m; jj += jTile)
+    {
+        #pragma loop name main #1 #0
+        #pragma cetus private(i, j, k)
+        #pragma cetus parallel
+        #pragma omp parallel for private(i, j, k)
+        for (i = 0; i < n; i++)
+        {
+            #pragma loop name main #1 #0 #0
+            #pragma cetus private(j, k)
+            for ((j = jj); j < ((((-1 + jTile) + jj) < m) ? ((-1 + jTile) + jj) : m); j++)
+            {
+                #pragma loop name main #1 #0 #0 #0
+                #pragma cetus private(k)
+                for (k = 0; k < n; k++)
+                {
+                    d[i][j] = (d[i][j] + (a[i][k] * b[k][j]));
+                }
+            }
+        }
+    }
 
 	long_long measurement = stopMeasure(eventSet);
 
@@ -116,7 +116,7 @@ int main(int argc, char const *argv[])
 	free(b);
 	free(d);
 
-	printf("matrix-mult,parallel-paw-single-tiled,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, n, m, balancedTileSize, measurement);
+	printf("matrix-mult,parallel-paw-single-tiled-v2,%d,%s,%d,%d,%d,%lld\n", cores, eventLabel, n, m, balancedTileSize, measurement);
 	_ret_val_0 = 0;
 	return _ret_val_0;
 }
