@@ -1,0 +1,10 @@
+matrix-mult,parallel-non-tiled,1,cache-misses,2805,2805,0,574828823
+matrix-mult,parallel-non-tiled,1,cache-misses,2805,2805,0,568943339
+matrix-mult,parallel-non-tiled,1,cache-misses,2805,2805,0,571409947
+matrix-mult,parallel-non-tiled,1,cache-misses,2805,2805,0,586309964
+matrix-mult,parallel-non-tiled,1,cache-misses,2805,2805,0,572513039
+matrix-mult,non-tiled,0,cache-misses,2805,2805,0,527408591
+matrix-mult,non-tiled,0,cache-misses,2805,2805,0,579869303
+matrix-mult,non-tiled,0,cache-misses,2805,2805,0,571503819
+matrix-mult,non-tiled,0,cache-misses,2805,2805,0,548531425
+matrix-mult,non-tiled,0,cache-misses,2805,2805,0,570578691
