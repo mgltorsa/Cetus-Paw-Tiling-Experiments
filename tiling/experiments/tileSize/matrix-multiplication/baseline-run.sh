@@ -13,15 +13,17 @@ BINARY_FOLDER=bin
 
 . ../../setup.sh
 
+CORES=1
+
 for i in {1..10}
 do
-    ./$BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --cpu-bind=thread --exclusive $BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
+    wait
 done
 
 
 for j in {1..10}
 do
-    CORES=1
-    ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
-    
+    srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --cpu-bind=thread --exclusive $BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
+    wait
 done
