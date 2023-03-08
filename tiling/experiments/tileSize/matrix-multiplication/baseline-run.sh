@@ -1,9 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=mm-tile-sizes-job
+#SBATCH --job-name=base-mmtl
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=13
-#SBATCH --nodes=3
-#SBATCH --array=1-10%3
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=1
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail

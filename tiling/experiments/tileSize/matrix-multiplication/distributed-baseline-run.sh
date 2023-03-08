@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=mm-tile-sizes-baseline
+#SBATCH --job-name=base-mmtl
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --nodes=3
@@ -15,13 +15,8 @@
 BINARY_FOLDER=bin
 
 CORES=1
-srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --exclusive $BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
-wait
+./$BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
 
-
-
-
-srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --exclusive $BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
-wait
+./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
 
 

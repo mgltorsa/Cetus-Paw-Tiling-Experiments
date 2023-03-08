@@ -1,9 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=mm-tile-sizes-variations
+#SBATCH --job-name=mmtl-variations
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=10
-#SBATCH --nodes=3
-#SBATCH --array=1-10%3
+#SBATCH --nodes=1
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
@@ -15,23 +14,25 @@
 BINARY_FOLDER=bin
 LOOP_INTER_BINARY_FOLDER=bin/loop-inter
 
-for i in {1..12..3}
+for reps in {1..10}
 do
-    CORES=$i
-    
-    for j in {16..2016..64}
+    for i in {1..12..3}
     do
-        TILE_SIZE=$j
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
-        wait
-
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
-        wait
-
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelTiledV2 "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
-        wait
-
-        srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES $BINARY_FOLDER/ParallelSingleTiledV2 "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
-        wait
+        CORES=$i
+        
+        for j in {16..2016..64}
+        do
+            TILE_SIZE=$j
+            ./$BINARY_FOLDER/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            
+            ./$BINARY_FOLDER/ParallelSingleTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            
+            
+            ./$BINARY_FOLDER/ParallelTiledV2 "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            
+            
+            ./$BINARY_FOLDER/ParallelSingleTiledV2 "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+            
+        done
     done
 done
