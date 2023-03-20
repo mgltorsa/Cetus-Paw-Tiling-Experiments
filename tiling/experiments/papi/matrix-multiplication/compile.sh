@@ -18,3 +18,7 @@ gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp NonTiled.c -o $BINARY_FOLDER/NonTiled
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp ParallelNonTiled.c -o $BINARY_FOLDER/ParallelNonTiled $PROJECT_EXTRA
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp ParallelTiled.c -o $BINARY_FOLDER/ParallelTiled $PROJECT_EXTRA
 gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp ParallelSingleTiled.c -o $BINARY_FOLDER/ParallelSingleTiled $PROJECT_EXTRA
+
+gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp NoFSParallelNonTiled.c -o $BINARY_FOLDER/NoFSParallelNonTiled $PROJECT_EXTRA
+gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp NoFSParallelTiled.c -o $BINARY_FOLDER/NoFSParallelTiled $PROJECT_EXTRA
+gcc $PROJECT_PATH $PROJECT_LIB -g -fopenmp NoFSParallelSingleTiled.c -o $BINARY_FOLDER/NoFSParallelSingleTiled $PROJECT_EXTRA
