@@ -1,8 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=mmpp-variations
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=10
-#SBATCH --nodes=1
+#SBATCH --threads-per-core=1
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
@@ -28,9 +29,12 @@ do
                 TILE_SIZE=$j
                 ./$BINARY_FOLDER/ParallelTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
                 
-                
                 ./$BINARY_FOLDER/ParallelSingleTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+
                 
+                ./$BINARY_FOLDER/NoFSParallelTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
+                
+                ./$BINARY_FOLDER/NoFSParallelSingleTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE
                 
             done
         done

@@ -1,8 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=mmpp-baseline
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
-#SBATCH --nodes=1
+#SBATCH --threads-per-core=1
 #SBATCH --exclusive
 #SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=mgltorsa@udel.edu   # Where to send mail
