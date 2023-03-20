@@ -22,12 +22,16 @@ do
     
     ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
     
+    ./$BINARY_FOLDER/NoFSParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+
     
     TYPE=1
     ./$BINARY_FOLDER/NonTiled "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
     
     
     ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
+
+    ./$BINARY_FOLDER/NoFSParallelNonTiled "$CORES" "$CACHE" "$TYPE" $MATRIX_MULT_M $MATRIX_MULT_M
 done
 
 
