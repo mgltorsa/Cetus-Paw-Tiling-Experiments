@@ -98,7 +98,7 @@ int main(int argc, char const *argv[])
                 #pragma cetus private(k)
                 for (k = 0; k < n; k++)
                 {
-                    sum += (d[i][j] + (a[i][k] * b[k][j]));
+                    sum += ((a[i][k] * b[k][j]));
                 }
 
 				d[i][j]=sum;

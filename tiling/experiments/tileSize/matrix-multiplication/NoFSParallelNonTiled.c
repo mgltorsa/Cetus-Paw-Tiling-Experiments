@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
             for (k = 0; k < n; k++)
             {
 
-                sum += d[i][j] + a[i][k] * b[k][j];
+                sum += a[i][k] * b[k][j];
             }
             d[i][j]=sum;
         }
