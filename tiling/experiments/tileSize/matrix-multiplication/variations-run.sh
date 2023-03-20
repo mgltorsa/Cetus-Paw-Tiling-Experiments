@@ -20,7 +20,7 @@ do
     do
         CORES=$i
         
-        for j in {16..2016..64}
+        for j in {16..256..16}
         do
             TILE_SIZE=$j
             ./$BINARY_FOLDER/ParallelTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M $TILE_SIZE

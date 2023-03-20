@@ -17,13 +17,11 @@ CORES=1
 
 for i in {1..10}
 do
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --cpu-bind=thread --exclusive $BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
-    wait
+    ./$BINARY_FOLDER/NonTiled $MATRIX_MULT_M $MATRIX_MULT_M
 done
 
 
 for j in {1..10}
 do
-    srun --nodes=1 --ntasks=1 --cpus-per-task=$CORES --cpu-bind=thread --exclusive $BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
-    wait
+    ./$BINARY_FOLDER/ParallelNonTiled "$CORES" "$CACHE" $MATRIX_MULT_M $MATRIX_MULT_M
 done
