@@ -60,12 +60,16 @@ int main(int argc, char *argv[])
 
         for (j = 0; j < m; j++)
         {
+            
+            float sum=0.0;
 
             for (k = 0; k < n; k++)
             {
 
-                d[i][j] = d[i][j] + a[i][k] * b[k][j];
+               sum += a[i][k] * b[k][j];
             }
+
+             d[i][j] = sum;
         }
     }
 
