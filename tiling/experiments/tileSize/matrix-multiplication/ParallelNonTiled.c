@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <omp.h>
 #include <math.h>
+#include <sys/time.h>
 
 int main(int argc, char *argv[])
 {
@@ -62,10 +63,15 @@ int main(int argc, char *argv[])
     int i, j, k;
 
     double start = omp_get_wtime();
+    struct timeval startT;
+    gettimeofday(&startT, 0);
     
     #pragma omp parallel for private(i, j, k)
     for (i = 0; i < n; i++)
     {
+        // int thId = omp_get_thread_num();
+        // printf("LOGS: Th id: %d", thId);
+
 
         for (j = 0; j < m; j++)
         {
@@ -78,8 +84,16 @@ int main(int argc, char *argv[])
         }
     }
 
+    struct timeval endT;
+    gettimeofday(&endT, 0);
+    long seconds = endT.tv_sec - startT.tv_sec;
+    long microseconds = endT.tv_usec - startT.tv_usec;
+    double timeT = seconds + microseconds*1e-6;
+
     double end = omp_get_wtime();
     double time = end - start;
+
+ 
 
     for (z = 0; z < n; z++)
     {
@@ -93,6 +107,7 @@ int main(int argc, char *argv[])
     free(d);
 
     printf("matrix-mult,parallel-non-tiled,%d,speed-up,%d,%d,%d,%f\n", cores, n, m,0, time);
+    printf("matrix-mult,parallel-non-tiled,%d,speed-up-t,%d,%d,%d,%f\n", cores, n, m,0, timeT);
 
     return 0;
 }
